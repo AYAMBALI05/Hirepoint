@@ -1,0 +1,1040 @@
+[
+  {
+    "ContainingType": "HirePoint.Controllers.ApplicationsController",
+    "Method": "GetApplications",
+    "RelativePath": "api/Applications",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.ApplicationsController",
+    "Method": "CreateApplication",
+    "RelativePath": "api/Applications",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "application",
+        "Type": "HirePoint.Models.Entities.Application",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.ApplicationsController",
+    "Method": "DeleteApplication",
+    "RelativePath": "api/Applications/DeleteApplication/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.ApplicationsController",
+    "Method": "GetApplicationById",
+    "RelativePath": "api/Applications/GetApplicationById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.ApplicationsController",
+    "Method": "UpdateApplication",
+    "RelativePath": "api/Applications/UpdateApplication/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "application",
+        "Type": "HirePoint.Models.Entities.Application",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.CitiesController",
+    "Method": "GetCities",
+    "RelativePath": "api/Cities",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.CitiesController",
+    "Method": "CreateCity",
+    "RelativePath": "api/Cities",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "city",
+        "Type": "HirePoint.Models.Entities.City",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.CitiesController",
+    "Method": "DeleteCity",
+    "RelativePath": "api/Cities/DeleteCity/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.CitiesController",
+    "Method": "GetCityById",
+    "RelativePath": "api/Cities/GetCityById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.CitiesController",
+    "Method": "UpdateCity",
+    "RelativePath": "api/Cities/UpdateCity/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "city",
+        "Type": "HirePoint.Models.Entities.City",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.CompaniesController",
+    "Method": "GetCompanies",
+    "RelativePath": "api/Companies",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.CompaniesController",
+    "Method": "CreateCompany",
+    "RelativePath": "api/Companies",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "company",
+        "Type": "HirePoint.Models.Entities.Company",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.CompaniesController",
+    "Method": "DeleteCompany",
+    "RelativePath": "api/Companies/DeleteCompany/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.CompaniesController",
+    "Method": "GetCompanyById",
+    "RelativePath": "api/Companies/GetCompanyById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.CompaniesController",
+    "Method": "UpdateCompany",
+    "RelativePath": "api/Companies/UpdateCompany/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "company",
+        "Type": "HirePoint.Models.Entities.Company",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.CountriesController",
+    "Method": "GetCountries",
+    "RelativePath": "api/Countries",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.CountriesController",
+    "Method": "CreateCountry",
+    "RelativePath": "api/Countries",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "country",
+        "Type": "HirePoint.Models.Entities.Country",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.CountriesController",
+    "Method": "DeleteCountry",
+    "RelativePath": "api/Countries/DeleteCountry/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.CountriesController",
+    "Method": "GetCountryById",
+    "RelativePath": "api/Countries/GetCountryById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.CountriesController",
+    "Method": "UpdateCountry",
+    "RelativePath": "api/Countries/UpdateCountry/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "country",
+        "Type": "HirePoint.Models.Entities.Country",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.CVsController",
+    "Method": "CreateCV",
+    "RelativePath": "api/CVs",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cv",
+        "Type": "HirePoint.Models.Entities.CV",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.CVsController",
+    "Method": "DeleteCV",
+    "RelativePath": "api/CVs/DeleteCV/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.CVsController",
+    "Method": "GetCVById",
+    "RelativePath": "api/CVs/GetCVById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.CVsController",
+    "Method": "GetCVs",
+    "RelativePath": "api/CVs/GetCVs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.CVsController",
+    "Method": "UpdateCV",
+    "RelativePath": "api/CVs/UpdateCV/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "cv",
+        "Type": "HirePoint.Models.Entities.CV",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.JobsController",
+    "Method": "GetJobs",
+    "RelativePath": "api/Jobs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.JobsController",
+    "Method": "CreateJob",
+    "RelativePath": "api/Jobs",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "job",
+        "Type": "HirePoint.Models.Entities.Job",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.JobsController",
+    "Method": "DeleteJob",
+    "RelativePath": "api/Jobs/DeleteJob/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.JobsController",
+    "Method": "GetJobById",
+    "RelativePath": "api/Jobs/GetJobById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.JobsController",
+    "Method": "UpdateJob",
+    "RelativePath": "api/Jobs/UpdateJob/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "job",
+        "Type": "HirePoint.Models.Entities.Job",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.NotificationsController",
+    "Method": "GetNotifications",
+    "RelativePath": "api/Notifications",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.NotificationsController",
+    "Method": "CreateNotification",
+    "RelativePath": "api/Notifications",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "notification",
+        "Type": "HirePoint.Models.Entities.Notification",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.NotificationsController",
+    "Method": "GetNotificationById",
+    "RelativePath": "api/Notifications/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.NotificationsController",
+    "Method": "MarkNotificationAsRead",
+    "RelativePath": "api/Notifications/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.NotificationsController",
+    "Method": "DeleteNotification",
+    "RelativePath": "api/Notifications/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.NotificationsController",
+    "Method": "GetNotificationsByUser",
+    "RelativePath": "api/Notifications/User/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.NotificationsController",
+    "Method": "GetUnreadNotifications",
+    "RelativePath": "api/Notifications/User/{userId}/Unread",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.ProvinciesController",
+    "Method": "GetProvinces",
+    "RelativePath": "api/Provincies",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.ProvinciesController",
+    "Method": "CreateProvince",
+    "RelativePath": "api/Provincies",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "province",
+        "Type": "HirePoint.Models.Entities.Province",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.ProvinciesController",
+    "Method": "DeleteProvince",
+    "RelativePath": "api/Provincies/DeleteProvince/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.ProvinciesController",
+    "Method": "GetProvinceById",
+    "RelativePath": "api/Provincies/GetProvinceById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.ProvinciesController",
+    "Method": "UpdateProvince",
+    "RelativePath": "api/Provincies/UpdateProvince/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "province",
+        "Type": "HirePoint.Models.Entities.Province",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.QualificationsController",
+    "Method": "GetQualifications",
+    "RelativePath": "api/Qualifications",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.QualificationsController",
+    "Method": "CreateQualification",
+    "RelativePath": "api/Qualifications",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "qualification",
+        "Type": "HirePoint.Models.Entities.Qualification",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.QualificationsController",
+    "Method": "GetQualificationById",
+    "RelativePath": "api/Qualifications/GetQualificationById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.QualificationsController",
+    "Method": "UpdateQualification",
+    "RelativePath": "api/Qualifications/UpdateQualification/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "qualification",
+        "Type": "HirePoint.Models.Entities.Qualification",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.SavedJobsController",
+    "Method": "GetSavedJobs",
+    "RelativePath": "api/SavedJobs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.SavedJobsController",
+    "Method": "CreateSavedJob",
+    "RelativePath": "api/SavedJobs",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "savedJob",
+        "Type": "HirePoint.Models.Entities.SavedJob",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.SavedJobsController",
+    "Method": "DeleteSavedJob",
+    "RelativePath": "api/SavedJobs/DeleteSavedJob/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.SavedJobsController",
+    "Method": "GetSavedJobById",
+    "RelativePath": "api/SavedJobs/GetSavedJobById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.SkillsController",
+    "Method": "CreateSkill",
+    "RelativePath": "api/Skills",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "skill",
+        "Type": "HirePoint.Models.Entities.Skill",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.SkillsController",
+    "Method": "DeleteSkill",
+    "RelativePath": "api/Skills/DeleteSkill/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.SkillsController",
+    "Method": "GetSkills",
+    "RelativePath": "api/Skills/GetSkills",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.SkillsController",
+    "Method": "GetSkillsById",
+    "RelativePath": "api/Skills/GetSkillsById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.SkillsController",
+    "Method": "UpdateSkill",
+    "RelativePath": "api/Skills/UpdateSkill/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "skill",
+        "Type": "HirePoint.Models.Entities.Skill",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.UserProfilesController",
+    "Method": "CreateUserProfile",
+    "RelativePath": "api/UserProfiles",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userProfile",
+        "Type": "HirePoint.Models.Entities.UserProfile",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.UserProfilesController",
+    "Method": "GetUserProfileById",
+    "RelativePath": "api/UserProfiles/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.UserProfilesController",
+    "Method": "UpdateUserProfile",
+    "RelativePath": "api/UserProfiles/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "userProfile",
+        "Type": "HirePoint.Models.Entities.UserProfile",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.UserProfilesController",
+    "Method": "DeleteUser",
+    "RelativePath": "api/UserProfiles/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.UserProfilesController",
+    "Method": "GetUserProfiles",
+    "RelativePath": "api/UserProfiles/GetUserProfiles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.UsersController",
+    "Method": "CreateUser",
+    "RelativePath": "api/Users",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "HirePoint.Models.Entities.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.UsersController",
+    "Method": "DeleteUser",
+    "RelativePath": "api/Users/DeleteUser/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.UsersController",
+    "Method": "GetUserById",
+    "RelativePath": "api/Users/GetCVById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.UsersController",
+    "Method": "GetCVs",
+    "RelativePath": "api/Users/GetCVs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.UsersController",
+    "Method": "UpdateUser",
+    "RelativePath": "api/Users/UpdateUser/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "user",
+        "Type": "HirePoint.Models.Entities.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[HirePoint.WeatherForecast, HirePoint, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]
