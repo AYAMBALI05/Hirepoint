@@ -1,0 +1,976 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\dtos\\applications\\updateapplicationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\applications\\updateapplicationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\dtos\\applications\\createapplicationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\applications\\createapplicationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\dtos\\applications\\applicationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\applications\\applicationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\entities\\application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\entities\\application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\dtos\\cvs\\createcvdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\cvs\\createcvdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\dtos\\cvs\\cvdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\cvs\\cvdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\entities\\cv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\entities\\cv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\dtos\\notifications\\marknotificationasreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\notifications\\marknotificationasreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\dtos\\notifications\\createnotificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\notifications\\createnotificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\dtos\\notifications\\notificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\notifications\\notificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\entities\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\entities\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\dtos\\savedjobs\\createsavedjobdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\savedjobs\\createsavedjobdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\dtos\\savedjobs\\savedjobdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\savedjobs\\savedjobdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\entities\\savedjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\entities\\savedjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\dtos\\userqualifications\\createuserqualificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\userqualifications\\createuserqualificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\dtos\\userqualifications\\userqualificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\userqualifications\\userqualificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\entities\\userqualification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\entities\\userqualification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\dtos\\userskill\\createuserskilldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\userskill\\createuserskilldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\dtos\\userskill\\userskilldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\userskill\\userskilldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\entities\\userskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\entities\\userskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\dtos\\userprofiles\\updateuserprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\userprofiles\\updateuserprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\dtos\\userprofiles\\createuserprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\userprofiles\\createuserprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\dtos\\userprofiles\\userprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\userprofiles\\userprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\entities\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\entities\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\dtos\\skills\\updateskilldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\skills\\updateskilldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\dtos\\skills\\createskilldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\skills\\createskilldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\dtos\\skills\\skilldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\skills\\skilldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\entities\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\entities\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\dtos\\qualifications\\updatequalificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\qualifications\\updatequalificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\dtos\\qualifications\\createqualificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\qualifications\\createqualificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\dtos\\qualifications\\qualificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\qualifications\\qualificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\entities\\qualification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\entities\\qualification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\dtos\\jobs\\jobdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\jobs\\jobdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\dtos\\jobs\\createjobdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\jobs\\createjobdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\dtos\\jobs\\updatejobdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\jobs\\updatejobdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\entities\\job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\entities\\job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\dtos\\companies\\updatecompanydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\companies\\updatecompanydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\dtos\\companies\\createcompanydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\companies\\createcompanydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\dtos\\companies\\companydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\companies\\companydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\entities\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\entities\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\dtos\\cities\\updatecitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\cities\\updatecitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\dtos\\cities\\createcitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\cities\\createcitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\dtos\\cities\\citydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\cities\\citydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\entities\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\entities\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\dtos\\provinces\\updateprovincedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\provinces\\updateprovincedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\dtos\\provinces\\createprovincedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\provinces\\createprovincedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\dtos\\provinces\\provincedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\provinces\\provincedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\entities\\province.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\entities\\province.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\dtos\\countries\\updatecountrydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\countries\\updatecountrydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\dtos\\countries\\countrydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\countries\\countrydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\dtos\\countries\\createcountrydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\countries\\createcountrydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\entities\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\entities\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\dtos\\users\\updateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\users\\updateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\dtos\\users\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\users\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\dtos\\users\\registeruserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\users\\registeruserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ncedo\\downloads\\hirepoint 2\\hirepoint\\models\\dtos\\users\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\users\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UpdateApplicationDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Applications\\UpdateApplicationDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Applications\\UpdateApplicationDto.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Applications\\UpdateApplicationDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Applications\\UpdateApplicationDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T10:10:16.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreateApplicationDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Applications\\CreateApplicationDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Applications\\CreateApplicationDto.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Applications\\CreateApplicationDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Applications\\CreateApplicationDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T10:09:14.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApplicationDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Applications\\ApplicationDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Applications\\ApplicationDto.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Applications\\ApplicationDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Applications\\ApplicationDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T10:08:41.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Application.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\Entities\\Application.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\Application.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\Entities\\Application.cs",
+              "RelativeToolTip": "Models\\Entities\\Application.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAIwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T10:07:57.528Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CreateCVDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\CVs\\CreateCVDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\CVs\\CreateCVDto.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\CVs\\CreateCVDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\CVs\\CreateCVDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T10:07:22.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CVDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\CVs\\CVDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\CVs\\CVDto.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\CVs\\CVDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\CVs\\CVDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T10:06:22.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CV.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\Entities\\CV.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\CV.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\Entities\\CV.cs",
+              "RelativeToolTip": "Models\\Entities\\CV.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAA/wBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T09:56:59.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MarkNotificationAsReadDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Notifications\\MarkNotificationAsReadDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Notifications\\MarkNotificationAsReadDto.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Notifications\\MarkNotificationAsReadDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Notifications\\MarkNotificationAsReadDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T09:56:26.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CreateNotificationDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Notifications\\CreateNotificationDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Notifications\\CreateNotificationDto.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Notifications\\CreateNotificationDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Notifications\\CreateNotificationDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T09:54:43.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "NotificationDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Notifications\\NotificationDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Notifications\\NotificationDto.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Notifications\\NotificationDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Notifications\\NotificationDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T09:54:10.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Notification.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\Entities\\Notification.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\Notification.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\Entities\\Notification.cs",
+              "RelativeToolTip": "Models\\Entities\\Notification.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAADwvxoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T09:53:05.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CreateSavedJobDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\SavedJobs\\CreateSavedJobDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\SavedJobs\\CreateSavedJobDto.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\SavedJobs\\CreateSavedJobDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\SavedJobs\\CreateSavedJobDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T09:52:21.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SavedJobDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\SavedJobs\\SavedJobDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\SavedJobs\\SavedJobDto.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\SavedJobs\\SavedJobDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\SavedJobs\\SavedJobDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T09:51:48.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SavedJob.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\Entities\\SavedJob.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\SavedJob.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\Entities\\SavedJob.cs",
+              "RelativeToolTip": "Models\\Entities\\SavedJob.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAwwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T09:48:53.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CreateUserQualificationDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\UserQualifications\\CreateUserQualificationDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\UserQualifications\\CreateUserQualificationDto.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\UserQualifications\\CreateUserQualificationDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\UserQualifications\\CreateUserQualificationDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T09:48:13.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UserQualificationDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\UserQualifications\\UserQualificationDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\UserQualifications\\UserQualificationDto.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\UserQualifications\\UserQualificationDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\UserQualifications\\UserQualificationDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T09:47:44.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UserQualification.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\Entities\\UserQualification.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\UserQualification.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\Entities\\UserQualification.cs",
+              "RelativeToolTip": "Models\\Entities\\UserQualification.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAADwvw8AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T09:46:42.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CreateUserSkillDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\UserSkill\\CreateUserSkillDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\UserSkill\\CreateUserSkillDto.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\UserSkill\\CreateUserSkillDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\UserSkill\\CreateUserSkillDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T09:45:43.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UserSkillDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\UserSkill\\UserSkillDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\UserSkill\\UserSkillDto.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\UserSkill\\UserSkillDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\UserSkill\\UserSkillDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T09:45:10.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UserSkill.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\Entities\\UserSkill.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\UserSkill.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\Entities\\UserSkill.cs",
+              "RelativeToolTip": "Models\\Entities\\UserSkill.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAADwvwkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T09:44:04.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UpdateUserProfileDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\UserProfiles\\UpdateUserProfileDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\UserProfiles\\UpdateUserProfileDto.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\UserProfiles\\UpdateUserProfileDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\UserProfiles\\UpdateUserProfileDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T09:43:15.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CreateUserProfileDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\UserProfiles\\CreateUserProfileDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\UserProfiles\\CreateUserProfileDto.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\UserProfiles\\CreateUserProfileDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\UserProfiles\\CreateUserProfileDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T09:41:40.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UserProfileDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\UserProfiles\\UserProfileDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\UserProfiles\\UserProfileDto.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\UserProfiles\\UserProfileDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\UserProfiles\\UserProfileDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T09:41:02.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "UserProfile.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\Entities\\UserProfile.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\UserProfile.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\Entities\\UserProfile.cs",
+              "RelativeToolTip": "Models\\Entities\\UserProfile.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAADwvxUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T09:40:00.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "UpdateSkillDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Skills\\UpdateSkillDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Skills\\UpdateSkillDto.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Skills\\UpdateSkillDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Skills\\UpdateSkillDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T09:39:03.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "CreateSkillDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Skills\\CreateSkillDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Skills\\CreateSkillDto.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Skills\\CreateSkillDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Skills\\CreateSkillDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T09:38:33.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "SkillDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Skills\\SkillDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Skills\\SkillDto.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Skills\\SkillDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Skills\\SkillDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T09:38:08.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Skill.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\Entities\\Skill.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\Skill.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\Entities\\Skill.cs",
+              "RelativeToolTip": "Models\\Entities\\Skill.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T09:37:08.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "UpdateQualificationDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Qualifications\\UpdateQualificationDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Qualifications\\UpdateQualificationDto.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Qualifications\\UpdateQualificationDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Qualifications\\UpdateQualificationDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T09:36:24.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "CreateQualificationDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Qualifications\\CreateQualificationDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Qualifications\\CreateQualificationDto.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Qualifications\\CreateQualificationDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Qualifications\\CreateQualificationDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T09:35:51.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "QualificationDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Qualifications\\QualificationDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Qualifications\\QualificationDto.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Qualifications\\QualificationDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Qualifications\\QualificationDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T09:35:17.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Qualification.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\Entities\\Qualification.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\Qualification.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\Entities\\Qualification.cs",
+              "RelativeToolTip": "Models\\Entities\\Qualification.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T09:34:20.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "UpdateJobDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Jobs\\UpdateJobDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Jobs\\UpdateJobDto.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Jobs\\UpdateJobDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Jobs\\UpdateJobDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T09:24:16.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "CreateJobDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Jobs\\CreateJobDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Jobs\\CreateJobDto.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Jobs\\CreateJobDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Jobs\\CreateJobDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T09:22:17.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "JobDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Jobs\\JobDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Jobs\\JobDto.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Jobs\\JobDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Jobs\\JobDto.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAA6wBcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T09:21:43.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Job.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\Entities\\Job.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\Job.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\Entities\\Job.cs",
+              "RelativeToolTip": "Models\\Entities\\Job.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAwwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T09:21:10.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "UpdateCompanyDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Companies\\UpdateCompanyDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Companies\\UpdateCompanyDto.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Companies\\UpdateCompanyDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Companies\\UpdateCompanyDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T09:20:38.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "CreateCompanyDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Companies\\CreateCompanyDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Companies\\CreateCompanyDto.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Companies\\CreateCompanyDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Companies\\CreateCompanyDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T09:20:03.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "CompanyDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Companies\\CompanyDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Companies\\CompanyDto.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Companies\\CompanyDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Companies\\CompanyDto.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAmwBYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T09:19:25.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Company.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\Entities\\Company.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\Company.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\Entities\\Company.cs",
+              "RelativeToolTip": "Models\\Entities\\Company.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAwwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T09:18:13.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "UpdateCityDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Cities\\UpdateCityDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Cities\\UpdateCityDto.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Cities\\UpdateCityDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Cities\\UpdateCityDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T09:16:26.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "CreateCityDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Cities\\CreateCityDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Cities\\CreateCityDto.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Cities\\CreateCityDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Cities\\CreateCityDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T09:13:25.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "CityDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Cities\\CityDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Cities\\CityDto.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Cities\\CityDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Cities\\CityDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T09:12:55.851Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "City.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\Entities\\City.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\City.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\Entities\\City.cs",
+              "RelativeToolTip": "Models\\Entities\\City.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAADwvxgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T09:11:43.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "UpdateProvinceDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Provinces\\UpdateProvinceDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Provinces\\UpdateProvinceDto.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Provinces\\UpdateProvinceDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Provinces\\UpdateProvinceDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T09:10:52.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "CreateProvinceDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Provinces\\CreateProvinceDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Provinces\\CreateProvinceDto.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Provinces\\CreateProvinceDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Provinces\\CreateProvinceDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T09:10:21.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "ProvinceDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Provinces\\ProvinceDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Provinces\\ProvinceDto.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Provinces\\ProvinceDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Provinces\\ProvinceDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T09:09:46.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Province.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\Entities\\Province.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\Province.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\Entities\\Province.cs",
+              "RelativeToolTip": "Models\\Entities\\Province.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T08:58:44.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "UpdateCountryDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Countries\\UpdateCountryDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Countries\\UpdateCountryDto.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Countries\\UpdateCountryDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Countries\\UpdateCountryDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T08:57:12.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "CreateCountryDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Countries\\CreateCountryDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Countries\\CreateCountryDto.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Countries\\CreateCountryDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Countries\\CreateCountryDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T08:56:31.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "CountryDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Countries\\CountryDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Countries\\CountryDto.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Countries\\CountryDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Countries\\CountryDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T08:55:00.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "Country.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\Entities\\Country.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\Country.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\Entities\\Country.cs",
+              "RelativeToolTip": "Models\\Entities\\Country.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T08:52:07.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "LoginDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Users\\LoginDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Users\\LoginDTO.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Users\\LoginDTO.cs",
+              "RelativeToolTip": "Models\\DTOs\\Users\\LoginDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T08:28:27.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "RegisterUserDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Users\\RegisterUserDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Users\\RegisterUserDto.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Users\\RegisterUserDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Users\\RegisterUserDto.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAwwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T08:28:20.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "UpdateUserDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Users\\UpdateUserDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Users\\UpdateUserDto.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Users\\UpdateUserDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Users\\UpdateUserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T08:28:09.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Users\\UserDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Users\\UserDto.cs",
+              "ToolTip": "C:\\Users\\Ncedo\\Downloads\\HirePoint 2\\HirePoint\\Models\\DTOs\\Users\\UserDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Users\\UserDto.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAkwAoAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T08:27:50.812Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
