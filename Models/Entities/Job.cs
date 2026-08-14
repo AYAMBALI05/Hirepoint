@@ -11,6 +11,7 @@ namespace HirePoint.Models.Entities
         public string Title { get; set; }
         public string Description { get; set; } //Details about job responsibilities
       //  public string Responsibility { get; set; } - remove on the DB
+      public string QualificationRequired { get; set; }
         public float Salary { get; set; }
         public string ExperienceRequired { get; set; }
 
@@ -28,7 +29,6 @@ namespace HirePoint.Models.Entities
         public ICollection<SavedJob> SavedJobs { get; set; } = new List<SavedJob>();
 
         // Navigation Property - accesses all qualifications required for this job
-        public ICollection<JobQualification> JobQualifications { get; set; } = new List<JobQualification>();
       
        
     }

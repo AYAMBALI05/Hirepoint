@@ -22,11 +22,7 @@ namespace HirePoint.Data
         public DbSet<UserProfile> UserProfiles { get; set; }
         public DbSet<Job> Jobs { get; set; }
         public DbSet<Application> Applications { get; set; }
-        public DbSet<Skill> Skills { get; set; }
-        public DbSet<UserSkill> UserSkills { get; set; }
         public DbSet<Qualification> Qualifications { get; set; }
-        public DbSet<UserQualification> UserQualifications { get; set; }
-        public DbSet<JobQualification> JobQualifications { get; set; }
         public DbSet<Company> Companies { get; set; }
         public DbSet<Country> Countries { get; set; }
         public DbSet<Province> Provinces { get; set; }
@@ -58,12 +54,7 @@ namespace HirePoint.Data
                 .HasForeignKey(u => u.RoleID)
                 .OnDelete(DeleteBehavior.Restrict);
 
-            modelBuilder.Entity<User>()
-                .HasOne(u => u.City)
-                .WithMany(c => c.Users)
-                .HasForeignKey(u => u.CityID)
-                .OnDelete(DeleteBehavior.Restrict);
-
+         
 
             // ==========================
             // USER PROFILE
@@ -175,7 +166,7 @@ namespace HirePoint.Data
             // ==========================
             // USER SKILLS
             // ==========================
-
+            /*
             modelBuilder.Entity<UserSkill>()
                 .HasOne(us => us.User)
                 .WithMany(u => u.UserSkills)
@@ -187,12 +178,12 @@ namespace HirePoint.Data
                 .WithMany(s => s.UserSkills)
                 .HasForeignKey(us => us.SkillID)
                 .OnDelete(DeleteBehavior.Cascade);
-
+            */
 
             // ==========================
             // USER QUALIFICATIONS
             // ==========================
-
+            /*
             modelBuilder.Entity<UserQualification>()
                 .HasOne(uq => uq.User)
                 .WithMany(u => u.UserQualifications)
@@ -204,12 +195,12 @@ namespace HirePoint.Data
                 .WithMany(q => q.UserQualifications)
                 .HasForeignKey(uq => uq.QualificationID)
                 .OnDelete(DeleteBehavior.Cascade);
-
+            */
 
             // ==========================
             // JOB QUALIFICATIONS
             // ==========================
-
+            /*
             modelBuilder.Entity<JobQualification>()
                 .HasOne(jq => jq.Job)
                 .WithMany(j => j.JobQualifications)
@@ -220,7 +211,7 @@ namespace HirePoint.Data
                 .HasOne(jq => jq.Qualification)
                 .WithMany(q => q.JobQualifications)
                 .HasForeignKey(jq => jq.QualificationID)
-                .OnDelete(DeleteBehavior.Cascade);
+                .OnDelete(DeleteBehavior.Cascade);*/
 
 
             // ==========================

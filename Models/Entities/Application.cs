@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using HirePoint.Models.Enums;
+using System.ComponentModel.DataAnnotations;
 
 namespace HirePoint.Models.Entities
 {
@@ -27,15 +28,16 @@ namespace HirePoint.Models.Entities
             // Navigation Property - accesses the related CV
             public CV CV { get; set; }
 
+        public string QualificationRequired { get; set; }
+
             // Stores the date and time the application was submitted
             public DateTime ApplicationDate { get; set; } = DateTime.Now;
 
-            // Stores the current status of the application
-            // Examples: Pending, Shortlisted, Interview, Accepted, Rejected
-            public string Status { get; set; }
-
-            // Stores feedback from the recruiter
-            public string Feedback { get; set; }
+        // Stores the current status of the application
+        // Examples: Pending, Shortlisted, Interview, Accepted, Rejected
+        public ApplicationStatus Status { get; set; } = ApplicationStatus.Pending;
+        // Stores feedback from the recruiter
+        public string? Feedback { get; set; }
 
         // Navigation Property - accesses all job applications submitted by this user
     }

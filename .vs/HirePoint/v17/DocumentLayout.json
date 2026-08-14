@@ -3,128 +3,196 @@
   "WorkspaceRootPath": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\controllers\\notificationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:controllers\\notificationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\entities\\savedjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\entities\\savedjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\controllers\\savedjobscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:controllers\\savedjobscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\controllers\\applicationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:controllers\\applicationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\controllers\\jobscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:controllers\\jobscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\controllers\\countriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:controllers\\countriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\controllers\\citiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:controllers\\citiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\controllers\\skillscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:controllers\\skillscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\services\\passwordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:services\\passwordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\controllers\\savedjobscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:controllers\\savedjobscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\controllers\\qualificationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:controllers\\qualificationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\entities\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\entities\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\controllers\\provinciescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:controllers\\provinciescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\dtos\\cities\\createcitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\cities\\createcitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\controllers\\jobscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:controllers\\jobscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\dtos\\cities\\updatecitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\cities\\updatecitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\controllers\\cvscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:controllers\\cvscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\dtos\\cities\\citydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\cities\\citydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\controllers\\companiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:controllers\\companiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\controllers\\userprofilescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:controllers\\userprofilescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\controllers\\citiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:controllers\\citiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\migrations\\20260813225410_removecityfromusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:migrations\\20260813225410_removecityfromusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\entities\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\entities\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\dtos\\authentication\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\authentication\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\entities\\cv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\entities\\cv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\dtos\\authentication\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\authentication\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\entities\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\entities\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\dtos\\authentication\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\authentication\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\entities\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\entities\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\dtos\\users\\registeruserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\users\\registeruserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\migrations\\20260724164333_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:migrations\\20260724164333_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\dtos\\users\\updateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\users\\updateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\dtos\\users\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\users\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Migrations\\20260724162908_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20260724162908_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\dtos\\userprofiles\\userprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\userprofiles\\userprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\entities\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\entities\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\dtos\\userprofiles\\updateuserprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\userprofiles\\updateuserprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\dtos\\userprofiles\\createuserprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\userprofiles\\createuserprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\dtos\\users\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\users\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\dtos\\jobs\\jobdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\jobs\\jobdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\dtos\\applications\\updateapplicationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\applications\\updateapplicationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\dtos\\applications\\createapplicationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\applications\\createapplicationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\dtos\\applications\\applicationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\applications\\applicationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\entities\\application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\entities\\application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\dtos\\jobs\\updatejobsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\jobs\\updatejobsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\dtos\\jobs\\createjobsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\jobs\\createjobsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\migrations\\20260813140532_removeskillstable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:migrations\\20260813140532_removeskillstable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\entities\\job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\entities\\job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\entities\\userqualification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\entities\\userqualification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\controllers\\qualificationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:controllers\\qualificationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\entities\\userskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\entities\\userskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\entities\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\entities\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Migrations\\20260724142451_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20260724142451_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\controllers\\notificationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:controllers\\notificationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\controllers\\cvscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:controllers\\cvscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\entities\\cv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\entities\\cv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\controllers\\companiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:controllers\\companiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\controllers\\provinciescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:controllers\\provinciescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\controllers\\countriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:controllers\\countriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\hirepoint.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:hirepoint.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\entities\\qualification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\entities\\qualification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\entities\\jobqualification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\entities\\jobqualification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\entities\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\entities\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\entities\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -135,12 +203,112 @@
       "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\entities\\province.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\entities\\application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\entities\\application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\entities\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\entities\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\entities\\savedjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\entities\\savedjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\dtos\\notifications\\createnotificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\notifications\\createnotificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\entities\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\entities\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\dtos\\savedjobs\\createsavedjobdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\savedjobs\\createsavedjobdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\dtos\\savedjobs\\savedjobdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\savedjobs\\savedjobdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\dtos\\notifications\\updatenotificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\notifications\\updatenotificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\dtos\\notifications\\notificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\notifications\\notificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\dtos\\cvs\\cvdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\cvs\\cvdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\dtos\\cvs\\updatecvdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\cvs\\updatecvdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\dtos\\cvs\\createcvdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\cvs\\createcvdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\enums\\applicationstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\enums\\applicationstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\dtos\\companies\\companydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\companies\\companydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\dtos\\companies\\updatecompanydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\companies\\updatecompanydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\dtos\\companies\\createcompanydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\companies\\createcompanydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\dtos\\qualifications\\qualificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\qualifications\\qualificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\dtos\\qualifications\\createqualificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\qualifications\\createqualificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\dtos\\qualifications\\updatequalificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\qualifications\\updatequalificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\dtos\\provinces\\updateprovincedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\provinces\\updateprovincedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\dtos\\provinces\\createprovincedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\provinces\\createprovincedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\dtos\\provinces\\provincedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\provinces\\provincedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\dtos\\countries\\countrydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\countries\\countrydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\dtos\\countries\\createcountrydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\countries\\createcountrydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\models\\dtos\\countries\\updatecuntrydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:models\\dtos\\countries\\updatecuntrydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\migrations\\20260724164333_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:migrations\\20260724164333_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Migrations\\20260724162908_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20260724162908_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Migrations\\20260724142451_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20260724142451_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Migrations\\20260724132339_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -149,10 +317,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Migrations\\20260724124100_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20260724124100_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\controllers\\userprofilescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|solutionrelative:controllers\\userprofilescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E77B6139-9CB5-4F95-AB90-4780A4B4ACD6}|HirePoint.csproj|c:\\users\\ayonda\\documents\\2026 work\\tech titans\\hirepoint\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -166,130 +330,150 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ApplicationsController.cs",
-              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\ApplicationsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ApplicationsController.cs",
-              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\ApplicationsController.cs",
-              "RelativeToolTip": "Controllers\\ApplicationsController.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAwwE0AAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-14T14:12:58.953Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "QualificationsController.cs",
-              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\QualificationsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\QualificationsController.cs",
-              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\QualificationsController.cs",
-              "RelativeToolTip": "Controllers\\QualificationsController.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAQwC4AAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-14T14:18:58.745Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "SavedJobsController.cs",
-              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\SavedJobsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\SavedJobsController.cs",
-              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\SavedJobsController.cs",
-              "RelativeToolTip": "Controllers\\SavedJobsController.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAowEUAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-14T14:17:24.041Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SavedJob.cs",
-              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\SavedJob.cs",
-              "RelativeDocumentMoniker": "Models\\Entities\\SavedJob.cs",
-              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\SavedJob.cs",
-              "RelativeToolTip": "Models\\Entities\\SavedJob.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAUwBEAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-04T20:52:54.32Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "NotificationsController.cs",
-              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\NotificationsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\NotificationsController.cs",
-              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\NotificationsController.cs",
-              "RelativeToolTip": "Controllers\\NotificationsController.cs",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAQwHYAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-14T14:16:33.71Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 13,
+              "Title": "CitiesController.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\CitiesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CitiesController.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\CitiesController.cs",
+              "RelativeToolTip": "Controllers\\CitiesController.cs",
+              "ViewState": "AgIAAJoAAAAAAAAAAAAIwKQAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-24T11:02:55.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "City.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\City.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\City.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\City.cs",
+              "RelativeToolTip": "Models\\Entities\\City.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-24T09:54:08.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "JobsController.cs",
               "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\JobsController.cs",
               "RelativeDocumentMoniker": "Controllers\\JobsController.cs",
               "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\JobsController.cs",
               "RelativeToolTip": "Controllers\\JobsController.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAqwFYAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAABoBAAAAAAAAAAAowFQBAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-14T14:12:20.103Z"
+              "WhenOpened": "2026-07-14T14:12:20.103Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "CVsController.cs",
-              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\CVsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CVsController.cs",
-              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\CVsController.cs",
-              "RelativeToolTip": "Controllers\\CVsController.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAgwEcAAAAeAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "PasswordService.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Services\\PasswordService.cs",
+              "RelativeDocumentMoniker": "Services\\PasswordService.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Services\\PasswordService.cs",
+              "RelativeToolTip": "Services\\PasswordService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-14T14:15:36.654Z"
+              "WhenOpened": "2026-08-12T13:12:08.571Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
+              "Title": "CreateCityDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Cities\\CreateCityDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Cities\\CreateCityDto.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Cities\\CreateCityDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Cities\\CreateCityDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-06T01:46:13.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAABXAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAACkAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-04T11:19:07.893Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CitiesController.cs",
-              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\CitiesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CitiesController.cs",
-              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\CitiesController.cs",
-              "RelativeToolTip": "Controllers\\CitiesController.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAIwGkAAAAgAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "SavedJobsController.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\SavedJobsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SavedJobsController.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\SavedJobsController.cs",
+              "RelativeToolTip": "Controllers\\SavedJobsController.cs",
+              "ViewState": "AgIAAEQBAAAAAAAAAAAwwF4BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-24T11:02:55.778Z"
+              "WhenOpened": "2026-07-14T14:17:24.041Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-07-13T18:58:30.759Z"
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAKwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T13:28:49.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApplicationsController.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\ApplicationsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ApplicationsController.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\ApplicationsController.cs",
+              "RelativeToolTip": "Controllers\\ApplicationsController.cs",
+              "ViewState": "AgIAADMCAAAAAAAAAAAowEwCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T14:12:58.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ApplicationDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeToolTip": "Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ViewState": "AgIAADQBAAAAAAAAAAAswDgCAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-13T22:27:13.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Controllers\\UsersController.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAQwIgAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T14:05:31.996Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -299,69 +483,62 @@
               "RelativeDocumentMoniker": "Models\\Entities\\User.cs",
               "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\User.cs",
               "RelativeToolTip": "Models\\Entities\\User.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAqwBUAAABmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-03T15:49:14.927Z"
+              "WhenOpened": "2026-07-03T15:49:14.927Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CountriesController.cs",
-              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\CountriesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CountriesController.cs",
-              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\CountriesController.cs",
-              "RelativeToolTip": "Controllers\\CountriesController.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAAAFUAAAAjAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "UpdateCityDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Cities\\UpdateCityDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Cities\\UpdateCityDto.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Cities\\UpdateCityDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Cities\\UpdateCityDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-24T10:05:13.446Z"
+              "WhenOpened": "2026-08-06T01:46:48.897Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "Controllers\\UsersController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFUAAAANAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "CityDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Cities\\CityDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Cities\\CityDto.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Cities\\CityDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Cities\\CityDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-14T14:05:31.996Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "SkillsController.cs",
-              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\SkillsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\SkillsController.cs",
-              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\SkillsController.cs",
-              "RelativeToolTip": "Controllers\\SkillsController.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAIwEMAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-14T14:18:02.051Z"
+              "WhenOpened": "2026-08-06T01:47:04.442Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "ProvinciesController.cs",
-              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\ProvinciesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ProvinciesController.cs",
-              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\ProvinciesController.cs",
-              "RelativeToolTip": "Controllers\\ProvinciesController.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAIwG0AAAAkAAAAAAAAAA==",
+              "Title": "UserProfilesController.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\UserProfilesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserProfilesController.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\UserProfilesController.cs",
+              "RelativeToolTip": "Controllers\\UserProfilesController.cs",
+              "ViewState": "AgIAAMkBAAAAAAAAAAAmwM4BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-24T11:13:59.58Z"
+              "WhenOpened": "2026-07-14T14:10:50.426Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "CompaniesController.cs",
-              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\CompaniesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CompaniesController.cs",
-              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\CompaniesController.cs",
-              "RelativeToolTip": "Controllers\\CompaniesController.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAowCIAAAAhAAAAAAAAAA==",
+              "Title": "20260813225410_RemoveCityFromUsers.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Migrations\\20260813225410_RemoveCityFromUsers.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260813225410_RemoveCityFromUsers.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Migrations\\20260813225410_RemoveCityFromUsers.cs",
+              "RelativeToolTip": "Migrations\\20260813225410_RemoveCityFromUsers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-14T14:11:48.02Z"
+              "WhenOpened": "2026-08-13T22:54:11.37Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -371,193 +548,403 @@
               "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
               "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Data\\ApplicationDbContext.cs",
               "RelativeToolTip": "Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAowFkAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAADUAAAAAAAAAAAAswEcAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-13T17:54:01.706Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Country.cs",
-              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\Country.cs",
-              "RelativeDocumentMoniker": "Models\\Entities\\Country.cs",
-              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\Country.cs",
-              "RelativeToolTip": "Models\\Entities\\Country.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-24T09:49:55.806Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "CV.cs",
-              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\CV.cs",
-              "RelativeDocumentMoniker": "Models\\Entities\\CV.cs",
-              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\CV.cs",
-              "RelativeToolTip": "Models\\Entities\\CV.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-04T14:23:40.362Z"
+              "WhenOpened": "2026-07-13T17:54:01.706Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "Skill.cs",
-              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\Skill.cs",
-              "RelativeDocumentMoniker": "Models\\Entities\\Skill.cs",
-              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\Skill.cs",
-              "RelativeToolTip": "Models\\Entities\\Skill.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Title": "RegisterDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Authentication\\RegisterDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Authentication\\RegisterDto.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Authentication\\RegisterDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Authentication\\RegisterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-07T06:44:41.668Z"
+              "WhenOpened": "2026-08-12T12:44:22.853Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 20,
-              "Title": "UserProfile.cs",
-              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\UserProfile.cs",
-              "RelativeDocumentMoniker": "Models\\Entities\\UserProfile.cs",
-              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\UserProfile.cs",
-              "RelativeToolTip": "Models\\Entities\\UserProfile.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "Title": "RegisterUserDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Users\\RegisterUserDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Users\\RegisterUserDto.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Users\\RegisterUserDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Users\\RegisterUserDto.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABgAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-04T20:21:03.537Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "UserQualification.cs",
-              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\UserQualification.cs",
-              "RelativeDocumentMoniker": "Models\\Entities\\UserQualification.cs",
-              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\UserQualification.cs",
-              "RelativeToolTip": "Models\\Entities\\UserQualification.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-04T12:36:20.57Z"
+              "WhenOpened": "2026-08-04T18:50:08.523Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 21,
-              "Title": "20260724164333_Initial.cs",
-              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Migrations\\20260724164333_Initial.cs",
-              "RelativeDocumentMoniker": "Migrations\\20260724164333_Initial.cs",
-              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Migrations\\20260724164333_Initial.cs",
-              "RelativeToolTip": "Migrations\\20260724164333_Initial.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "UpdateUserDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Users\\UpdateUserDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Users\\UpdateUserDto.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Users\\UpdateUserDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Users\\UpdateUserDto.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAABYAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-24T16:43:34.836Z"
+              "WhenOpened": "2026-08-05T06:22:44.799Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "20260724162908_InitialCreate.cs",
-              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Migrations\\20260724162908_InitialCreate.cs",
-              "RelativeDocumentMoniker": "Migrations\\20260724162908_InitialCreate.cs",
-              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Migrations\\20260724162908_InitialCreate.cs",
-              "RelativeToolTip": "Migrations\\20260724162908_InitialCreate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 18,
+              "Title": "LoginResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Authentication\\LoginResponseDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Authentication\\LoginResponseDto.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Authentication\\LoginResponseDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Authentication\\LoginResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-24T16:29:09.337Z"
+              "WhenOpened": "2026-08-12T12:45:00.526Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Authentication\\LoginDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Authentication\\LoginDto.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Authentication\\LoginDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Authentication\\LoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T12:44:45.279Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 22,
-              "Title": "Role.cs",
-              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\Role.cs",
-              "RelativeDocumentMoniker": "Models\\Entities\\Role.cs",
-              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\Role.cs",
-              "RelativeToolTip": "Models\\Entities\\Role.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Users\\UserDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Users\\UserDto.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Users\\UserDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Users\\UserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAC1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-04T12:34:39.744Z"
+              "WhenOpened": "2026-08-04T19:15:24.841Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "UserSkill.cs",
-              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\UserSkill.cs",
-              "RelativeDocumentMoniker": "Models\\Entities\\UserSkill.cs",
-              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\UserSkill.cs",
-              "RelativeToolTip": "Models\\Entities\\UserSkill.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAaAAAAAAAAAA==",
+              "DocumentIndex": 23,
+              "Title": "UserProfileDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\UserProfiles\\UserProfileDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\UserProfiles\\UserProfileDto.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\UserProfiles\\UserProfileDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\UserProfiles\\UserProfileDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-04T12:42:22.618Z"
+              "WhenOpened": "2026-08-06T11:45:56.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "UpdateUserProfileDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\UserProfiles\\UpdateUserProfileDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\UserProfiles\\UpdateUserProfileDto.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\UserProfiles\\UpdateUserProfileDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\UserProfiles\\UpdateUserProfileDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-06T11:45:34.979Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 25,
+              "Title": "CreateUserProfileDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\UserProfiles\\CreateUserProfileDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\UserProfiles\\CreateUserProfileDto.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\UserProfiles\\CreateUserProfileDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\UserProfiles\\CreateUserProfileDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-06T11:45:09.479Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "LoginDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Users\\LoginDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Users\\LoginDTO.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Users\\LoginDTO.cs",
+              "RelativeToolTip": "Models\\DTOs\\Users\\LoginDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-04T19:08:54.369Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ApplicationDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Applications\\ApplicationDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Applications\\ApplicationDto.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Applications\\ApplicationDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Applications\\ApplicationDto.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAswBIAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-06T14:00:16.613Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "JobDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Jobs\\JobDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Jobs\\JobDto.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Jobs\\JobDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Jobs\\JobDto.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAA8wA8AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-06T12:17:32.556Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "UpdateApplicationDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Applications\\UpdateApplicationDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Applications\\UpdateApplicationDto.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Applications\\UpdateApplicationDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Applications\\UpdateApplicationDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-06T13:59:55.849Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "CreateApplicationDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Applications\\CreateApplicationDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Applications\\CreateApplicationDto.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Applications\\CreateApplicationDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Applications\\CreateApplicationDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-06T13:59:19.617Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Application.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\Application.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\Application.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\Application.cs",
+              "RelativeToolTip": "Models\\Entities\\Application.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAIwBwAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-04T14:27:25.1Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "UpdateJobsDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Jobs\\UpdateJobsDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Jobs\\UpdateJobsDto.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Jobs\\UpdateJobsDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Jobs\\UpdateJobsDto.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-06T12:17:14.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "CreateJobsDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Jobs\\CreateJobsDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Jobs\\CreateJobsDto.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Jobs\\CreateJobsDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Jobs\\CreateJobsDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-06T12:16:59.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "20260813140532_RemoveSkillsTable.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Migrations\\20260813140532_RemoveSkillsTable.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260813140532_RemoveSkillsTable.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Migrations\\20260813140532_RemoveSkillsTable.cs",
+              "RelativeToolTip": "Migrations\\20260813140532_RemoveSkillsTable.cs",
+              "ViewState": "AgIAAJsAAAAAAAAAAAAswKwAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-13T14:05:33.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
               "Title": "Job.cs",
               "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\Job.cs",
               "RelativeDocumentMoniker": "Models\\Entities\\Job.cs",
               "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\Job.cs",
               "RelativeToolTip": "Models\\Entities\\Job.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACEAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAADwvw0AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-03T16:33:35.317Z"
+              "WhenOpened": "2026-07-03T16:33:35.317Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 36,
+              "Title": "QualificationsController.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\QualificationsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\QualificationsController.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\QualificationsController.cs",
+              "RelativeToolTip": "Controllers\\QualificationsController.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAkwGgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T14:18:58.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
               "Title": "Company.cs",
               "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\Company.cs",
               "RelativeDocumentMoniker": "Models\\Entities\\Company.cs",
               "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\Company.cs",
               "RelativeToolTip": "Models\\Entities\\Company.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-04T20:28:14.968Z"
+              "WhenOpened": "2026-07-04T20:28:14.968Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "Notification.cs",
-              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\Notification.cs",
-              "RelativeDocumentMoniker": "Models\\Entities\\Notification.cs",
-              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\Notification.cs",
-              "RelativeToolTip": "Models\\Entities\\Notification.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 38,
+              "Title": "NotificationsController.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\NotificationsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\NotificationsController.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\NotificationsController.cs",
+              "RelativeToolTip": "Controllers\\NotificationsController.cs",
+              "ViewState": "AgIAANgAAAAAAAAAAAAAAF0BAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-04T14:35:29.794Z"
+              "WhenOpened": "2026-07-14T14:16:33.71Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 39,
+              "Title": "CVsController.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\CVsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CVsController.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\CVsController.cs",
+              "RelativeToolTip": "Controllers\\CVsController.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAiwHoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T14:15:36.654Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "CV.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\CV.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\CV.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\CV.cs",
+              "RelativeToolTip": "Models\\Entities\\CV.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-04T14:23:40.362Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "ProvinciesController.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\ProvinciesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProvinciesController.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\ProvinciesController.cs",
+              "RelativeToolTip": "Controllers\\ProvinciesController.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAUwEEAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-24T11:13:59.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "CompaniesController.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\CompaniesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CompaniesController.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\CompaniesController.cs",
+              "RelativeToolTip": "Controllers\\CompaniesController.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAIwGQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T14:11:48.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "CountriesController.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\CountriesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CountriesController.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\CountriesController.cs",
+              "RelativeToolTip": "Controllers\\CountriesController.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAcwH4AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-24T10:05:13.446Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "HirePoint.csproj",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\HirePoint.csproj",
+              "RelativeDocumentMoniker": "HirePoint.csproj",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\HirePoint.csproj",
+              "RelativeToolTip": "HirePoint.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-08-06T09:58:52.616Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-07-13T18:58:30.759Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
               "Title": "Qualification.cs",
               "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\Qualification.cs",
               "RelativeDocumentMoniker": "Models\\Entities\\Qualification.cs",
               "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\Qualification.cs",
               "RelativeToolTip": "Models\\Entities\\Qualification.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-04T12:32:48.383Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "20260724142451_InitialCreate.cs",
-              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Migrations\\20260724142451_InitialCreate.cs",
-              "RelativeDocumentMoniker": "Migrations\\20260724142451_InitialCreate.cs",
-              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Migrations\\20260724142451_InitialCreate.cs",
-              "RelativeToolTip": "Migrations\\20260724142451_InitialCreate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 47,
+              "Title": "Country.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\Country.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\Country.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\Country.cs",
+              "RelativeToolTip": "Models\\Entities\\Country.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-24T14:24:51.945Z"
+              "WhenOpened": "2026-07-24T09:49:55.806Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "JobQualification.cs",
-              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\JobQualification.cs",
-              "RelativeDocumentMoniker": "Models\\Entities\\JobQualification.cs",
-              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\JobQualification.cs",
-              "RelativeToolTip": "Models\\Entities\\JobQualification.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 48,
+              "Title": "Notification.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\Notification.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\Notification.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\Notification.cs",
+              "RelativeToolTip": "Models\\Entities\\Notification.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T10:32:04.823Z"
+              "WhenOpened": "2026-07-04T14:35:29.794Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 49,
               "Title": "Province.cs",
               "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\Province.cs",
               "RelativeDocumentMoniker": "Models\\Entities\\Province.cs",
@@ -569,67 +956,354 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "Application.cs",
-              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\Application.cs",
-              "RelativeDocumentMoniker": "Models\\Entities\\Application.cs",
-              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\Application.cs",
-              "RelativeToolTip": "Models\\Entities\\Application.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 50,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\Role.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\Role.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\Role.cs",
+              "RelativeToolTip": "Models\\Entities\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-04T14:27:25.1Z"
+              "WhenOpened": "2026-07-04T12:34:39.744Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "City.cs",
-              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\City.cs",
-              "RelativeDocumentMoniker": "Models\\Entities\\City.cs",
-              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\City.cs",
-              "RelativeToolTip": "Models\\Entities\\City.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 51,
+              "Title": "SavedJob.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\SavedJob.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\SavedJob.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\SavedJob.cs",
+              "RelativeToolTip": "Models\\Entities\\SavedJob.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAUwBQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-24T09:54:08.27Z"
+              "WhenOpened": "2026-07-04T20:52:54.32Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 52,
+              "Title": "CreateNotificationDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Notifications\\CreateNotificationDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Notifications\\CreateNotificationDto.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Notifications\\CreateNotificationDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Notifications\\CreateNotificationDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-11T21:10:19.701Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "UserProfile.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\UserProfile.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\UserProfile.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Entities\\UserProfile.cs",
+              "RelativeToolTip": "Models\\Entities\\UserProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-04T20:21:03.537Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "CreateSavedJobDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\SavedJobs\\CreateSavedJobDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\SavedJobs\\CreateSavedJobDto.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\SavedJobs\\CreateSavedJobDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\SavedJobs\\CreateSavedJobDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-11T21:50:31.147Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "SavedJobDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\SavedJobs\\SavedJobDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\SavedJobs\\SavedJobDto.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\SavedJobs\\SavedJobDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\SavedJobs\\SavedJobDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-11T21:46:42.428Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "UpdateNotificationDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Notifications\\UpdateNotificationDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Notifications\\UpdateNotificationDto.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Notifications\\UpdateNotificationDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Notifications\\UpdateNotificationDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-11T21:10:38.072Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "NotificationDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Notifications\\NotificationDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Notifications\\NotificationDto.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Notifications\\NotificationDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Notifications\\NotificationDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-11T21:08:01.358Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "UpdateCVDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\CVs\\UpdateCVDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\CVs\\UpdateCVDto.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\CVs\\UpdateCVDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\CVs\\UpdateCVDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-06T15:28:41.819Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "CreateCVDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\CVs\\CreateCVDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\CVs\\CreateCVDto.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\CVs\\CreateCVDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\CVs\\CreateCVDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-06T15:28:25.825Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "CVDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\CVs\\CVDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\CVs\\CVDto.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\CVs\\CVDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\CVs\\CVDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-06T15:28:09.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "ApplicationStatus.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Enums\\ApplicationStatus.cs",
+              "RelativeDocumentMoniker": "Models\\Enums\\ApplicationStatus.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\Enums\\ApplicationStatus.cs",
+              "RelativeToolTip": "Models\\Enums\\ApplicationStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-06T15:05:56.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "CompanyDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Companies\\CompanyDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Companies\\CompanyDto.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Companies\\CompanyDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Companies\\CompanyDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-06T10:41:04.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "UpdateCompanyDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Companies\\UpdateCompanyDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Companies\\UpdateCompanyDto.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Companies\\UpdateCompanyDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Companies\\UpdateCompanyDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-06T10:40:48.111Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "CreateCompanyDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Companies\\CreateCompanyDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Companies\\CreateCompanyDto.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Companies\\CreateCompanyDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Companies\\CreateCompanyDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwCIAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-06T10:40:32.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "QualificationDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Qualifications\\QualificationDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Qualifications\\QualificationDto.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Qualifications\\QualificationDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Qualifications\\QualificationDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-06T10:07:34.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "CreateQualificationDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Qualifications\\CreateQualificationDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Qualifications\\CreateQualificationDto.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Qualifications\\CreateQualificationDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Qualifications\\CreateQualificationDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-06T09:58:55.051Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "UpdateQualificationDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Qualifications\\UpdateQualificationDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Qualifications\\UpdateQualificationDto.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Qualifications\\UpdateQualificationDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Qualifications\\UpdateQualificationDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-06T10:00:37.395Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "UpdateProvinceDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Provinces\\UpdateProvinceDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Provinces\\UpdateProvinceDto.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Provinces\\UpdateProvinceDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Provinces\\UpdateProvinceDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-06T00:49:54.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "CreateProvinceDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Provinces\\CreateProvinceDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Provinces\\CreateProvinceDto.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Provinces\\CreateProvinceDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Provinces\\CreateProvinceDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-06T00:47:00.631Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "ProvinceDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Provinces\\ProvinceDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Provinces\\ProvinceDto.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Provinces\\ProvinceDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Provinces\\ProvinceDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-06T00:51:43.306Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "CountryDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Countries\\CountryDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Countries\\CountryDto.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Countries\\CountryDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Countries\\CountryDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-06T00:25:33.899Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "CreateCountryDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Countries\\CreateCountryDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Countries\\CreateCountryDto.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Countries\\CreateCountryDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Countries\\CreateCountryDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-06T00:21:07.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "UpdateCuntryDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Countries\\UpdateCuntryDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Countries\\UpdateCuntryDto.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Models\\DTOs\\Countries\\UpdateCuntryDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Countries\\UpdateCuntryDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-06T00:23:32.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "20260724164333_Initial.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Migrations\\20260724164333_Initial.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260724164333_Initial.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Migrations\\20260724164333_Initial.cs",
+              "RelativeToolTip": "Migrations\\20260724164333_Initial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-24T16:43:34.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "20260724162908_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Migrations\\20260724162908_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260724162908_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Migrations\\20260724162908_InitialCreate.cs",
+              "RelativeToolTip": "Migrations\\20260724162908_InitialCreate.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-24T16:29:09.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "20260724142451_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Migrations\\20260724142451_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260724142451_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Migrations\\20260724142451_InitialCreate.cs",
+              "RelativeToolTip": "Migrations\\20260724142451_InitialCreate.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-24T14:24:51.945Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
               "Title": "20260724132339_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Migrations\\20260724132339_InitialCreate.cs",
               "RelativeDocumentMoniker": "Migrations\\20260724132339_InitialCreate.cs",
               "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Migrations\\20260724132339_InitialCreate.cs",
               "RelativeToolTip": "Migrations\\20260724132339_InitialCreate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-24T13:23:40.29Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 78,
               "Title": "20260724124100_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Migrations\\20260724124100_InitialCreate.cs",
               "RelativeDocumentMoniker": "Migrations\\20260724124100_InitialCreate.cs",
               "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Migrations\\20260724124100_InitialCreate.cs",
               "RelativeToolTip": "Migrations\\20260724124100_InitialCreate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-24T12:41:01.323Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "UserProfilesController.cs",
-              "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\UserProfilesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UserProfilesController.cs",
-              "ToolTip": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\Controllers\\UserProfilesController.cs",
-              "RelativeToolTip": "Controllers\\UserProfilesController.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAgwCYAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-14T14:10:50.426Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 79,
               "Title": "WeatherForecast.cs",
               "DocumentMoniker": "C:\\Users\\Ayonda\\Documents\\2026 WORK\\TECH TITANS\\HirePoint\\WeatherForecast.cs",
               "RelativeDocumentMoniker": "WeatherForecast.cs",

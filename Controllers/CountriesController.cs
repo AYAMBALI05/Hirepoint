@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using HirePoint.Data;
+using HirePoint.Models.DTOs.Countries;
+using HirePoint.Models.Entities;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using HirePoint.Models.Entities;
-using HirePoint.Data;
 
 namespace HirePoint.Controllers
 {
@@ -19,7 +21,13 @@ namespace HirePoint.Controllers
         public async Task<IActionResult> GetCountries()
         {
             var countries = await _context.Countries.ToListAsync();
-            return Ok(countries);
+
+            var countryDtos = countries.Select(c => new CountryDto
+            {
+                CountryID = c.CountryID,
+                CountryName = c.CountryName
+            });
+            return Ok(countryDtos);
         }
         
 
@@ -33,31 +41,64 @@ namespace HirePoint.Controllers
                 return NotFound("Country not found");
             }
 
-            return Ok(country);
+            var countryDto = new CountryDto
+            {
+                CountryID = country.CountryID,
+                CountryName = country.CountryName
+            };
+
+            return Ok(countryDto);
         }
 
+        [Authorize(Roles = "1")]
         [HttpPost]
-        public async Task<IActionResult> CreateCountry(Country country)
+        public async Task<IActionResult> CreateCountry(CreateCountryDto createCountryDto)
         {
+            if(!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
             // Prevent duplicate country names
             var countryExists = await _context.Countries
-                .AnyAsync(c => c.CountryName == country.CountryName);
+                .AnyAsync(c => c.CountryName == createCountryDto.CountryName);
 
             if (countryExists)
             {
                 return BadRequest("Country already exists.");
             }
 
+            var country = new Country
+            {
+                
+                CountryName = createCountryDto.CountryName
+            };
+
             await _context.Countries.AddAsync(country);
             await _context.SaveChangesAsync();
-            return CreatedAtAction(nameof(GetCountryById), new { id = country.CountryID }, country);
+
+            var countryDto = new CountryDto
+            {
+                CountryID = country.CountryID,
+                CountryName = country.CountryName
+            };
+
+            return CreatedAtAction(
+                nameof(GetCountryById),
+                new { id = country.CountryID },
+                countryDto);
         }
 
+        [Authorize(Roles = "1")]
         [HttpPut("UpdateCountry/{id}")]
-        public async Task<IActionResult> UpdateCountry(int id, Country country)
+        public async Task<IActionResult> UpdateCountry(int id, UpdateCuntryDto updateCountryDto)
         {
-            if (id != country.CountryID)
-                return BadRequest("Country ID does not match");
+            if(!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+           
 
             var existingCountry = await _context.Countries.FindAsync(id);
 
@@ -68,7 +109,7 @@ namespace HirePoint.Controllers
 
             // Prevent another country from having the same name
             var countryExists = await _context.Countries
-                .AnyAsync(c => c.CountryName == country.CountryName &&
+                .AnyAsync(c => c.CountryName == updateCountryDto.CountryName &&
                                c.CountryID != id);
 
             if (countryExists)
@@ -76,13 +117,14 @@ namespace HirePoint.Controllers
                 return BadRequest("Country already exists.");
             }
 
-            existingCountry.CountryName = country.CountryName;
+            existingCountry.CountryName = updateCountryDto.CountryName;
 
             await _context.SaveChangesAsync();
 
             return NoContent();
         }
 
+        [Authorize(Roles = "1")]
         [HttpDelete("DeleteCountry/{id}")]
         public async Task<IActionResult> DeleteCountry(int id)
         {

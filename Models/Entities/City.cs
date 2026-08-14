@@ -12,9 +12,7 @@
         // Navigation Property - accesses the related Province
         public Province Province { get; set; }
 
-        // Navigation Property - accesses all users who are located in this city
-        public ICollection<User> Users { get; set; } = new List<User>();
-
+        
         // Navigation Property - accesses all companies located in this city
         public ICollection<Company> Companies { get; set; } = new List<Company>();
 
