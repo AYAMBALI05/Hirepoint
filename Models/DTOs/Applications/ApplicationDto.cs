@@ -24,8 +24,7 @@ namespace HirePoint.Models.DTOs.Applications
 
         public DateTime ApplicationDate { get; set; }
 
-        public ApplicationStatus Status { get; set; }
-
+        public string Status { get; set; }
         public string? Feedback { get; set; }
     }
 }

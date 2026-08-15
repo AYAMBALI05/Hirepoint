@@ -133,6 +133,61 @@ namespace HirePoint.Controllers
         }
 
         [Authorize]
+        [HttpGet("MyProfile")]
+        public async Task<IActionResult> GetMyProfile()
+        {
+            var userId = User.FindFirstValue(
+                ClaimTypes.NameIdentifier);
+
+            if (userId == null)
+            {
+                return Unauthorized();
+            }
+
+            var userGuid = Guid.Parse(userId);
+
+            var profile = await _context.UserProfiles
+                .Include(p => p.User)
+                .FirstOrDefaultAsync(
+                    p => p.UserID == userGuid);
+
+            if (profile == null)
+            {
+                return NotFound("User Profile not found.");
+            }
+
+            // Find the CV belonging to this user.
+            var cv = await _context.CVs
+                .FirstOrDefaultAsync(
+                    c => c.UserID == profile.UserID);
+
+            var profileDto = new UserProfileDto
+            {
+                ProfileID = profile.ProfileID,
+
+                UserID = profile.UserID,
+
+                FullName = profile.User == null
+                    ? null
+                    : $"{profile.User.FirstName} {profile.User.LastName}",
+
+                Email = profile.User?.Email,
+
+                Experience = profile.Experience,
+
+                CVID = cv?.CVID,
+
+                CVFileName = cv?.FileName,
+
+                CVPath = cv?.FilePath,
+
+                CVUploadDate = cv?.UploadDate
+            };
+
+            return Ok(profileDto);
+        }
+
+        [Authorize]
         [HttpPost]
         public async Task<IActionResult> CreateUserProfile(CreateUserProfileDto createUserProfileDto)
         {

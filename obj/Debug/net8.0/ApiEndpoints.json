@@ -973,6 +973,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "HirePoint.Controllers.UserProfilesController",
+    "Method": "GetMyProfile",
+    "RelativePath": "api/UserProfiles/MyProfile",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "HirePoint.Controllers.UsersController",
     "Method": "DeleteUser",
     "RelativePath": "api/Users/DeleteUser/{id}",

@@ -8,44 +8,16 @@ import "./Jobs.css";
 
 function Jobs() {
 
-    /*
-     * Stores all jobs returned by the API.
-     */
     const [jobs, setJobs] = useState([]);
-
-
-    /*
-     * Search text entered by the user.
-     */
     const [searchTerm, setSearchTerm] = useState("");
-
-
-    /*
-     * Selected location.
-     */
     const [locationFilter, setLocationFilter] = useState("");
-
-
-    /*
-     * Selected employment type.
-     */
     const [employmentFilter, setEmploymentFilter] = useState("");
-
-
-    /*
-     * Loading state.
-     */
     const [loading, setLoading] = useState(true);
-
-
-    /*
-     * Error message.
-     */
     const [error, setError] = useState("");
 
 
     /*
-     * Load jobs when the page opens.
+     * Load jobs from the ASP.NET API.
      */
     useEffect(() => {
 
@@ -76,17 +48,13 @@ function Jobs() {
             }
         };
 
-
         loadJobs();
 
     }, []);
 
 
     /*
-     * Create a list of unique locations.
-     *
-     * This allows us to populate the
-     * Location dropdown dynamically.
+     * Create unique locations for the filter.
      */
     const locations = [
         ...new Set(
@@ -98,7 +66,7 @@ function Jobs() {
 
 
     /*
-     * Create a list of unique employment types.
+     * Create unique employment types.
      */
     const employmentTypes = [
         ...new Set(
@@ -110,7 +78,8 @@ function Jobs() {
 
 
     /*
-     * Filter the jobs.
+     * Filter jobs according to the
+     * user's search and selections.
      */
     const filteredJobs = jobs.filter((job) => {
 
@@ -119,12 +88,6 @@ function Jobs() {
             .trim();
 
 
-        /*
-         * Search by:
-         * - Job title
-         * - Company
-         * - Location
-         */
         const matchesSearch =
             !search ||
             job.title
@@ -138,17 +101,11 @@ function Jobs() {
                 .includes(search);
 
 
-        /*
-         * Location filter.
-         */
         const matchesLocation =
             !locationFilter ||
             job.cityName === locationFilter;
 
 
-        /*
-         * Employment type filter.
-         */
         const matchesEmployment =
             !employmentFilter ||
             job.employmentType === employmentFilter;
@@ -163,15 +120,14 @@ function Jobs() {
 
 
     /*
-     * Reset all filters.
+     * Clear all filters.
      */
     const clearFilters = () => {
 
         setSearchTerm("");
-
         setLocationFilter("");
-
         setEmploymentFilter("");
+
     };
 
 
@@ -193,8 +149,8 @@ function Jobs() {
                     </h1>
 
                     <p>
-                        Search thousands of opportunities
-                        and find the right job for you.
+                        Search for opportunities that
+                        match your skills and goals.
                     </p>
 
                 </div>
@@ -203,7 +159,7 @@ function Jobs() {
 
 
             {/* =================================
-                SEARCH & FILTERS
+                SEARCH AND FILTERS
             ================================== */}
 
             <section className="jobs-search-section">
@@ -211,29 +167,32 @@ function Jobs() {
                 <div className="jobs-search-container">
 
 
-                    {/* Search */}
-
                     <div className="jobs-search-box">
 
                         <label>
                             Search
                         </label>
 
-                        <input
-                            type="text"
-                            placeholder="Job title, company or keyword"
-                            value={searchTerm}
-                            onChange={(e) =>
-                                setSearchTerm(
-                                    e.target.value
-                                )
-                            }
-                        />
+                        <div className="search-input-wrapper">
+
+                            {/* Space reserved for search icon */}
+                            <span className="search-icon"></span>
+
+                            <input
+                                type="text"
+                                placeholder="Job title, company or keyword"
+                                value={searchTerm}
+                                onChange={(e) =>
+                                    setSearchTerm(
+                                        e.target.value
+                                    )
+                                }
+                            />
+
+                        </div>
 
                     </div>
 
-
-                    {/* Location */}
 
                     <div className="jobs-filter">
 
@@ -272,8 +231,6 @@ function Jobs() {
                     </div>
 
 
-                    {/* Employment type */}
-
                     <div className="jobs-filter">
 
                         <label>
@@ -311,9 +268,8 @@ function Jobs() {
                     </div>
 
 
-                    {/* Clear */}
-
                     <button
+                        type="button"
                         className="clear-filters-button"
                         onClick={clearFilters}
                     >
@@ -331,20 +287,33 @@ function Jobs() {
 
             <main className="jobs-content">
 
-
                 <div className="jobs-results-header">
 
-                    <h2>
-                        Available Jobs
-                    </h2>
+                    <div>
+
+                        <h2>
+                            Available Jobs
+                        </h2>
+
+                        <p>
+                            Find an opportunity that
+                            suits you.
+                        </p>
+
+                    </div>
+
 
                     {!loading && !error && (
 
-                        <span>
+                        <span className="jobs-count">
+
                             {filteredJobs.length}{" "}
+
                             {filteredJobs.length === 1
                                 ? "job"
-                                : "jobs"} found
+                                : "jobs"}{" "}
+                            found
+
                         </span>
 
                     )}
@@ -357,7 +326,9 @@ function Jobs() {
                 {loading && (
 
                     <div className="jobs-message">
+
                         Loading jobs...
+
                     </div>
 
                 )}
@@ -368,7 +339,9 @@ function Jobs() {
                 {!loading && error && (
 
                     <div className="jobs-message error">
+
                         {error}
+
                     </div>
 
                 )}
@@ -392,6 +365,7 @@ function Jobs() {
                             </p>
 
                             <button
+                                type="button"
                                 onClick={clearFilters}
                                 className="clear-results-button"
                             >
@@ -403,7 +377,9 @@ function Jobs() {
                     )}
 
 
-                {/* Job cards */}
+                {/* =================================
+                    JOB CARDS
+                ================================== */}
 
                 {!loading &&
                     !error &&
@@ -439,9 +415,7 @@ function Jobs() {
 
                                                 <span className="job-type">
 
-                                                    {
-                                                        job.employmentType
-                                                    }
+                                                    {job.employmentType}
 
                                                 </span>
 
@@ -449,35 +423,58 @@ function Jobs() {
 
                                         </div>
 
+
+                                        {/* Job details */}
 
                                         <div className="job-card-details">
 
-                                            <span>
-                                                📍{" "}
-                                                {job.cityName ||
-                                                    "Location not specified"}
+
+                                            <span className="job-detail-item">
+
+                                                {/* Space reserved for location icon */}
+                                                <span className="job-detail-icon"></span>
+
+                                                <span>
+                                                    {job.cityName ||
+                                                        "Location not specified"}
+                                                </span>
+
                                             </span>
 
-                                            <span>
-                                                💰{" "}
-                                                {job.salary
-                                                    ? `R${job.salary}`
-                                                    : "Salary not specified"}
+
+                                            <span className="job-detail-item">
+
+                                                {/* Space reserved for salary icon */}
+                                                <span className="job-detail-icon"></span>
+
+                                                <span>
+                                                    {job.salary
+                                                        ? `R${job.salary}`
+                                                        : "Salary not specified"}
+                                                </span>
+
                                             </span>
+
 
                                             {job.experienceRequired && (
 
-                                                <span>
-                                                    💼{" "}
-                                                    {
-                                                        job.experienceRequired
-                                                    }
+                                                <span className="job-detail-item">
+
+                                                    {/* Space reserved for experience icon */}
+                                                    <span className="job-detail-icon"></span>
+
+                                                    <span>
+                                                        {job.experienceRequired}
+                                                    </span>
+
                                                 </span>
 
                                             )}
 
                                         </div>
 
+
+                                        {/* Description */}
 
                                         <p className="job-description">
 
@@ -491,13 +488,15 @@ function Jobs() {
                                         </p>
 
 
+                                        {/* Card footer */}
+
                                         <div className="job-card-footer">
 
                                             <Link
                                                 to={`/jobs/${job.jobID}`}
                                                 className="view-job-button"
                                             >
-                                                View Job
+                                                View Details
                                             </Link>
 
                                         </div>
@@ -512,6 +511,78 @@ function Jobs() {
                     )}
 
             </main>
+
+
+            {/* =================================
+                BOTTOM NAVIGATION
+            ================================== */}
+
+            <nav className="bottom-navbar">
+
+
+                <Link to="/dashboard">
+
+                    {/* Space reserved for icon */}
+                    <span className="nav-icon"></span>
+
+                    <small>
+                        Home
+                    </small>
+
+                </Link>
+
+
+                <Link
+                    to="/jobs"
+                    className="active"
+                >
+
+                    {/* Space reserved for icon */}
+                    <span className="nav-icon"></span>
+
+                    <small>
+                        Jobs
+                    </small>
+
+                </Link>
+
+
+                <Link to="/my-applications">
+
+                    {/* Space reserved for icon */}
+                    <span className="nav-icon"></span>
+
+                    <small>
+                        Applications
+                    </small>
+
+                </Link>
+
+
+                <Link to="/saved-jobs">
+
+                    {/* Space reserved for icon */}
+                    <span className="nav-icon"></span>
+
+                    <small>
+                        Saved
+                    </small>
+
+                </Link>
+
+
+                <Link to="/profile">
+
+                    {/* Space reserved for icon */}
+                    <span className="nav-icon"></span>
+
+                    <small>
+                        Profile
+                    </small>
+
+                </Link>
+
+            </nav>
 
         </div>
     );

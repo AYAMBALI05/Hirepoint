@@ -1528,6 +1528,18 @@
         }
       }
     },
+    "/api/UserProfiles/MyProfile": {
+      "get": {
+        "tags": [
+          "UserProfiles"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/UserProfiles": {
       "post": {
         "tags": [

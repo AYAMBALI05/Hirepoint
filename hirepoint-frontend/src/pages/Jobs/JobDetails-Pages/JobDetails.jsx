@@ -226,14 +226,7 @@ function JobDetails() {
         <div className="job-details-page">
 
 
-            {/* Back to Jobs */}
-
-            <Link
-                to="/jobs"
-                className="back-link"
-            >
-                ← Back to Jobs
-            </Link>
+           
 
 
             <div className="job-details-card">
@@ -277,7 +270,7 @@ function JobDetails() {
                     <div>
 
                         <strong>
-                            📍 Location
+                             Location
                         </strong>
 
                         <p>
@@ -293,7 +286,7 @@ function JobDetails() {
                     <div>
 
                         <strong>
-                            💰 Salary
+                             Salary
                         </strong>
 
                         <p>
@@ -308,7 +301,7 @@ function JobDetails() {
                     <div>
 
                         <strong>
-                            👥 Vacancies
+                             Vacancies
                         </strong>
 
                         <p>
@@ -323,7 +316,7 @@ function JobDetails() {
                     <div>
 
                         <strong>
-                            💼 Experience
+                            Experience
                         </strong>
 
                         <p>
@@ -451,6 +444,97 @@ function JobDetails() {
                 )}
 
             </div>
+
+{/* =====================================
+    BOTTOM NAVIGATION
+====================================== */}
+
+<nav className="bottom-navigation">
+
+    <Link
+        to="/dashboard"
+        className="bottom-nav-item"
+            >
+                <span className="bottom-nav-icon">
+                    {/* ICON SPACE */}
+                </span>
+
+                <span>
+                    Dashboard
+                </span>
+            </Link>
+
+
+            <Link
+                to="/my-applications"
+                className="bottom-nav-item"
+            >
+                <span className="bottom-nav-icon">
+                    {/* ICON SPACE */}
+                </span>
+
+                <span>
+                    My Applications
+                </span>
+            </Link>
+
+
+            <Link
+                to="/saved-jobs"
+                className="bottom-nav-item"
+            >
+                <span className="bottom-nav-icon">
+                    {/* ICON SPACE */}
+                </span>
+
+                <span>
+                    Saved Jobs
+                </span>
+            </Link>
+
+
+            <Link
+                to="/messages"
+                className="bottom-nav-item "
+            >
+                <span className="bottom-nav-icon">
+                    {/* ICON SPACE */}
+                </span>
+
+                <span>
+                    Messages
+                </span>
+            </Link>
+
+
+            <Link
+                to="/settings"
+                className="bottom-nav-item"
+            >
+                <span className="bottom-nav-icon">
+                    {/* ICON SPACE */}
+                </span>
+
+                <span>
+                    Settings
+                </span>
+            </Link>
+
+
+            <Link
+                to="/profile"
+                className="bottom-nav-item"
+            >
+                <span className="bottom-nav-icon">
+                    {/* ICON SPACE */}
+                </span>
+
+                <span>
+                    Profile
+                </span>
+            </Link>
+
+        </nav>      
 
         </div>
     );

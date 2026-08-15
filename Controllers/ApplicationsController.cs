@@ -83,11 +83,12 @@ namespace HirePoint.Controllers
 
                 ApplicationDate = a.ApplicationDate,
 
-                Status = a.Status,
-
+                Status = a.Status.ToString(),
                 Feedback = a.Feedback
 
-            }).ToList();
+            })
+
+            .ToList();
 
             return Ok(applicationDtos);
         }
@@ -159,7 +160,7 @@ namespace HirePoint.Controllers
 
                 ApplicationDate = application.ApplicationDate,
 
-                Status = application.Status,
+                Status = application.Status.ToString(),
 
                 Feedback = application.Feedback
             };
@@ -207,8 +208,7 @@ namespace HirePoint.Controllers
 
                 ApplicationDate = a.ApplicationDate,
 
-                Status = a.Status,
-
+                Status = a.Status.ToString(),
                 Feedback = a.Feedback
 
             }).ToList();
@@ -499,7 +499,7 @@ namespace HirePoint.Controllers
                       createdApplication.ApplicationDate,
 
                 Status =
-                      createdApplication.Status,
+                      createdApplication.Status.ToString(),
 
                 Feedback =
                       createdApplication.Feedback

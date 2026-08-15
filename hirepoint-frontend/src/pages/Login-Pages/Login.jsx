@@ -2,51 +2,28 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./Login.css";
 
-// Import the function that tells the rest of the application
-// that the authentication state has changed.
 import { notifyAuthChange } from "../../services/auth";
-
 
 function Login() {
 
-    // Allows us to redirect the user after successful login.
     const navigate = useNavigate();
 
-
-    // Stores the value entered into the email field.
     const [email, setEmail] = useState("");
-
-    // Stores the value entered into the password field.
     const [password, setPassword] = useState("");
 
-    // Stores an error message if login fails.
     const [error, setError] = useState("");
-
-    // Used to disable the login button while the request is processing.
     const [loading, setLoading] = useState(false);
 
 
-    /*
-     * Runs when the login form is submitted.
-     */
     const handleSubmit = async (e) => {
 
-        // Prevent the browser from refreshing the page.
         e.preventDefault();
 
-        // Clear any previous error message.
         setError("");
-
-        // Tell the UI that login is currently processing.
         setLoading(true);
-
 
         try {
 
-            /*
-             * Send the user's email and password
-             * to the ASP.NET Core Login endpoint.
-             */
             const response = await fetch(
                 "https://localhost:7081/api/Auth/Login",
                 {
@@ -64,18 +41,11 @@ function Login() {
             );
 
 
-            /*
-             * Read the response returned by the API.
-             */
             const data = await response.json();
 
             console.log("Login response:", data);
 
 
-            /*
-             * If ASP.NET returns an error,
-             * display an appropriate message.
-             */
             if (!response.ok) {
 
                 throw new Error(
@@ -83,26 +53,21 @@ function Login() {
                         ? data
                         : "Invalid email or password."
                 );
+
             }
 
 
             /*
-             * LOGIN WAS SUCCESSFUL
-             *
-             * Save the JWT token.
+             * =====================================
+             * SAVE LOGIN INFORMATION
+             * =====================================
              */
+
             localStorage.setItem(
                 "token",
                 data.token
             );
 
-
-            /*
-             * Save the logged-in user's information.
-             *
-             * The AuthController returns these properties
-             * through LoginResponseDto.
-             */
             localStorage.setItem(
                 "userID",
                 data.userID
@@ -130,22 +95,22 @@ function Login() {
 
 
             /*
-             * Tell the Navbar and other components that
-             * the user has successfully logged in.
-             *
-             * Without this, the Navbar may not update
-             * until the page is refreshed.
+             * Tell the rest of the application
+             * that the user has logged in.
              */
             notifyAuthChange();
 
 
             /*
-             * Redirect the user based on their role.
+             * =====================================
+             * REDIRECT BASED ON ROLE
+             * =====================================
              *
              * 1 = Admin
              * 2 = Recruiter
              * 3 = Job Seeker
              */
+
             if (Number(data.roleID) === 1) {
 
                 navigate("/admin-dashboard");
@@ -158,28 +123,36 @@ function Login() {
             }
             else if (Number(data.roleID) === 3) {
 
-                navigate("/");
+                navigate("/dashboard");
 
             }
             else {
 
-                // Fallback if the role is unknown.
-                navigate("/");
+                /*
+                 * Fallback if the role is unknown.
+                 */
+                navigate("/dashboard");
+
             }
 
 
-        } catch (error) {
+        }
+        catch (error) {
 
-            console.error("Login error:", error);
+            console.error(
+                "Login error:",
+                error
+            );
 
-            // Display the error message on the login page.
             setError(error.message);
 
-        } finally {
-
-            // Allow the user to submit the form again.
-            setLoading(false);
         }
+        finally {
+
+            setLoading(false);
+
+        }
+
     };
 
 
@@ -188,6 +161,10 @@ function Login() {
         <div className="login-page">
 
             <div className="login-card">
+
+                {/* =====================================
+                    HEADER
+                ====================================== */}
 
                 <div className="login-header">
 
@@ -202,9 +179,14 @@ function Login() {
                 </div>
 
 
+                {/* =====================================
+                    LOGIN FORM
+                ====================================== */}
+
                 <form onSubmit={handleSubmit}>
 
                     {/* Email */}
+
                     <div className="form-group">
 
                         <label htmlFor="email">
@@ -226,6 +208,7 @@ function Login() {
 
 
                     {/* Password */}
+
                     <div className="form-group">
 
                         <label htmlFor="password">
@@ -246,7 +229,8 @@ function Login() {
                     </div>
 
 
-                    {/* Error message */}
+                    {/* Error */}
+
                     {error && (
 
                         <p className="login-error">
@@ -257,6 +241,7 @@ function Login() {
 
 
                     {/* Login button */}
+
                     <button
                         type="submit"
                         className="login-button"
@@ -272,7 +257,10 @@ function Login() {
                 </form>
 
 
-                {/* Registration link */}
+                {/* =====================================
+                    REGISTER LINK
+                ====================================== */}
+
                 <div className="register-link">
 
                     <p>
@@ -287,11 +275,25 @@ function Login() {
 
                 </div>
 
+
+                {/* =====================================
+                    BACK TO HOME
+                ====================================== */}
+
+                <div className="login-home-link">
+
+                    <Link to="/">
+                        Back to HirePoint
+                    </Link>
+
+                </div>
+
             </div>
 
         </div>
-    );
-}
 
+    );
+
+}
 
 export default Login;

@@ -1,5 +1,9 @@
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import {
+    Link,
+    useLocation,
+    useNavigate
+} from "react-router-dom";
 
 import {
     isLoggedIn,
@@ -7,25 +11,26 @@ import {
     logout
 } from "../services/auth";
 
+import "./Navbar.css";
 
 function Navbar() {
 
     const navigate = useNavigate();
+    const location = useLocation();
 
+    const [loggedIn, setLoggedIn] = useState(isLoggedIn());
 
-    /*
-     * Check whether a user is currently logged in.
-     */
-    const [loggedIn, setLoggedIn] = useState(
-        isLoggedIn()
-    );
-
-
-    /*
-     * Get the currently logged-in user's
-     * information from localStorage.
-     */
     const user = getCurrentUser();
+
+    /*
+     * Check whether the current page is the
+     * Job Seeker Dashboard.
+     *
+     * The dashboard gets the sidebar.
+     * Other pages keep the normal top navbar.
+     */
+    const isDashboard =
+        location.pathname === "/dashboard";
 
 
     /*
@@ -33,205 +38,180 @@ function Navbar() {
      */
     const handleLogout = () => {
 
-        /*
-         * Remove the JWT and user information
-         * from localStorage.
-         */
         logout();
 
-
-        /*
-         * Update the Navbar immediately.
-         */
         setLoggedIn(false);
 
-
-        /*
-         * Return the user to the login page.
-         */
         navigate("/login");
     };
 
 
     /*
-     * Convert the stored role ID into
-     * something easier to understand.
-     *
-     * 1 = Admin
-     * 2 = Recruiter
-     * 3 = Job Seeker
+     * =========================================
+     * JOB SEEKER DASHBOARD SIDEBAR
+     * =========================================
      */
-    const roleID = user?.roleID;
+
+    if (isDashboard && loggedIn) {
+
+        return (
+
+            <aside className="dashboard-sidebar">
+
+                {/* Logo */}
+
+                <div className="sidebar-logo">
+
+                    <Link to="/dashboard">
+                        HirePoint
+                    </Link>
+
+                </div>
 
 
-    return (
+                {/* User information */}
 
-        <nav className="navbar">
+                <div className="sidebar-user">
 
-            {/* =================================
-                HIREPOINT LOGO
-            ================================== */}
+                    <div className="sidebar-avatar">
+                        {user?.firstName?.charAt(0)}
+                    </div>
 
-            <Link
-                to="/"
-                className="navbar-logo"
-            >
-                HirePoint
-            </Link>
+                    <div>
 
+                        <strong>
+                            {user?.firstName} {user?.lastName}
+                        </strong>
 
-            {/* =================================
-                MAIN NAVIGATION
-            ================================== */}
-
-            <div className="navbar-links">
-
-                {/* -----------------------------
-                    LOGGED OUT
-                ------------------------------ */}
-
-                {!loggedIn && (
-
-                    <>
-                        <Link to="/">
-                            Home
-                        </Link>
-
-                        <Link to="/jobs">
-                            Jobs
-                        </Link>
-                    </>
-                )}
-
-
-                {/* -----------------------------
-                    JOB SEEKER
-                    Role ID = 3
-                ------------------------------ */}
-
-                {loggedIn && roleID === "3" && (
-
-                    <>
-                        <Link to="/">
-                            Home
-                        </Link>
-
-                        <Link to="/jobs">
-                            Jobs
-                        </Link>
-
-                        <Link to="/saved-jobs">
-                            Saved Jobs
-                        </Link>
-
-                        <Link to="/my-applications">
-                            My Applications
-                        </Link>
-                    </>
-                )}
-
-
-                {/* -----------------------------
-                    RECRUITER
-                    Role ID = 2
-                ------------------------------ */}
-
-                {loggedIn && roleID === "2" && (
-
-                    <>
-                        <Link to="/recruiter-dashboard">
-                            Dashboard
-                        </Link>
-
-                        <Link to="/recruiter/jobs">
-                            My Jobs
-                        </Link>
-
-                        <Link to="/recruiter/applications">
-                            Applications
-                        </Link>
-                    </>
-                )}
-
-
-                {/* -----------------------------
-                    ADMIN
-                    Role ID = 1
-                ------------------------------ */}
-
-                {loggedIn && roleID === "1" && (
-
-                    <>
-                        <Link to="/admin-dashboard">
-                            Dashboard
-                        </Link>
-
-                        <Link to="/admin/users">
-                            Users
-                        </Link>
-
-                        <Link to="/admin/reports">
-                            Reports
-                        </Link>
-                    </>
-                )}
-
-            </div>
-
-
-            {/* =================================
-                AUTHENTICATION SECTION
-            ================================== */}
-
-            <div className="navbar-auth">
-
-                {loggedIn && user ? (
-
-                    <>
-
-                        {/* User's name */}
-
-                        <span className="navbar-user">
-                            Welcome, {user.firstName}
+                        <span>
+                            Job Seeker
                         </span>
 
+                    </div>
 
-                        {/* Logout */}
-
-                        <button
-                            className="navbar-logout"
-                            onClick={handleLogout}
-                        >
-                            Logout
-                        </button>
-
-                    </>
-
-                ) : (
-
-                    <>
-
-                        {/* Login */}
-
-                        <Link to="/login">
-                            Login
-                        </Link>
+                </div>
 
 
-                        {/* Register */}
+                {/* Dashboard navigation */}
 
-                        <Link to="/register">
-                            Register
-                        </Link>
+                <nav className="sidebar-navigation">
 
-                    </>
-                )}
+                    <Link
+                        to="/dashboard"
+                        className={
+                            location.pathname === "/dashboard"
+                                ? "sidebar-link active"
+                                : "sidebar-link"
+                        }
+                    >
+                       
+                        Dashboard
+                    </Link>
 
-            </div>
 
-        </nav>
-    );
-}
+                    <Link
+                        to="/my-applications"
+                        className="sidebar-link"
+                    >
+                       
+                        My Applications
+                    </Link>
 
+
+                    <Link
+                        to="/saved-jobs"
+                        className="sidebar-link"
+                    >
+                        
+                        Saved Jobs
+                    </Link>
+
+
+                    
+
+                </nav>
+
+                    <Link
+                        to="/saved-jobs"
+                        className="active"
+                    >
+                        <small>Saved</small>
+                    </Link>
+
+                    <Link to="/profile">
+                        <small>Profile</small>
+                    </Link>
+
+                {/* Bottom section */}
+
+                <div className="sidebar-bottom">
+
+                    <button
+                        onClick={handleLogout}
+                        className="sidebar-logout"
+                    >
+                        
+                        Logout
+                    </button>
+
+                </div>
+
+            </aside>
+        );
+    }
+
+
+    /*
+ * =========================================
+ * NORMAL TOP NAVBAR
+ * =========================================
+ */
+
+return (
+
+    <nav className="top-navbar">
+
+        {/* HirePoint logo */}
+
+        <Link
+            to="/"
+            className="navbar-logo"
+        >
+            HirePoint
+        </Link>
+
+
+        {/* Logout */}
+
+        <div className="navbar-auth">
+
+            {loggedIn && user ? (
+
+                <button
+                    onClick={handleLogout}
+                    className="navbar-logout"
+                >
+                    Logout
+                </button>
+
+            ) : (
+
+                <>
+                    <Link to="/login">
+                        Login
+                    </Link>
+
+                    <Link to="/register">
+                        Register
+                    </Link>
+                </>
+
+            )}
+
+        </div>
+
+    </nav>
+);
+};
 
 export default Navbar;

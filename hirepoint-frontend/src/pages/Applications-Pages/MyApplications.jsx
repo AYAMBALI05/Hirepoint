@@ -8,22 +8,10 @@ import "./MyApplications.css";
 
 function MyApplications() {
 
-    /*
-     * Stores the applications returned
-     * by the ASP.NET API.
-     */
     const [applications, setApplications] = useState([]);
 
-
-    /*
-     * Controls the loading message.
-     */
     const [loading, setLoading] = useState(true);
 
-
-    /*
-     * Stores an error message if the API fails.
-     */
     const [error, setError] = useState("");
 
 
@@ -36,16 +24,8 @@ function MyApplications() {
 
             try {
 
-                /*
-                 * Get the JWT stored during login.
-                 */
                 const token = getToken();
 
-
-                /*
-                 * If there is no token, the user
-                 * should not be accessing this page.
-                 */
                 if (!token) {
 
                     setError(
@@ -58,10 +38,6 @@ function MyApplications() {
                 }
 
 
-                /*
-                 * Request the applications belonging
-                 * to the currently logged-in job seeker.
-                 */
                 const response = await fetch(
                     "https://localhost:7081/api/Applications/MyApplications",
                     {
@@ -77,44 +53,36 @@ function MyApplications() {
                 );
 
 
-                /*
-                 * Check whether ASP.NET returned
-                 * a successful response.
-                 */
                 if (!response.ok) {
 
                     throw new Error(
                         "Could not load your applications."
                     );
+
                 }
 
 
-                /*
-                 * Convert the response to JSON.
-                 */
                 const data = await response.json();
 
-
-                /*
-                 * Store the applications in React state.
-                 */
                 setApplications(data);
 
-            } catch (error) {
+            }
+            catch (error) {
 
                 console.error(
                     "Applications error:",
                     error
                 );
 
-                setError(
-                    error.message
-                );
+                setError(error.message);
 
-            } finally {
+            }
+            finally {
 
                 setLoading(false);
+
             }
+
         };
 
 
@@ -124,15 +92,41 @@ function MyApplications() {
 
 
     /*
+     * Format application date.
+     */
+    const formatDate = (date) => {
+
+        if (!date) {
+            return "N/A";
+        }
+
+        return new Date(date).toLocaleDateString(
+            "en-ZA",
+            {
+                day: "2-digit",
+                month: "short",
+                year: "numeric"
+            }
+        );
+
+    };
+
+
+    /*
      * Loading state.
      */
     if (loading) {
 
         return (
-            <div className="applications-message">
-                Loading your applications...
+            <div className="applications-page">
+
+                <div className="applications-loading">
+                    Loading your applications...
+                </div>
+
             </div>
         );
+
     }
 
 
@@ -142,10 +136,15 @@ function MyApplications() {
     if (error) {
 
         return (
-            <div className="applications-message error">
-                {error}
+            <div className="applications-page">
+
+                <div className="applications-error">
+                    {error}
+                </div>
+
             </div>
         );
+
     }
 
 
@@ -153,14 +152,19 @@ function MyApplications() {
 
         <div className="applications-page">
 
-            <div className="applications-container">
+
+            {/* =====================================
+                MAIN CONTENT
+            ====================================== */}
+
+            <main className="applications-content">
 
 
-                {/* =========================
+                {/* =====================================
                     PAGE HEADER
-                ========================== */}
+                ====================================== */}
 
-                <div className="applications-header">
+                <header className="applications-header">
 
                     <div>
 
@@ -174,24 +178,24 @@ function MyApplications() {
 
                     </div>
 
-
-                    <Link
-                        to="/jobs"
-                        className="browse-jobs-button"
-                    >
-                        Browse Jobs
-                    </Link>
-
-                </div>
+                </header>
 
 
-                {/* =========================
+              
+
+
+
+                {/* =====================================
                     NO APPLICATIONS
-                ========================== */}
+                ====================================== */}
 
                 {applications.length === 0 ? (
 
-                    <div className="no-applications">
+                    <section className="no-applications">
+
+                        <div className="empty-icon">
+                            {/* ICON SPACE */}
+                        </div>
 
                         <h2>
                             No Applications Yet
@@ -202,93 +206,259 @@ function MyApplications() {
                         </p>
 
                         <Link
-                            to="/jobs"
+                            to="/dashboard"
                             className="browse-jobs-button"
                         >
-                            Find a Job
+                            Browse Jobs
                         </Link>
 
-                    </div>
+                    </section>
 
                 ) : (
 
 
-                    /* =========================
-                       APPLICATION LIST
-                    ========================== */
+                    /* =====================================
+                       APPLICATIONS
+                    ====================================== */
 
-                    <div className="applications-list">
+                    <section className="applications-section">
 
-                        {applications.map((application) => (
+                        <div className="section-title">
 
-                            <div
-                                className="application-card"
-                                key={application.applicationID}
-                            >
+                            <h2>
+                                Your Applications
+                            </h2>
 
-
-                                {/* Job information */}
-
-                                <div className="application-info">
-
-                                    <h2>
-                                        {application.jobTitle}
-                                    </h2>
+                        </div>
 
 
-                                    <p>
-                                        Applied on:{" "}
+                        <div className="applications-list">
 
-                                        {new Date(
-                                            application.applicationDate
-                                        ).toLocaleDateString()}
-                                    </p>
+                            {applications.map(
+                                (application) => (
 
-
-                                    <p>
-                                        CV submitted:{" "}
-
-                                        {application.cvPath
-                                            ? "Yes"
-                                            : "No"}
-                                    </p>
-
-                                </div>
-
-
-                                {/* Application status */}
-
-                                <div className="application-status">
-
-                                    <span
-                                        className={
-                                            `status-badge status-${String(
-                                                application.status
-                                            ).toLowerCase()}`
+                                    <article
+                                        className="application-card"
+                                        key={
+                                            application.applicationID
                                         }
                                     >
-                                        {application.status}
-                                    </span>
 
 
-                                    <Link
-                                        to={`/jobs/${application.jobID}`}
-                                        className="view-job-button"
-                                    >
-                                        View Job
-                                    </Link>
+                                        {/* =========================
+                                            LEFT SIDE
+                                        ========================== */}
 
-                                </div>
+                                        <div className="application-main">
 
-                            </div>
 
-                        ))}
+                                            
 
-                    </div>
+
+                                            <div className="application-info">
+
+                                                <h3>
+                                                    {
+                                                        application.jobTitle ||
+                                                        "Job Title"
+                                                    }
+                                                </h3>
+
+
+                                                <div className="application-meta">
+
+                                                    <span>
+                                                        Applied
+                                                    </span>
+
+                                                    <strong>
+                                                        {
+                                                            formatDate(
+                                                                application.applicationDate
+                                                            )
+                                                        }
+                                                    </strong>
+
+                                                </div>
+
+
+                                                <div className="application-meta">
+
+                                                    <span>
+                                                        CV
+                                                    </span>
+
+                                                    <strong>
+                                                        {
+                                                            application.cvPath
+                                                                ? "Submitted"
+                                                                : "Not available"
+                                                        }
+                                                    </strong>
+
+                                                </div>
+
+
+                                                {application.feedback && (
+
+                                                    <div className="application-feedback">
+
+                                                        <span>
+                                                            Recruiter Feedback
+                                                        </span>
+
+                                                        <p>
+                                                            {
+                                                                application.feedback
+                                                            }
+                                                        </p>
+
+                                                    </div>
+
+                                                )}
+
+                                            </div>
+
+                                        </div>
+
+
+                                        {/* =========================
+                                            RIGHT SIDE
+                                        ========================== */}
+
+                                        <div className="application-actions">
+
+
+                                            <span
+                                                className={
+                                                    `status-badge status-${String(
+                                                        application.status
+                                                    ).toLowerCase()}`
+                                                }
+                                            >
+                                                {
+                                                    application.status
+                                                }
+                                            </span>
+
+
+                                            <Link
+                                                to={
+                                                    `/jobs/${application.jobID}`
+                                                }
+                                                className="view-job-button"
+                                            >
+                                                View Job
+                                            </Link>
+
+                                        </div>
+
+
+                                    </article>
+
+                                )
+                            )}
+
+                        </div>
+
+                    </section>
 
                 )}
 
-            </div>
+            </main>
+
+
+           {/* =====================================
+    BOTTOM NAVIGATION
+====================================== */}
+
+<nav className="bottom-navigation">
+
+    <Link
+        to="/dashboard"
+        className="bottom-nav-item"
+            >
+                <span className="bottom-nav-icon">
+                    {/* ICON SPACE */}
+                </span>
+
+                <span>
+                    Dashboard
+                </span>
+            </Link>
+
+
+            <Link
+                to="/my-applications"
+                className="bottom-nav-item"
+            >
+                <span className="bottom-nav-icon">
+                    {/* ICON SPACE */}
+                </span>
+
+                <span>
+                    My Applications
+                </span>
+            </Link>
+
+
+            <Link
+                to="/saved-jobs"
+                className="bottom-nav-item"
+            >
+                <span className="bottom-nav-icon">
+                    {/* ICON SPACE */}
+                </span>
+
+                <span>
+                    Saved Jobs
+                </span>
+            </Link>
+
+
+           <Link
+                to="/messages"
+                className="bottom-nav-item "
+            >
+                <span className="bottom-nav-icon">
+                    {/* ICON SPACE */}
+                </span>
+
+                <span>
+                    Messages
+                </span>
+            </Link>
+
+
+            <Link
+                to="/settings"
+                className="bottom-nav-item"
+            >
+                <span className="bottom-nav-icon">
+                    {/* ICON SPACE */}
+                </span>
+
+                <span>
+                    Settings
+                </span>
+            </Link>
+
+
+            <Link
+                to="/profile"
+                className="bottom-nav-item"
+            >
+                <span className="bottom-nav-icon">
+                    {/* ICON SPACE */}
+                </span>
+
+                <span>
+                    Profile
+                </span>
+            </Link>
+
+        </nav>      
+
 
         </div>
     );

@@ -1,0 +1,212 @@
+/* =========================================
+   MESSAGES PAGE
+========================================= */
+
+.messages-page {
+    min-height: 100vh;
+    background: #f5f7fa;
+    padding-bottom: 100px;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.messages-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.messages-header {
+    margin-bottom: 30px;
+}
+
+.messages-header h1 {
+    margin: 0 0 8px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #222;
+}
+
+.messages-header p {
+    margin: 0;
+    color: #666;
+    font-size: 15px;
+}
+
+
+/* =========================================
+   MESSAGES CONTENT
+========================================= */
+
+.messages-content {
+    background: #ffffff;
+    border: 1px solid #e1e5ea;
+    border-radius: 10px;
+    min-height: 500px;
+    padding: 30px;
+}
+
+
+/* =========================================
+   EMPTY MESSAGES
+========================================= */
+
+.messages-empty {
+    min-height: 400px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.messages-empty h2 {
+    margin: 0 0 10px;
+
+    font-size: 22px;
+    color: #222;
+}
+
+.messages-empty p {
+    margin: 0;
+
+    font-size: 15px;
+    color: #777;
+}
+
+
+/* =========================================
+   BOTTOM NAVIGATION
+========================================= */
+
+.bottom-navigation {
+    position: fixed;
+
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 72px;
+
+    background: #ffffff;
+
+    border-top: 1px solid #e1e5ea;
+
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+
+    z-index: 1000;
+}
+
+
+/* =========================================
+   NAVIGATION ITEMS
+========================================= */
+
+.bottom-nav-item {
+    flex: 1;
+
+    max-width: 200px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+
+    color: #666;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    transition: 0.2s ease;
+}
+
+.bottom-nav-item:hover {
+    background: #f5f5f5;
+    color: #222;
+}
+
+
+/* =========================================
+   ACTIVE ITEM
+========================================= */
+
+.bottom-nav-item.active {
+    color: #222;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   ICON SPACE
+========================================= */
+
+.bottom-nav-icon {
+    width: 20px;
+    height: 20px;
+
+    display: block;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .messages-container {
+        width: 94%;
+        padding: 25px 0;
+    }
+
+    .messages-header h1 {
+        font-size: 27px;
+    }
+
+    .messages-content {
+        padding: 20px;
+    }
+
+    .bottom-navigation {
+        height: 68px;
+    }
+
+    .bottom-nav-item {
+        font-size: 11px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .messages-container {
+        width: 92%;
+    }
+
+    .messages-header h1 {
+        font-size: 24px;
+    }
+
+    .messages-content {
+        min-height: 450px;
+    }
+
+}
