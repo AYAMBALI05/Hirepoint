@@ -1,0 +1,627 @@
+/* =========================================
+   HOME PAGE
+========================================= */
+
+.home-page {
+    min-height: 100vh;
+    background-color: #f5f7fb;
+}
+
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.home-hero {
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #1e40af
+    );
+
+    padding: 80px 20px;
+
+    color: white;
+}
+
+
+.home-hero-content {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+.home-hero h1 {
+    margin: 0 0 15px 0;
+
+    font-size: 46px;
+    font-weight: 700;
+
+    line-height: 1.2;
+}
+
+
+.home-hero p {
+    max-width: 650px;
+
+    margin: 0 auto 35px auto;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    opacity: 0.95;
+}
+
+
+/* =========================================
+   SEARCH
+========================================= */
+
+.home-search {
+    display: flex;
+
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    gap: 10px;
+
+    background-color: white;
+
+    padding: 8px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+.home-search input {
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 14px 16px;
+
+    border: none;
+
+    outline: none;
+
+    border-radius: 7px;
+
+    color: #111827;
+
+    font-size: 15px;
+}
+
+
+.home-search input::placeholder {
+    color: #9ca3af;
+}
+
+
+.search-button {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 0 22px;
+
+    background-color: #111827;
+
+    color: white;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    transition:
+        background-color 0.2s ease;
+}
+
+
+.search-button:hover {
+    background-color: #1f2937;
+}
+
+
+/* =========================================
+   JOBS SECTION
+========================================= */
+
+.home-jobs-section {
+    width: 100%;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 60px 20px;
+
+    box-sizing: border-box;
+}
+
+
+.home-section-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-end;
+
+    gap: 20px;
+
+    margin-bottom: 30px;
+}
+
+
+.home-section-header h2 {
+    margin: 0 0 8px 0;
+
+    color: #111827;
+
+    font-size: 28px;
+}
+
+
+.home-section-header p {
+    margin: 0;
+
+    color: #6b7280;
+
+    font-size: 15px;
+}
+
+
+.view-all-link {
+    color: #2563eb;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+
+.view-all-link:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   JOB GRID
+========================================= */
+
+.home-jobs-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+/* =========================================
+   JOB CARD
+========================================= */
+
+.home-job-card {
+    display: flex;
+
+    flex-direction: column;
+
+    background-color: white;
+
+    padding: 22px;
+
+    border-radius: 10px;
+
+    border: 1px solid #e5e7eb;
+
+    box-shadow:
+        0 3px 12px rgba(0, 0, 0, 0.05);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.home-job-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 8px 22px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================
+   JOB CARD HEADER
+========================================= */
+
+.home-job-card-top {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    gap: 15px;
+
+    margin-bottom: 18px;
+}
+
+
+.home-job-card h3 {
+    margin: 0 0 7px 0;
+
+    color: #111827;
+
+    font-size: 19px;
+
+    line-height: 1.3;
+}
+
+
+.home-company {
+    margin: 0;
+
+    color: #374151;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   EMPLOYMENT TYPE
+========================================= */
+
+.home-job-type {
+    padding: 6px 9px;
+
+    background-color: #eff6ff;
+
+    color: #2563eb;
+
+    border-radius: 15px;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   JOB DETAILS
+========================================= */
+
+.home-job-details {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-bottom: 15px;
+}
+
+
+.home-job-details span {
+    color: #6b7280;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   JOB DESCRIPTION
+========================================= */
+
+.home-job-description {
+    flex: 1;
+
+    margin: 0 0 20px 0;
+
+    color: #6b7280;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   VIEW JOB
+========================================= */
+
+.home-view-job {
+    display: block;
+
+    padding: 10px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    border-radius: 7px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition:
+        background-color 0.2s ease;
+}
+
+
+.home-view-job:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* =========================================
+   LOADING / ERROR / EMPTY MESSAGE
+========================================= */
+
+.home-message {
+    padding: 50px 20px;
+
+    background-color: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    color: #6b7280;
+}
+
+
+.home-message h3 {
+    margin: 0 0 8px 0;
+
+    color: #111827;
+}
+
+
+.home-message p {
+    margin: 0;
+}
+
+
+.home-message.error {
+    color: #b91c1c;
+
+    background-color: #fef2f2;
+
+    border-color: #fecaca;
+}
+
+
+/* =========================================
+   FEATURES SECTION
+========================================= */
+
+.home-features {
+    background-color: white;
+
+    padding: 60px 20px 80px 20px;
+
+    border-top: 1px solid #e5e7eb;
+}
+
+
+.home-features > h2 {
+    margin: 0 0 35px 0;
+
+    color: #111827;
+
+    text-align: center;
+
+    font-size: 28px;
+}
+
+
+.home-features-grid {
+    width: 100%;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+/* =========================================
+   FEATURE CARD
+========================================= */
+
+.home-feature-card {
+    padding: 25px;
+
+    background-color: #f8fafc;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+
+.feature-icon {
+    width: 50px;
+
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin: 0 auto 15px auto;
+
+    background-color: #eff6ff;
+
+    border-radius: 50%;
+
+    font-size: 22px;
+}
+
+
+.home-feature-card h3 {
+    margin: 0 0 10px 0;
+
+    color: #111827;
+
+    font-size: 17px;
+}
+
+
+.home-feature-card p {
+    margin: 0;
+
+    color: #6b7280;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .home-jobs-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .home-features-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .home-hero h1 {
+        font-size: 40px;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+    .home-hero {
+        padding: 60px 15px;
+    }
+
+
+    .home-hero h1 {
+        font-size: 32px;
+    }
+
+
+    .home-hero p {
+        font-size: 16px;
+    }
+
+
+    .home-search {
+        flex-direction: column;
+
+        padding: 8px;
+    }
+
+
+    .home-search input {
+        width: 100%;
+
+        box-sizing: border-box;
+
+        padding: 13px;
+    }
+
+
+    .search-button {
+        min-height: 45px;
+    }
+
+
+    .home-jobs-section {
+        padding: 45px 15px;
+    }
+
+
+    .home-section-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .home-section-header h2 {
+        font-size: 24px;
+    }
+
+
+    .home-jobs-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .home-features {
+        padding: 45px 15px 60px 15px;
+    }
+
+
+    .home-features > h2 {
+        font-size: 24px;
+    }
+
+
+    .home-features-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -18,9 +18,24 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "application",
-        "Type": "HirePoint.Models.Entities.Application",
-        "IsRequired": true
+        "Name": "UserID",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "JobID",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "CVID",
+        "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "CVFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -59,6 +74,16 @@
   },
   {
     "ContainingType": "HirePoint.Controllers.ApplicationsController",
+    "Method": "GetMyApplications",
+    "RelativePath": "api/Applications/MyApplications",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.ApplicationsController",
     "Method": "UpdateApplication",
     "RelativePath": "api/Applications/UpdateApplication/{id}",
     "HttpMethod": "PUT",
@@ -71,8 +96,40 @@
         "IsRequired": true
       },
       {
-        "Name": "application",
-        "Type": "HirePoint.Models.Entities.Application",
+        "Name": "updateApplicationDto",
+        "Type": "HirePoint.Models.DTOs.Applications.UpdateApplicationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDto",
+        "Type": "HirePoint.Models.DTOs.Authentication.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.AuthController",
+    "Method": "Register",
+    "RelativePath": "api/Auth/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registerDto",
+        "Type": "HirePoint.Models.DTOs.Authentication.RegisterDto",
         "IsRequired": true
       }
     ],
@@ -97,8 +154,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "city",
-        "Type": "HirePoint.Models.Entities.City",
+        "Name": "createCityDto",
+        "Type": "HirePoint.Models.DTOs.Cities.CreateCityDto",
         "IsRequired": true
       }
     ],
@@ -150,8 +207,8 @@
         "IsRequired": true
       },
       {
-        "Name": "city",
-        "Type": "HirePoint.Models.Entities.City",
+        "Name": "updateCityDto",
+        "Type": "HirePoint.Models.DTOs.Cities.UpdateCityDto",
         "IsRequired": true
       }
     ],
@@ -176,8 +233,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "company",
-        "Type": "HirePoint.Models.Entities.Company",
+        "Name": "createCompanyDto",
+        "Type": "HirePoint.Models.DTOs.Companies.CreateCompanyDto",
         "IsRequired": true
       }
     ],
@@ -229,8 +286,8 @@
         "IsRequired": true
       },
       {
-        "Name": "company",
-        "Type": "HirePoint.Models.Entities.Company",
+        "Name": "updateCompanyDto",
+        "Type": "HirePoint.Models.DTOs.Companies.UpdateCompanyDto",
         "IsRequired": true
       }
     ],
@@ -255,8 +312,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "country",
-        "Type": "HirePoint.Models.Entities.Country",
+        "Name": "createCountryDto",
+        "Type": "HirePoint.Models.DTOs.Countries.CreateCountryDto",
         "IsRequired": true
       }
     ],
@@ -308,8 +365,8 @@
         "IsRequired": true
       },
       {
-        "Name": "country",
-        "Type": "HirePoint.Models.Entities.Country",
+        "Name": "updateCountryDto",
+        "Type": "HirePoint.Models.DTOs.Countries.UpdateCuntryDto",
         "IsRequired": true
       }
     ],
@@ -324,9 +381,14 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "cv",
-        "Type": "HirePoint.Models.Entities.CV",
-        "IsRequired": true
+        "Name": "UserID",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "CVFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -387,9 +449,14 @@
         "IsRequired": true
       },
       {
-        "Name": "cv",
-        "Type": "HirePoint.Models.Entities.CV",
-        "IsRequired": true
+        "Name": "UserID",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "CVFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -413,8 +480,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "job",
-        "Type": "HirePoint.Models.Entities.Job",
+        "Name": "createJobsDto",
+        "Type": "HirePoint.Models.DTOs.Jobs.CreateJobsDto",
         "IsRequired": true
       }
     ],
@@ -454,6 +521,22 @@
   },
   {
     "ContainingType": "HirePoint.Controllers.JobsController",
+    "Method": "SaveJob",
+    "RelativePath": "api/Jobs/SaveJob/{jobId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "jobId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HirePoint.Controllers.JobsController",
     "Method": "UpdateJob",
     "RelativePath": "api/Jobs/UpdateJob/{id}",
     "HttpMethod": "PUT",
@@ -466,8 +549,8 @@
         "IsRequired": true
       },
       {
-        "Name": "job",
-        "Type": "HirePoint.Models.Entities.Job",
+        "Name": "updateJobsDto",
+        "Type": "HirePoint.Models.DTOs.Jobs.UpdateJobsDto",
         "IsRequired": true
       }
     ],
@@ -492,8 +575,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "notification",
-        "Type": "HirePoint.Models.Entities.Notification",
+        "Name": "createNotificationDto",
+        "Type": "HirePoint.Models.DTOs.Notifications.CreateNotificationDto",
         "IsRequired": true
       }
     ],
@@ -598,8 +681,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "province",
-        "Type": "HirePoint.Models.Entities.Province",
+        "Name": "createProvinceDto",
+        "Type": "HirePoint.Models.DTOs.Provinces.CreateProvinceDto",
         "IsRequired": true
       }
     ],
@@ -651,8 +734,8 @@
         "IsRequired": true
       },
       {
-        "Name": "province",
-        "Type": "HirePoint.Models.Entities.Province",
+        "Name": "updateProvinceDto",
+        "Type": "HirePoint.Models.DTOs.Provinces.UpdateProvinceDto",
         "IsRequired": true
       }
     ],
@@ -677,8 +760,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "qualification",
-        "Type": "HirePoint.Models.Entities.Qualification",
+        "Name": "createQualificationDto",
+        "Type": "HirePoint.Models.DTOs.Qualifications.CreateQualificationDto",
         "IsRequired": true
       }
     ],
@@ -714,8 +797,8 @@
         "IsRequired": true
       },
       {
-        "Name": "qualification",
-        "Type": "HirePoint.Models.Entities.Qualification",
+        "Name": "updateQualificationDto",
+        "Type": "HirePoint.Models.DTOs.Qualifications.UpdateQualificationDto",
         "IsRequired": true
       }
     ],
@@ -740,8 +823,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "savedJob",
-        "Type": "HirePoint.Models.Entities.SavedJob",
+        "Name": "createSavedJobDto",
+        "Type": "HirePoint.Models.DTOs.SavedJobs.CreateSavedJobDto",
         "IsRequired": true
       }
     ],
@@ -780,79 +863,16 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "HirePoint.Controllers.SkillsController",
-    "Method": "CreateSkill",
-    "RelativePath": "api/Skills",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "skill",
-        "Type": "HirePoint.Models.Entities.Skill",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "HirePoint.Controllers.SkillsController",
-    "Method": "DeleteSkill",
-    "RelativePath": "api/Skills/DeleteSkill/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "HirePoint.Controllers.SkillsController",
-    "Method": "GetSkills",
-    "RelativePath": "api/Skills/GetSkills",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "HirePoint.Controllers.SkillsController",
-    "Method": "GetSkillsById",
-    "RelativePath": "api/Skills/GetSkillsById/{id}",
+    "ContainingType": "HirePoint.Controllers.SavedJobsController",
+    "Method": "GetSavedJobsByUser",
+    "RelativePath": "api/SavedJobs/User/{userId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "HirePoint.Controllers.SkillsController",
-    "Method": "UpdateSkill",
-    "RelativePath": "api/Skills/UpdateSkill/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "skill",
-        "Type": "HirePoint.Models.Entities.Skill",
+        "Name": "userId",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -867,9 +887,19 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "userProfile",
-        "Type": "HirePoint.Models.Entities.UserProfile",
-        "IsRequired": true
+        "Name": "UserID",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "Experience",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CVFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -904,9 +934,14 @@
         "IsRequired": true
       },
       {
-        "Name": "userProfile",
-        "Type": "HirePoint.Models.Entities.UserProfile",
-        "IsRequired": true
+        "Name": "Experience",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CVFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -939,22 +974,6 @@
   },
   {
     "ContainingType": "HirePoint.Controllers.UsersController",
-    "Method": "CreateUser",
-    "RelativePath": "api/Users",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "user",
-        "Type": "HirePoint.Models.Entities.User",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "HirePoint.Controllers.UsersController",
     "Method": "DeleteUser",
     "RelativePath": "api/Users/DeleteUser/{id}",
     "HttpMethod": "DELETE",
@@ -972,7 +991,7 @@
   {
     "ContainingType": "HirePoint.Controllers.UsersController",
     "Method": "GetUserById",
-    "RelativePath": "api/Users/GetCVById/{id}",
+    "RelativePath": "api/Users/GetUserById/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -987,8 +1006,8 @@
   },
   {
     "ContainingType": "HirePoint.Controllers.UsersController",
-    "Method": "GetCVs",
-    "RelativePath": "api/Users/GetCVs",
+    "Method": "GetUser",
+    "RelativePath": "api/Users/GetUsers",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -1009,8 +1028,8 @@
         "IsRequired": true
       },
       {
-        "Name": "user",
-        "Type": "HirePoint.Models.Entities.User",
+        "Name": "updateUserDto",
+        "Type": "HirePoint.Models.DTOs.Users.UpdateUserDto",
         "IsRequired": true
       }
     ],

@@ -1,5 +1,7 @@
 ﻿using HirePoint.Data;
+using HirePoint.Models.DTOs.Companies;
 using HirePoint.Models.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -27,7 +29,33 @@ namespace HirePoint.Controllers
                 .Include(c => c.City)
                 .ToListAsync();
 
-            return Ok(companies);
+            var companyDtos = companies.Select(c => new CompanyDto
+            {
+                CompanyID = c.CompanyID,
+
+                UserID = c.UserID,
+
+                // Return the recruiter's full name instead of the entire User object.
+                RecruiterName = c.User == null
+                   ? null
+                   : $"{c.User.FirstName} {c.User.LastName}",
+
+                CompanyName = c.CompanyName,
+                Description = c.Description,
+                Email = c.Email,
+
+                CityID = c.CityID,
+
+                // Return the city name instead of the City object.
+                CityName = c.City?.CityName,
+
+                PhoneNumber = c.PhoneNumber,
+                Website = c.Website,
+                LogoPath = c.LogoPath
+            });
+
+            return Ok(companyDtos);
+
         }
 
         // GET: api/Companies/{id}
@@ -45,40 +73,120 @@ namespace HirePoint.Controllers
                 return NotFound("Company not found.");
             }
 
-            return Ok(company);
+            var companyDto = new CompanyDto
+            {
+                CompanyID = company.CompanyID,
+
+                UserID = company.UserID,
+
+                RecruiterName = company.User == null
+                   ? null
+                   : $"{company.User.FirstName} {company.User.LastName}",
+
+                CompanyName = company.CompanyName,
+                Description = company.Description,
+                Email = company.Email,
+
+                CityID = company.CityID,
+                CityName = company.City?.CityName,
+
+                PhoneNumber = company.PhoneNumber,
+                Website = company.Website,
+                LogoPath = company.LogoPath
+            };
+
+            return Ok(companyDto);
         }
 
-        // POST: api/Companies
-        // Creates a new company
+        [Authorize(Roles = "2")]
         [HttpPost]
-        public async Task<IActionResult> CreateCompany(Company company)
+        public async Task<IActionResult> CreateCompany(CreateCompanyDto createCompanyDto)
         {
-            // Prevents duplicate company names
+
+            if(!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            // Ensure the recruiter exists.
+            // This prevents a foreign key constraint error.
+            var recruiterExists = await _context.Users
+                .AnyAsync(u => u.UserID == createCompanyDto.UserID);
+
+            if (!recruiterExists)
+            {
+                return BadRequest("Recruiter does not exist.");
+            }
+
+            // Ensure the selected city exists.
+            var cityExists = await _context.Cities
+                .AnyAsync(c => c.CityID == createCompanyDto.CityID);
+
+            if (!cityExists)
+            {
+                return BadRequest("City does not exist.");
+            }
+
+            // Prevent duplicate company names.
             var companyExists = await _context.Companies
-                .AnyAsync(c => c.CompanyName == company.CompanyName);
+                .AnyAsync(c => c.CompanyName == createCompanyDto.CompanyName);
 
             if (companyExists)
             {
                 return BadRequest("A company with this name already exists.");
             }
 
+            var company = new Company
+            {
+                CompanyID = Guid.NewGuid(),
+                UserID = createCompanyDto.UserID,
+                CompanyName = createCompanyDto.CompanyName,
+                Description = createCompanyDto.Description,
+                Email = createCompanyDto.Email,
+                CityID = createCompanyDto.CityID,
+                PhoneNumber = createCompanyDto.PhoneNumber,
+                Website = createCompanyDto.Website,
+                LogoPath = createCompanyDto.LogoPath
+            };
+
             await _context.Companies.AddAsync(company);
             await _context.SaveChangesAsync();
+
+            var createdCompany = await _context.Companies
+                .Include(c => c.User)
+                .Include(c => c.City)
+                .FirstOrDefaultAsync(c => c.CompanyID == company.CompanyID);
+
+            var companyDto = new CompanyDto
+            {
+                CompanyID = createdCompany.CompanyID,
+                UserID = createdCompany.UserID,
+                RecruiterName = createdCompany.User == null
+                   ? null
+                   : $"{createdCompany.User.FirstName} {createdCompany.User.LastName}",
+                CompanyName = createdCompany.CompanyName,
+                Description = createdCompany.Description,
+                Email = createdCompany.Email,
+                CityID = createdCompany.CityID,
+                CityName = createdCompany.City?.CityName,
+                PhoneNumber = createdCompany.PhoneNumber,
+                Website = createdCompany.Website,
+                LogoPath = createdCompany.LogoPath
+            };
 
             return CreatedAtAction(
                 nameof(GetCompanyById),
                 new { id = company.CompanyID },
-                company);
+                companyDto);
         }
 
-        // PUT: api/Companies/{id}
-        // Updates an existing company
+        [Authorize(Roles = "2")]
         [HttpPut("UpdateCompany/{id}")]
-        public async Task<IActionResult> UpdateCompany(Guid id, Company company)
+        public async Task<IActionResult> UpdateCompany(Guid id, UpdateCompanyDto updateCompanyDto)
         {
-            if (id != company.CompanyID)
+            if (!ModelState.IsValid)
             {
-                return BadRequest("Company ID does not match.");
+                return BadRequest(ModelState);
             }
 
             var existingCompany = await _context.Companies.FindAsync(id);
@@ -88,22 +196,51 @@ namespace HirePoint.Controllers
                 return NotFound("Company not found.");
             }
 
-            existingCompany.UserID = company.UserID;
-            existingCompany.CompanyName = company.CompanyName;
-            existingCompany.Description = company.Description;
-            existingCompany.Email = company.Email;
-            existingCompany.CityID = company.CityID;
-            existingCompany.PhoneNumber = company.PhoneNumber;
-            existingCompany.Website = company.Website;
-            existingCompany.LogoPath = company.LogoPath;
+            // Ensure the recruiter exists.
+            var recruiterExists = await _context.Users
+                .AnyAsync(u => u.UserID == updateCompanyDto.UserID);
+
+            if (!recruiterExists)
+            {
+                return BadRequest("Recruiter does not exist.");
+            }
+
+            // Ensure the city exists.
+            var cityExists = await _context.Cities
+                .AnyAsync(c => c.CityID == updateCompanyDto.CityID);
+
+            if (!cityExists)
+            {
+                return BadRequest("City does not exist.");
+            }
+
+            // Prevent duplicate company names.
+            var companyExists = await _context.Companies
+                .AnyAsync(c =>
+                    c.CompanyName == updateCompanyDto.CompanyName &&
+                    c.CompanyID != id);
+
+            if (companyExists)
+            {
+                return BadRequest("A company with this name already exists.");
+            }
+
+            // Update editable fields.
+            existingCompany.UserID = updateCompanyDto.UserID;
+            existingCompany.CompanyName = updateCompanyDto.CompanyName;
+            existingCompany.Description = updateCompanyDto.Description;
+            existingCompany.Email = updateCompanyDto.Email;
+            existingCompany.CityID = updateCompanyDto.CityID;
+            existingCompany.PhoneNumber = updateCompanyDto.PhoneNumber;
+            existingCompany.Website = updateCompanyDto.Website;
+            existingCompany.LogoPath = updateCompanyDto.LogoPath;
 
             await _context.SaveChangesAsync();
 
             return NoContent();
         }
 
-        // DELETE: api/Companies/{id}
-        // Deletes a company
+        [Authorize(Roles = "2")]
         [HttpDelete("DeleteCompany/{id}")]
         public async Task<IActionResult> DeleteCompany(Guid id)
         {

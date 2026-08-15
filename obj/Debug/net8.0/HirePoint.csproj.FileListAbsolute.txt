@@ -1,5 +1,8 @@
 C:\Users\Ayonda\Documents\2026 WORK\TECH TITANS\HirePoint\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\Ayonda\Documents\2026 WORK\TECH TITANS\HirePoint\bin\Debug\net8.0\appsettings.json
+C:\Users\Ayonda\Documents\2026 WORK\TECH TITANS\HirePoint\bin\Debug\net8.0\hirepoint-frontend\package-lock.json
+C:\Users\Ayonda\Documents\2026 WORK\TECH TITANS\HirePoint\bin\Debug\net8.0\hirepoint-frontend\package.json
+C:\Users\Ayonda\Documents\2026 WORK\TECH TITANS\HirePoint\bin\Debug\net8.0\HirePoint.staticwebassets.runtime.json
 C:\Users\Ayonda\Documents\2026 WORK\TECH TITANS\HirePoint\bin\Debug\net8.0\HirePoint.staticwebassets.endpoints.json
 C:\Users\Ayonda\Documents\2026 WORK\TECH TITANS\HirePoint\bin\Debug\net8.0\HirePoint.exe
 C:\Users\Ayonda\Documents\2026 WORK\TECH TITANS\HirePoint\bin\Debug\net8.0\HirePoint.deps.json
@@ -9,6 +12,7 @@ C:\Users\Ayonda\Documents\2026 WORK\TECH TITANS\HirePoint\bin\Debug\net8.0\HireP
 C:\Users\Ayonda\Documents\2026 WORK\TECH TITANS\HirePoint\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\Ayonda\Documents\2026 WORK\TECH TITANS\HirePoint\bin\Debug\net8.0\Azure.Identity.dll
 C:\Users\Ayonda\Documents\2026 WORK\TECH TITANS\HirePoint\bin\Debug\net8.0\Humanizer.dll
+C:\Users\Ayonda\Documents\2026 WORK\TECH TITANS\HirePoint\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\Ayonda\Documents\2026 WORK\TECH TITANS\HirePoint\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Ayonda\Documents\2026 WORK\TECH TITANS\HirePoint\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
 C:\Users\Ayonda\Documents\2026 WORK\TECH TITANS\HirePoint\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll

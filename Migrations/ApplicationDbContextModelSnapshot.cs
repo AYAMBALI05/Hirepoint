@@ -40,8 +40,11 @@ namespace HirePoint.Migrations
                     b.Property<Guid>("JobID")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("Status")
+                    b.Property<string>("QualificationRequired")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
 
                     b.Property<Guid>("UserID")
                         .HasColumnType("uniqueidentifier");
@@ -54,7 +57,7 @@ namespace HirePoint.Migrations
 
                     b.HasIndex("UserID");
 
-                    b.ToTable("Applications");
+                    b.ToTable("Applications", (string)null);
                 });
 
             modelBuilder.Entity("HirePoint.Models.Entities.CV", b =>
@@ -79,7 +82,7 @@ namespace HirePoint.Migrations
 
                     b.HasIndex("UserID");
 
-                    b.ToTable("CVs");
+                    b.ToTable("CVs", (string)null);
                 });
 
             modelBuilder.Entity("HirePoint.Models.Entities.City", b =>
@@ -100,7 +103,7 @@ namespace HirePoint.Migrations
 
                     b.HasIndex("ProvinceID");
 
-                    b.ToTable("Cities");
+                    b.ToTable("Cities", (string)null);
                 });
 
             modelBuilder.Entity("HirePoint.Models.Entities.Company", b =>
@@ -139,7 +142,7 @@ namespace HirePoint.Migrations
 
                     b.HasIndex("UserID");
 
-                    b.ToTable("Companies");
+                    b.ToTable("Companies", (string)null);
                 });
 
             modelBuilder.Entity("HirePoint.Models.Entities.Country", b =>
@@ -155,7 +158,7 @@ namespace HirePoint.Migrations
 
                     b.HasKey("CountryID");
 
-                    b.ToTable("Countries");
+                    b.ToTable("Countries", (string)null);
                 });
 
             modelBuilder.Entity("HirePoint.Models.Entities.Job", b =>
@@ -188,6 +191,9 @@ namespace HirePoint.Migrations
                     b.Property<DateTime>("PostDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("QualificationRequired")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<float>("Salary")
                         .HasColumnType("real");
 
@@ -200,28 +206,7 @@ namespace HirePoint.Migrations
 
                     b.HasIndex("CompanyID");
 
-                    b.ToTable("Jobs");
-                });
-
-            modelBuilder.Entity("HirePoint.Models.Entities.JobQualification", b =>
-                {
-                    b.Property<Guid>("JobQualificationID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("JobID")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<int>("QualificationID")
-                        .HasColumnType("int");
-
-                    b.HasKey("JobQualificationID");
-
-                    b.HasIndex("JobID");
-
-                    b.HasIndex("QualificationID");
-
-                    b.ToTable("JobQualifications");
+                    b.ToTable("Jobs", (string)null);
                 });
 
             modelBuilder.Entity("HirePoint.Models.Entities.Notification", b =>
@@ -246,7 +231,7 @@ namespace HirePoint.Migrations
 
                     b.HasIndex("UserID");
 
-                    b.ToTable("Notifications");
+                    b.ToTable("Notifications", (string)null);
                 });
 
             modelBuilder.Entity("HirePoint.Models.Entities.Province", b =>
@@ -267,7 +252,7 @@ namespace HirePoint.Migrations
 
                     b.HasIndex("CountryID");
 
-                    b.ToTable("Provinces");
+                    b.ToTable("Provinces", (string)null);
                 });
 
             modelBuilder.Entity("HirePoint.Models.Entities.Qualification", b =>
@@ -283,7 +268,7 @@ namespace HirePoint.Migrations
 
                     b.HasKey("QualificationID");
 
-                    b.ToTable("Qualifications");
+                    b.ToTable("Qualifications", (string)null);
                 });
 
             modelBuilder.Entity("HirePoint.Models.Entities.Role", b =>
@@ -299,7 +284,7 @@ namespace HirePoint.Migrations
 
                     b.HasKey("RoleID");
 
-                    b.ToTable("Roles");
+                    b.ToTable("Roles", (string)null);
                 });
 
             modelBuilder.Entity("HirePoint.Models.Entities.SavedJob", b =>
@@ -323,23 +308,7 @@ namespace HirePoint.Migrations
 
                     b.HasIndex("UserID");
 
-                    b.ToTable("SavedJobs");
-                });
-
-            modelBuilder.Entity("HirePoint.Models.Entities.Skill", b =>
-                {
-                    b.Property<int>("SkillID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SkillID"));
-
-                    b.Property<string>("SkillName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("SkillID");
-
-                    b.ToTable("Skills");
+                    b.ToTable("SavedJobs", (string)null);
                 });
 
             modelBuilder.Entity("HirePoint.Models.Entities.User", b =>
@@ -348,7 +317,7 @@ namespace HirePoint.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<int>("CityID")
+                    b.Property<int?>("CityID")
                         .HasColumnType("int");
 
                     b.Property<DateTime?>("DeletedDate")
@@ -381,7 +350,7 @@ namespace HirePoint.Migrations
 
                     b.HasIndex("RoleID");
 
-                    b.ToTable("Users");
+                    b.ToTable("Users", (string)null);
                 });
 
             modelBuilder.Entity("HirePoint.Models.Entities.UserProfile", b =>
@@ -389,9 +358,6 @@ namespace HirePoint.Migrations
                     b.Property<Guid>("ProfileID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("CVPath")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Experience")
                         .HasColumnType("nvarchar(max)");
@@ -404,51 +370,7 @@ namespace HirePoint.Migrations
                     b.HasIndex("UserID")
                         .IsUnique();
 
-                    b.ToTable("UserProfiles");
-                });
-
-            modelBuilder.Entity("HirePoint.Models.Entities.UserQualification", b =>
-                {
-                    b.Property<int>("UserQualificationID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UserQualificationID"));
-
-                    b.Property<int>("QualificationID")
-                        .HasColumnType("int");
-
-                    b.Property<Guid>("UserID")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("UserQualificationID");
-
-                    b.HasIndex("QualificationID");
-
-                    b.HasIndex("UserID");
-
-                    b.ToTable("UserQualifications");
-                });
-
-            modelBuilder.Entity("HirePoint.Models.Entities.UserSkill", b =>
-                {
-                    b.Property<Guid>("UserSkillID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<int>("SkillID")
-                        .HasColumnType("int");
-
-                    b.Property<Guid>("UserID")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("UserSkillID");
-
-                    b.HasIndex("SkillID");
-
-                    b.HasIndex("UserID");
-
-                    b.ToTable("UserSkills");
+                    b.ToTable("UserProfiles", (string)null);
                 });
 
             modelBuilder.Entity("HirePoint.Models.Entities.Application", b =>
@@ -538,25 +460,6 @@ namespace HirePoint.Migrations
                     b.Navigation("Company");
                 });
 
-            modelBuilder.Entity("HirePoint.Models.Entities.JobQualification", b =>
-                {
-                    b.HasOne("HirePoint.Models.Entities.Job", "Job")
-                        .WithMany("JobQualifications")
-                        .HasForeignKey("JobID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("HirePoint.Models.Entities.Qualification", "Qualification")
-                        .WithMany("JobQualifications")
-                        .HasForeignKey("QualificationID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Job");
-
-                    b.Navigation("Qualification");
-                });
-
             modelBuilder.Entity("HirePoint.Models.Entities.Notification", b =>
                 {
                     b.HasOne("HirePoint.Models.Entities.User", "User")
@@ -600,19 +503,15 @@ namespace HirePoint.Migrations
 
             modelBuilder.Entity("HirePoint.Models.Entities.User", b =>
                 {
-                    b.HasOne("HirePoint.Models.Entities.City", "City")
+                    b.HasOne("HirePoint.Models.Entities.City", null)
                         .WithMany("Users")
-                        .HasForeignKey("CityID")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .HasForeignKey("CityID");
 
                     b.HasOne("HirePoint.Models.Entities.Role", "Role")
                         .WithMany("Users")
                         .HasForeignKey("RoleID")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
-
-                    b.Navigation("City");
 
                     b.Navigation("Role");
                 });
@@ -624,44 +523,6 @@ namespace HirePoint.Migrations
                         .HasForeignKey("HirePoint.Models.Entities.UserProfile", "UserID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("HirePoint.Models.Entities.UserQualification", b =>
-                {
-                    b.HasOne("HirePoint.Models.Entities.Qualification", "Qualification")
-                        .WithMany("UserQualifications")
-                        .HasForeignKey("QualificationID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("HirePoint.Models.Entities.User", "User")
-                        .WithMany("UserQualifications")
-                        .HasForeignKey("UserID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Qualification");
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("HirePoint.Models.Entities.UserSkill", b =>
-                {
-                    b.HasOne("HirePoint.Models.Entities.Skill", "Skill")
-                        .WithMany("UserSkills")
-                        .HasForeignKey("SkillID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("HirePoint.Models.Entities.User", "User")
-                        .WithMany("UserSkills")
-                        .HasForeignKey("UserID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Skill");
 
                     b.Navigation("User");
                 });
@@ -694,8 +555,6 @@ namespace HirePoint.Migrations
                 {
                     b.Navigation("Applications");
 
-                    b.Navigation("JobQualifications");
-
                     b.Navigation("SavedJobs");
                 });
 
@@ -704,21 +563,9 @@ namespace HirePoint.Migrations
                     b.Navigation("Cities");
                 });
 
-            modelBuilder.Entity("HirePoint.Models.Entities.Qualification", b =>
-                {
-                    b.Navigation("JobQualifications");
-
-                    b.Navigation("UserQualifications");
-                });
-
             modelBuilder.Entity("HirePoint.Models.Entities.Role", b =>
                 {
                     b.Navigation("Users");
-                });
-
-            modelBuilder.Entity("HirePoint.Models.Entities.Skill", b =>
-                {
-                    b.Navigation("UserSkills");
                 });
 
             modelBuilder.Entity("HirePoint.Models.Entities.User", b =>
@@ -734,10 +581,6 @@ namespace HirePoint.Migrations
                     b.Navigation("SavedJobs");
 
                     b.Navigation("UserProfile");
-
-                    b.Navigation("UserQualifications");
-
-                    b.Navigation("UserSkills");
                 });
 #pragma warning restore 612, 618
         }

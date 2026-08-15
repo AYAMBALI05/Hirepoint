@@ -22,19 +22,41 @@
         ],
         "requestBody": {
           "content": {
-            "application/json": {
+            "multipart/form-data": {
               "schema": {
-                "$ref": "#/components/schemas/Application"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Application"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Application"
+                "type": "object",
+                "properties": {
+                  "UserID": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
+                  "JobID": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
+                  "CVID": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
+                  "CVFile": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "UserID": {
+                  "style": "form"
+                },
+                "JobID": {
+                  "style": "form"
+                },
+                "CVID": {
+                  "style": "form"
+                },
+                "CVFile": {
+                  "style": "form"
+                }
               }
             }
           }
@@ -69,6 +91,18 @@
         }
       }
     },
+    "/api/Applications/MyApplications": {
+      "get": {
+        "tags": [
+          "Applications"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/Applications/UpdateApplication/{id}": {
       "put": {
         "tags": [
@@ -89,17 +123,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Application"
+                "$ref": "#/components/schemas/UpdateApplicationDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Application"
+                "$ref": "#/components/schemas/UpdateApplicationDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Application"
+                "$ref": "#/components/schemas/UpdateApplicationDto"
               }
             }
           }
@@ -134,6 +168,68 @@
         }
       }
     },
+    "/api/Auth/Register": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Auth/Login": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/Cities": {
       "get": {
         "tags": [
@@ -153,17 +249,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/City"
+                "$ref": "#/components/schemas/CreateCityDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/City"
+                "$ref": "#/components/schemas/CreateCityDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/City"
+                "$ref": "#/components/schemas/CreateCityDto"
               }
             }
           }
@@ -218,17 +314,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/City"
+                "$ref": "#/components/schemas/UpdateCityDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/City"
+                "$ref": "#/components/schemas/UpdateCityDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/City"
+                "$ref": "#/components/schemas/UpdateCityDto"
               }
             }
           }
@@ -282,17 +378,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Company"
+                "$ref": "#/components/schemas/CreateCompanyDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Company"
+                "$ref": "#/components/schemas/CreateCompanyDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Company"
+                "$ref": "#/components/schemas/CreateCompanyDto"
               }
             }
           }
@@ -347,17 +443,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Company"
+                "$ref": "#/components/schemas/UpdateCompanyDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Company"
+                "$ref": "#/components/schemas/UpdateCompanyDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Company"
+                "$ref": "#/components/schemas/UpdateCompanyDto"
               }
             }
           }
@@ -411,17 +507,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Country"
+                "$ref": "#/components/schemas/CreateCountryDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Country"
+                "$ref": "#/components/schemas/CreateCountryDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Country"
+                "$ref": "#/components/schemas/CreateCountryDto"
               }
             }
           }
@@ -476,17 +572,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Country"
+                "$ref": "#/components/schemas/UpdateCuntryDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Country"
+                "$ref": "#/components/schemas/UpdateCuntryDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Country"
+                "$ref": "#/components/schemas/UpdateCuntryDto"
               }
             }
           }
@@ -563,19 +659,31 @@
         ],
         "requestBody": {
           "content": {
-            "application/json": {
+            "multipart/form-data": {
               "schema": {
-                "$ref": "#/components/schemas/CV"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/CV"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/CV"
+                "required": [
+                  "CVFile",
+                  "UserID"
+                ],
+                "type": "object",
+                "properties": {
+                  "UserID": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
+                  "CVFile": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "UserID": {
+                  "style": "form"
+                },
+                "CVFile": {
+                  "style": "form"
+                }
               }
             }
           }
@@ -601,23 +709,36 @@
               "type": "string",
               "format": "uuid"
             }
+          },
+          {
+            "name": "UserID",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
           }
         ],
         "requestBody": {
           "content": {
-            "application/json": {
+            "multipart/form-data": {
               "schema": {
-                "$ref": "#/components/schemas/CV"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/CV"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/CV"
+                "required": [
+                  "CVFile"
+                ],
+                "type": "object",
+                "properties": {
+                  "CVFile": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "CVFile": {
+                  "style": "form"
+                }
               }
             }
           }
@@ -671,17 +792,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Job"
+                "$ref": "#/components/schemas/CreateJobsDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Job"
+                "$ref": "#/components/schemas/CreateJobsDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Job"
+                "$ref": "#/components/schemas/CreateJobsDto"
               }
             }
           }
@@ -736,17 +857,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Job"
+                "$ref": "#/components/schemas/UpdateJobsDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Job"
+                "$ref": "#/components/schemas/UpdateJobsDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Job"
+                "$ref": "#/components/schemas/UpdateJobsDto"
               }
             }
           }
@@ -781,6 +902,29 @@
         }
       }
     },
+    "/api/Jobs/SaveJob/{jobId}": {
+      "post": {
+        "tags": [
+          "Jobs"
+        ],
+        "parameters": [
+          {
+            "name": "jobId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/Notifications": {
       "get": {
         "tags": [
@@ -800,17 +944,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Notification"
+                "$ref": "#/components/schemas/CreateNotificationDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Notification"
+                "$ref": "#/components/schemas/CreateNotificationDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Notification"
+                "$ref": "#/components/schemas/CreateNotificationDto"
               }
             }
           }
@@ -952,17 +1096,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Province"
+                "$ref": "#/components/schemas/CreateProvinceDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Province"
+                "$ref": "#/components/schemas/CreateProvinceDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Province"
+                "$ref": "#/components/schemas/CreateProvinceDto"
               }
             }
           }
@@ -1017,17 +1161,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Province"
+                "$ref": "#/components/schemas/UpdateProvinceDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Province"
+                "$ref": "#/components/schemas/UpdateProvinceDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Province"
+                "$ref": "#/components/schemas/UpdateProvinceDto"
               }
             }
           }
@@ -1081,17 +1225,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Qualification"
+                "$ref": "#/components/schemas/CreateQualificationDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Qualification"
+                "$ref": "#/components/schemas/CreateQualificationDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Qualification"
+                "$ref": "#/components/schemas/CreateQualificationDto"
               }
             }
           }
@@ -1146,17 +1290,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Qualification"
+                "$ref": "#/components/schemas/UpdateQualificationDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Qualification"
+                "$ref": "#/components/schemas/UpdateQualificationDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Qualification"
+                "$ref": "#/components/schemas/UpdateQualificationDto"
               }
             }
           }
@@ -1187,17 +1331,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/SavedJob"
+                "$ref": "#/components/schemas/CreateSavedJobDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/SavedJob"
+                "$ref": "#/components/schemas/CreateSavedJobDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/SavedJob"
+                "$ref": "#/components/schemas/CreateSavedJobDto"
               }
             }
           }
@@ -1255,127 +1399,19 @@
         }
       }
     },
-    "/api/Skills/GetSkills": {
+    "/api/SavedJobs/User/{userId}": {
       "get": {
         "tags": [
-          "Skills"
-        ],
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      }
-    },
-    "/api/Skills/GetSkillsById/{id}": {
-      "get": {
-        "tags": [
-          "Skills"
+          "SavedJobs"
         ],
         "parameters": [
           {
-            "name": "id",
+            "name": "userId",
             "in": "path",
             "required": true,
             "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      }
-    },
-    "/api/Skills": {
-      "post": {
-        "tags": [
-          "Skills"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Skill"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Skill"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Skill"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      }
-    },
-    "/api/Skills/UpdateSkill/{id}": {
-      "put": {
-        "tags": [
-          "Skills"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Skill"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Skill"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Skill"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      }
-    },
-    "/api/Skills/DeleteSkill/{id}": {
-      "delete": {
-        "tags": [
-          "Skills"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -1437,19 +1473,29 @@
         ],
         "requestBody": {
           "content": {
-            "application/json": {
+            "multipart/form-data": {
               "schema": {
-                "$ref": "#/components/schemas/UserProfile"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UserProfile"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/UserProfile"
+                "required": [
+                  "Experience"
+                ],
+                "type": "object",
+                "properties": {
+                  "Experience": {
+                    "type": "string"
+                  },
+                  "CVFile": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "Experience": {
+                  "style": "form"
+                },
+                "CVFile": {
+                  "style": "form"
+                }
               }
             }
           }
@@ -1487,21 +1533,41 @@
         "tags": [
           "UserProfiles"
         ],
+        "parameters": [
+          {
+            "name": "UserID",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "Experience",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "requestBody": {
           "content": {
-            "application/json": {
+            "multipart/form-data": {
               "schema": {
-                "$ref": "#/components/schemas/UserProfile"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UserProfile"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/UserProfile"
+                "type": "object",
+                "properties": {
+                  "CVFile": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "CVFile": {
+                  "style": "form"
+                }
               }
             }
           }
@@ -1513,7 +1579,7 @@
         }
       }
     },
-    "/api/Users/GetCVs": {
+    "/api/Users/GetUsers": {
       "get": {
         "tags": [
           "Users"
@@ -1525,7 +1591,7 @@
         }
       }
     },
-    "/api/Users/GetCVById/{id}": {
+    "/api/Users/GetUserById/{id}": {
       "get": {
         "tags": [
           "Users"
@@ -1541,37 +1607,6 @@
             }
           }
         ],
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      }
-    },
-    "/api/Users": {
-      "post": {
-        "tags": [
-          "Users"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/User"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/User"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/User"
-              }
-            }
-          }
-        },
         "responses": {
           "200": {
             "description": "Success"
@@ -1599,17 +1634,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/User"
+                "$ref": "#/components/schemas/UpdateUserDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/User"
+                "$ref": "#/components/schemas/UpdateUserDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/User"
+                "$ref": "#/components/schemas/UpdateUserDto"
               }
             }
           }
@@ -1686,127 +1721,72 @@
   },
   "components": {
     "schemas": {
-      "Application": {
-        "type": "object",
-        "properties": {
-          "applicationID": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "userID": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "user": {
-            "$ref": "#/components/schemas/User"
-          },
-          "jobID": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "job": {
-            "$ref": "#/components/schemas/Job"
-          },
-          "cvid": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "cv": {
-            "$ref": "#/components/schemas/CV"
-          },
-          "applicationDate": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "status": {
-            "type": "string",
-            "nullable": true
-          },
-          "feedback": {
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
+      "ApplicationStatus": {
+        "enum": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "type": "integer",
+        "format": "int32"
       },
-      "City": {
+      "CreateCityDto": {
+        "required": [
+          "cityName",
+          "provinceID"
+        ],
         "type": "object",
         "properties": {
-          "cityID": {
-            "type": "integer",
-            "format": "int32"
-          },
           "cityName": {
-            "type": "string",
-            "nullable": true
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
           },
           "provinceID": {
             "type": "integer",
             "format": "int32"
-          },
-          "province": {
-            "$ref": "#/components/schemas/Province"
-          },
-          "users": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/User"
-            },
-            "nullable": true
-          },
-          "companies": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Company"
-            },
-            "nullable": true
-          },
-          "jobs": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Job"
-            },
-            "nullable": true
           }
         },
         "additionalProperties": false
       },
-      "Company": {
+      "CreateCompanyDto": {
+        "required": [
+          "cityID",
+          "companyName",
+          "description",
+          "email",
+          "phoneNumber",
+          "userID"
+        ],
         "type": "object",
         "properties": {
-          "companyID": {
-            "type": "string",
-            "format": "uuid"
-          },
           "userID": {
             "type": "string",
             "format": "uuid"
           },
-          "user": {
-            "$ref": "#/components/schemas/User"
-          },
           "companyName": {
-            "type": "string",
-            "nullable": true
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
           },
           "description": {
-            "type": "string",
-            "nullable": true
+            "maxLength": 500,
+            "minLength": 0,
+            "type": "string"
           },
           "email": {
             "type": "string",
-            "nullable": true
+            "format": "email"
           },
           "cityID": {
             "type": "integer",
             "format": "int32"
           },
-          "city": {
-            "$ref": "#/components/schemas/City"
-          },
           "phoneNumber": {
             "type": "string",
-            "nullable": true
+            "format": "tel"
           },
           "website": {
             "type": "string",
@@ -1815,70 +1795,143 @@
           "logoPath": {
             "type": "string",
             "nullable": true
-          },
-          "jobs": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Job"
-            },
-            "nullable": true
           }
         },
         "additionalProperties": false
       },
-      "Country": {
+      "CreateCountryDto": {
+        "required": [
+          "countryName"
+        ],
         "type": "object",
         "properties": {
-          "countryID": {
-            "type": "integer",
-            "format": "int32"
-          },
           "countryName": {
-            "type": "string",
-            "nullable": true
-          },
-          "provinces": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Province"
-            },
-            "nullable": true
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
           }
         },
         "additionalProperties": false
       },
-      "CV": {
+      "CreateJobsDto": {
+        "required": [
+          "availableVacancies",
+          "cityID",
+          "closingDate",
+          "companyID",
+          "description",
+          "employmentType",
+          "experienceRequired",
+          "qualificationRequired",
+          "salary",
+          "title"
+        ],
         "type": "object",
         "properties": {
-          "cvid": {
+          "companyID": {
             "type": "string",
             "format": "uuid"
           },
+          "title": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "description": {
+            "maxLength": 1000,
+            "minLength": 0,
+            "type": "string"
+          },
+          "qualificationRequired": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "salary": {
+            "minimum": 0,
+            "type": "number",
+            "format": "float"
+          },
+          "experienceRequired": {
+            "type": "string"
+          },
+          "employmentType": {
+            "type": "string"
+          },
+          "availableVacancies": {
+            "maximum": 1000,
+            "minimum": 1,
+            "type": "integer",
+            "format": "int32"
+          },
+          "cityID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "closingDate": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateNotificationDto": {
+        "type": "object",
+        "properties": {
           "userID": {
             "type": "string",
             "format": "uuid"
           },
-          "user": {
-            "$ref": "#/components/schemas/User"
-          },
-          "fileName": {
+          "message": {
             "type": "string",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateProvinceDto": {
+        "required": [
+          "countryID",
+          "provinceName"
+        ],
+        "type": "object",
+        "properties": {
+          "provinceName": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
           },
-          "filePath": {
+          "countryID": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateQualificationDto": {
+        "required": [
+          "qualificationName"
+        ],
+        "type": "object",
+        "properties": {
+          "qualificationName": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateSavedJobDto": {
+        "type": "object",
+        "properties": {
+          "userID": {
             "type": "string",
-            "nullable": true
+            "format": "uuid"
           },
-          "uploadDate": {
+          "jobID": {
             "type": "string",
-            "format": "date-time"
-          },
-          "applications": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Application"
-            },
-            "nullable": true
+            "format": "uuid"
           }
         },
         "additionalProperties": false
@@ -1930,268 +1983,23 @@
         "type": "integer",
         "format": "int32"
       },
-      "Job": {
+      "LoginDto": {
         "type": "object",
         "properties": {
-          "jobID": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "companyID": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "company": {
-            "$ref": "#/components/schemas/Company"
-          },
-          "title": {
+          "email": {
             "type": "string",
             "nullable": true
           },
-          "description": {
+          "password": {
             "type": "string",
-            "nullable": true
-          },
-          "salary": {
-            "type": "number",
-            "format": "float"
-          },
-          "experienceRequired": {
-            "type": "string",
-            "nullable": true
-          },
-          "employmentType": {
-            "type": "string",
-            "nullable": true
-          },
-          "availableVacancies": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "cityID": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "city": {
-            "$ref": "#/components/schemas/City"
-          },
-          "postDate": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "closingDate": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "applications": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Application"
-            },
-            "nullable": true
-          },
-          "savedJobs": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/SavedJob"
-            },
-            "nullable": true
-          },
-          "jobQualifications": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/JobQualification"
-            },
             "nullable": true
           }
         },
         "additionalProperties": false
       },
-      "JobQualification": {
+      "RegisterDto": {
         "type": "object",
         "properties": {
-          "jobQualificationID": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "jobID": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "job": {
-            "$ref": "#/components/schemas/Job"
-          },
-          "qualificationID": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "qualification": {
-            "$ref": "#/components/schemas/Qualification"
-          }
-        },
-        "additionalProperties": false
-      },
-      "Notification": {
-        "type": "object",
-        "properties": {
-          "notificationID": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "userID": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "user": {
-            "$ref": "#/components/schemas/User"
-          },
-          "message": {
-            "type": "string",
-            "nullable": true
-          },
-          "dateCreated": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "isRead": {
-            "type": "boolean"
-          }
-        },
-        "additionalProperties": false
-      },
-      "Province": {
-        "type": "object",
-        "properties": {
-          "provinceID": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "provinceName": {
-            "type": "string",
-            "nullable": true
-          },
-          "countryID": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "country": {
-            "$ref": "#/components/schemas/Country"
-          },
-          "cities": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/City"
-            },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "Qualification": {
-        "type": "object",
-        "properties": {
-          "qualificationID": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "qualificationName": {
-            "type": "string",
-            "nullable": true
-          },
-          "jobQualifications": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/JobQualification"
-            },
-            "nullable": true
-          },
-          "userQualifications": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/UserQualification"
-            },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "Role": {
-        "type": "object",
-        "properties": {
-          "roleID": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "roleName": {
-            "type": "string",
-            "nullable": true
-          },
-          "users": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/User"
-            },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "SavedJob": {
-        "type": "object",
-        "properties": {
-          "savedJobID": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "userID": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "user": {
-            "$ref": "#/components/schemas/User"
-          },
-          "jobID": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "job": {
-            "$ref": "#/components/schemas/Job"
-          },
-          "savedDate": {
-            "type": "string",
-            "format": "date-time"
-          }
-        },
-        "additionalProperties": false
-      },
-      "Skill": {
-        "type": "object",
-        "properties": {
-          "skillID": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "skillName": {
-            "type": "string",
-            "nullable": true
-          },
-          "userSkills": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/UserSkill"
-            },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "User": {
-        "type": "object",
-        "properties": {
-          "userID": {
-            "type": "string",
-            "format": "uuid"
-          },
           "firstName": {
             "type": "string",
             "nullable": true
@@ -2215,152 +2023,228 @@
           "roleID": {
             "type": "integer",
             "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateApplicationDto": {
+        "required": [
+          "status"
+        ],
+        "type": "object",
+        "properties": {
+          "status": {
+            "$ref": "#/components/schemas/ApplicationStatus"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateCityDto": {
+        "required": [
+          "cityName",
+          "provinceID"
+        ],
+        "type": "object",
+        "properties": {
+          "cityName": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
           },
-          "role": {
-            "$ref": "#/components/schemas/Role"
+          "provinceID": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateCompanyDto": {
+        "required": [
+          "cityID",
+          "companyName",
+          "description",
+          "email",
+          "phoneNumber",
+          "userID"
+        ],
+        "type": "object",
+        "properties": {
+          "userID": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "companyName": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "description": {
+            "maxLength": 500,
+            "minLength": 0,
+            "type": "string"
+          },
+          "email": {
+            "type": "string",
+            "format": "email"
           },
           "cityID": {
             "type": "integer",
             "format": "int32"
           },
-          "city": {
-            "$ref": "#/components/schemas/City"
+          "phoneNumber": {
+            "type": "string",
+            "format": "tel"
           },
-          "userProfile": {
-            "$ref": "#/components/schemas/UserProfile"
+          "website": {
+            "type": "string",
+            "nullable": true
+          },
+          "logoPath": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateCuntryDto": {
+        "required": [
+          "countryName"
+        ],
+        "type": "object",
+        "properties": {
+          "countryName": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateJobsDto": {
+        "required": [
+          "availableVacancies",
+          "cityID",
+          "closingDate",
+          "companyID",
+          "description",
+          "employmentType",
+          "experienceRequired",
+          "qualificationRequired",
+          "salary",
+          "title"
+        ],
+        "type": "object",
+        "properties": {
+          "companyID": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "title": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "description": {
+            "maxLength": 1000,
+            "minLength": 0,
+            "type": "string"
+          },
+          "qualificationRequired": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "salary": {
+            "minimum": 0,
+            "type": "number",
+            "format": "float"
+          },
+          "experienceRequired": {
+            "type": "string"
+          },
+          "employmentType": {
+            "type": "string"
+          },
+          "availableVacancies": {
+            "maximum": 1000,
+            "minimum": 1,
+            "type": "integer",
+            "format": "int32"
+          },
+          "cityID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "closingDate": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateProvinceDto": {
+        "required": [
+          "countryID",
+          "provinceName"
+        ],
+        "type": "object",
+        "properties": {
+          "provinceName": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "countryID": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateQualificationDto": {
+        "required": [
+          "qualificationName"
+        ],
+        "type": "object",
+        "properties": {
+          "qualificationName": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateUserDto": {
+        "required": [
+          "email",
+          "firstName",
+          "isActive",
+          "lastName",
+          "roleID"
+        ],
+        "type": "object",
+        "properties": {
+          "firstName": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string"
+          },
+          "lastName": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string"
+          },
+          "email": {
+            "type": "string",
+            "format": "email"
+          },
+          "roleID": {
+            "type": "integer",
+            "format": "int32"
           },
           "isActive": {
             "type": "boolean"
-          },
-          "isDeleted": {
-            "type": "boolean"
-          },
-          "deletedDate": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "companies": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Company"
-            },
-            "nullable": true
-          },
-          "notifications": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Notification"
-            },
-            "nullable": true
-          },
-          "applications": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Application"
-            },
-            "nullable": true
-          },
-          "cVs": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/CV"
-            },
-            "nullable": true
-          },
-          "savedJobs": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/SavedJob"
-            },
-            "nullable": true
-          },
-          "userSkills": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/UserSkill"
-            },
-            "nullable": true
-          },
-          "userQualifications": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/UserQualification"
-            },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "UserProfile": {
-        "type": "object",
-        "properties": {
-          "profileID": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "userID": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "user": {
-            "$ref": "#/components/schemas/User"
-          },
-          "experience": {
-            "type": "string",
-            "nullable": true
-          },
-          "cvPath": {
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "UserQualification": {
-        "type": "object",
-        "properties": {
-          "userQualificationID": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "userID": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "user": {
-            "$ref": "#/components/schemas/User"
-          },
-          "qualificationID": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "qualification": {
-            "$ref": "#/components/schemas/Qualification"
-          }
-        },
-        "additionalProperties": false
-      },
-      "UserSkill": {
-        "type": "object",
-        "properties": {
-          "userSkillID": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "userID": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "user": {
-            "$ref": "#/components/schemas/User"
-          },
-          "skillID": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "skill": {
-            "$ref": "#/components/schemas/Skill"
           }
         },
         "additionalProperties": false
@@ -2387,6 +2271,19 @@
         },
         "additionalProperties": false
       }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "http",
+        "description": "Enter your JWT token.",
+        "scheme": "Bearer",
+        "bearerFormat": "JWT"
+      }
     }
-  }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
 }

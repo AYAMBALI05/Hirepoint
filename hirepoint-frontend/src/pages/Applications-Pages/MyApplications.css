@@ -1,0 +1,437 @@
+/* =========================================
+   MY APPLICATIONS PAGE
+========================================= */
+
+.applications-page {
+    min-height: 100vh;
+
+    background-color: #f5f7fb;
+
+    padding: 50px 20px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.applications-container {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   PAGE HEADER
+========================================= */
+
+.applications-header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    margin-bottom: 30px;
+}
+
+
+.applications-header h1 {
+    margin: 0 0 8px 0;
+
+    color: #111827;
+
+    font-size: 32px;
+
+    font-weight: 700;
+}
+
+
+.applications-header p {
+    margin: 0;
+
+    color: #6b7280;
+
+    font-size: 16px;
+}
+
+
+/* =========================================
+   BROWSE JOBS BUTTON
+========================================= */
+
+.browse-jobs-button {
+    display: inline-block;
+
+    padding: 12px 20px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: background-color 0.2s ease;
+}
+
+
+.browse-jobs-button:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* =========================================
+   APPLICATION LIST
+========================================= */
+
+.applications-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+
+/* =========================================
+   APPLICATION CARD
+========================================= */
+
+.application-card {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 25px;
+
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    border: 1px solid #e5e7eb;
+
+    box-shadow:
+        0 3px 12px rgba(0, 0, 0, 0.05);
+
+    transition:
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.application-card:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================
+   APPLICATION INFORMATION
+========================================= */
+
+.application-info {
+    flex: 1;
+}
+
+
+.application-info h2 {
+    margin: 0 0 12px 0;
+
+    color: #111827;
+
+    font-size: 20px;
+
+    font-weight: 650;
+}
+
+
+.application-info p {
+    margin: 6px 0;
+
+    color: #6b7280;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   APPLICATION STATUS SECTION
+========================================= */
+
+.application-status {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================
+   STATUS BADGE
+========================================= */
+
+.status-badge {
+    display: inline-block;
+
+    padding: 7px 13px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    text-transform: capitalize;
+}
+
+
+/* Pending */
+
+.status-pending {
+    background-color: #fef3c7;
+
+    color: #92400e;
+}
+
+
+/* Approved */
+
+.status-approved {
+    background-color: #dcfce7;
+
+    color: #166534;
+}
+
+
+/* Rejected */
+
+.status-rejected {
+    background-color: #fee2e2;
+
+    color: #991b1b;
+}
+
+
+/* Interview */
+
+.status-interview {
+    background-color: #dbeafe;
+
+    color: #1e40af;
+}
+
+
+/* =========================================
+   VIEW JOB BUTTON
+========================================= */
+
+.view-job-button {
+    display: inline-block;
+
+    padding: 9px 15px;
+
+    background-color: #eff6ff;
+
+    color: #2563eb;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+
+.view-job-button:hover {
+    background-color: #2563eb;
+
+    color: white;
+}
+
+
+/* =========================================
+   NO APPLICATIONS
+========================================= */
+
+.no-applications {
+    background-color: white;
+
+    padding: 60px 30px;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    border: 1px solid #e5e7eb;
+
+    box-shadow:
+        0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+
+.no-applications h2 {
+    margin: 0 0 10px 0;
+
+    color: #111827;
+
+    font-size: 24px;
+}
+
+
+.no-applications p {
+    margin: 0 0 25px 0;
+
+    color: #6b7280;
+
+    font-size: 15px;
+}
+
+
+/* =========================================
+   LOADING / ERROR MESSAGE
+========================================= */
+
+.applications-message {
+    min-height: 60vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 30px;
+
+    box-sizing: border-box;
+
+    color: #374151;
+
+    font-size: 17px;
+
+    text-align: center;
+}
+
+
+.applications-message.error {
+    color: #b91c1c;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 768px) {
+
+    .applications-page {
+        padding: 35px 15px;
+    }
+
+
+    .applications-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .applications-header h1 {
+        font-size: 28px;
+    }
+
+
+    .application-card {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .application-status {
+        width: 100%;
+
+        justify-content: space-between;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 500px) {
+
+    .applications-page {
+        padding: 25px 10px;
+    }
+
+
+    .applications-header h1 {
+        font-size: 25px;
+    }
+
+
+    .browse-jobs-button {
+        width: 100%;
+
+        box-sizing: border-box;
+
+        text-align: center;
+    }
+
+
+    .application-card {
+        padding: 20px;
+    }
+
+
+    .application-info h2 {
+        font-size: 18px;
+    }
+
+
+    .application-status {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 10px;
+    }
+
+
+    .status-badge {
+        text-align: center;
+    }
+
+
+    .view-job-button {
+        text-align: center;
+    }
+
+}

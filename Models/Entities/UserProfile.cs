@@ -16,6 +16,6 @@ namespace HirePoint.Models.Entities
        
         public string Experience { get; set; }
       //  public string Education { get; set; }
-        public string CVPath { get; set; }
+       // public string CVPath { get; set; }
     }
 }
