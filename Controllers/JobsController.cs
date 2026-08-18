@@ -88,20 +88,46 @@ namespace HirePoint.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateJob(CreateJobsDto createJobsDto)
         {
-            if(!ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            var companyExists = await _context.Companies
-              .AnyAsync(c => c.CompanyID == createJobsDto.CompanyID);
+            // =========================================
+            // GET LOGGED-IN RECRUITER
+            // =========================================
 
-            if (!companyExists)
+            var userIDClaim = User.FindFirstValue(
+                ClaimTypes.NameIdentifier);
+
+            if (userIDClaim == null)
             {
-                return BadRequest("Company does not exist.");
+                return Unauthorized();
             }
 
-            // Ensure the selected city exists.
+            var userID = Guid.Parse(userIDClaim);
+
+
+            // =========================================
+            // CHECK COMPANY PROFILE
+            // =========================================
+            // A recruiter MUST have a company profile
+            // before they can create a job.
+
+            var company = await _context.Companies
+                .FirstOrDefaultAsync(c => c.UserID == userID);
+
+            if (company == null)
+            {
+                return BadRequest(
+                    "You must create your company profile before posting a job.");
+            }
+
+
+            // =========================================
+            // ENSURE SELECTED CITY EXISTS
+            // =========================================
+
             var cityExists = await _context.Cities
                 .AnyAsync(c => c.CityID == createJobsDto.CityID);
 
@@ -110,69 +136,136 @@ namespace HirePoint.Controllers
                 return BadRequest("City does not exist.");
             }
 
-            // Ensure the closing date is in the future.
+
+            // =========================================
+            // ENSURE CLOSING DATE IS IN THE FUTURE
+            // =========================================
+
             if (createJobsDto.ClosingDate <= DateTime.Now)
             {
-                return BadRequest("Closing date must be in the future.");
+                return BadRequest(
+                    "Closing date must be in the future.");
             }
+
+
+            // =========================================
+            // CREATE JOB
+            // =========================================
 
             var job = new Job
             {
                 JobID = Guid.NewGuid(),
-                CompanyID = createJobsDto.CompanyID,
+
+                // IMPORTANT:
+                // Use the company belonging to the
+                // logged-in recruiter.
+                CompanyID = company.CompanyID,
+
                 Title = createJobsDto.Title,
+
                 Description = createJobsDto.Description,
-                QualificationRequired = createJobsDto.QualificationRequired,
+
+                QualificationRequired =
+                    createJobsDto.QualificationRequired,
+
                 Salary = createJobsDto.Salary,
-                ExperienceRequired = createJobsDto.ExperienceRequired,
-                EmploymentType = createJobsDto.EmploymentType,
-                AvailableVacancies = createJobsDto.AvailableVacancies,
+
+                ExperienceRequired =
+                    createJobsDto.ExperienceRequired,
+
+                EmploymentType =
+                    createJobsDto.EmploymentType,
+
+                AvailableVacancies =
+                    createJobsDto.AvailableVacancies,
+
                 CityID = createJobsDto.CityID,
-                PostDate = DateTime.Now, //The server determines when the job was posted.
-                ClosingDate = createJobsDto.ClosingDate
+
+                PostDate = DateTime.Now,
+
+                ClosingDate =
+                    createJobsDto.ClosingDate
             };
 
+
+            // =========================================
+            // SAVE JOB
+            // =========================================
 
             await _context.Jobs.AddAsync(job);
 
             await _context.SaveChangesAsync();
 
+
+            // =========================================
+            // GET CREATED JOB
+            // =========================================
+
             var createdJob = await _context.Jobs
                 .Include(j => j.Company)
                 .Include(j => j.City)
-                .FirstOrDefaultAsync(j => j.JobID == job.JobID);
+                .FirstOrDefaultAsync(
+                    j => j.JobID == job.JobID);
+
+
+            // =========================================
+            // CREATE RESPONSE DTO
+            // =========================================
 
             var jobDto = new JobDto
             {
                 JobID = createdJob.JobID,
+
                 CompanyID = createdJob.CompanyID,
-                CompanyName = createdJob.Company?.CompanyName,
+
+                CompanyName =
+                    createdJob.Company?.CompanyName,
+
                 Title = createdJob.Title,
+
                 Description = createdJob.Description,
-                QualificationRequired = createdJob.QualificationRequired,
+
+                QualificationRequired =
+                    createdJob.QualificationRequired,
+
                 Salary = createdJob.Salary,
-                ExperienceRequired = createdJob.ExperienceRequired,
-                EmploymentType = createdJob.EmploymentType,
-                AvailableVacancies = createdJob.AvailableVacancies,
+
+                ExperienceRequired =
+                    createdJob.ExperienceRequired,
+
+                EmploymentType =
+                    createdJob.EmploymentType,
+
+                AvailableVacancies =
+                    createdJob.AvailableVacancies,
+
                 CityID = createdJob.CityID,
-                CityName = createdJob.City?.CityName,
+
+                CityName =
+                    createdJob.City?.CityName,
+
                 PostDate = createdJob.PostDate,
+
                 ClosingDate = createdJob.ClosingDate
             };
 
-            return CreatedAtAction(nameof(GetJobById),new { id = job.JobID },jobDto);
+
+            return CreatedAtAction(
+                nameof(GetJobById),
+                new { id = job.JobID },
+                jobDto);
         }
 
         [Authorize(Roles = "2")]
         [HttpPut("UpdateJob/{id}")]
         public async Task<IActionResult> UpdateJob(Guid id, UpdateJobsDto updateJobsDto)
         {
-           if(!ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-           
+
             var existingJob = await _context.Jobs.FindAsync(id);
 
             if (existingJob == null)
@@ -274,13 +367,13 @@ namespace HirePoint.Controllers
             }
 
             // Prevent deleting a job that still has required qualifications.
-           /* var hasQualifications = await _context.JobQualifications
-                .AnyAsync(jq => jq.JobID == id);
+            /* var hasQualifications = await _context.JobQualifications
+                 .AnyAsync(jq => jq.JobID == id);
 
-            if (hasQualifications)
-            {
-                return BadRequest("Cannot delete a job that still has qualifications assigned.");
-            }*/
+             if (hasQualifications)
+             {
+                 return BadRequest("Cannot delete a job that still has qualifications assigned.");
+             }*/
 
             _context.Jobs.Remove(job);
 
@@ -339,5 +432,80 @@ namespace HirePoint.Controllers
 
             return Ok("Job saved successfully.");
         }
+
+        [Authorize(Roles = "2")]
+        [HttpGet("MyJobs")]
+        public async Task<IActionResult> GetMyJobs()
+        {
+            // Get the logged-in recruiter's UserID from the JWT.
+            var userIDClaim = User.FindFirstValue(
+                ClaimTypes.NameIdentifier);
+
+            if (userIDClaim == null)
+            {
+                return Unauthorized();
+            }
+
+            var userID = Guid.Parse(userIDClaim);
+
+            // Find the company belonging to this recruiter.
+            var company = await _context.Companies
+                .FirstOrDefaultAsync(c => c.UserID == userID);
+
+            if (company == null)
+            {
+                return NotFound(
+                    "No company was found for this recruiter.");
+            }
+
+            // Get only jobs belonging to this company.
+            var jobs = await _context.Jobs
+                .Include(j => j.Company)
+                .Include(j => j.City)
+                .Where(j => j.CompanyID == company.CompanyID)
+                .OrderByDescending(j => j.PostDate)
+                .ToListAsync();
+
+            var jobDtos = jobs.Select(j => new JobDto
+            {
+                JobID = j.JobID,
+
+                CompanyID = j.CompanyID,
+
+                CompanyName = j.Company?.CompanyName,
+
+                Title = j.Title,
+
+                Description = j.Description,
+
+                QualificationRequired =
+                    j.QualificationRequired,
+
+                Salary = j.Salary,
+
+                ExperienceRequired =
+                    j.ExperienceRequired,
+
+                EmploymentType =
+                    j.EmploymentType,
+
+                AvailableVacancies =
+                    j.AvailableVacancies,
+
+                CityID = j.CityID,
+
+                CityName = j.City?.CityName,
+
+                PostDate = j.PostDate,
+
+                ClosingDate = j.ClosingDate
+            });
+
+            return Ok(jobDtos);
+        }
+
+    
+
+
     }
 }

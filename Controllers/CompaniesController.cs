@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
 
 namespace HirePoint.Controllers
 {
@@ -98,59 +99,159 @@ namespace HirePoint.Controllers
             return Ok(companyDto);
         }
 
+
+        [Authorize(Roles = "2")]
+        [HttpGet("MyCompany")]
+        public async Task<IActionResult> GetMyCompany()
+        {
+            var userIDClaim = User.FindFirstValue(
+                ClaimTypes.NameIdentifier);
+
+            if (userIDClaim == null)
+            {
+                return Unauthorized();
+            }
+
+            var userID = Guid.Parse(userIDClaim);
+
+
+            var company = await _context.Companies
+                .Include(c => c.User)
+                .Include(c => c.City)
+                .FirstOrDefaultAsync(
+                    c => c.UserID == userID);
+
+
+            if (company == null)
+            {
+                return NotFound(
+                    "No company profile found.");
+            }
+
+
+            var companyDto = new CompanyDto
+            {
+                CompanyID = company.CompanyID,
+
+                UserID = company.UserID,
+
+                RecruiterName = company.User == null
+                    ? null
+                    : $"{company.User.FirstName} {company.User.LastName}",
+
+                CompanyName = company.CompanyName,
+
+                Description = company.Description,
+
+                Email = company.Email,
+
+                CityID = company.CityID,
+
+                CityName = company.City?.CityName,
+
+                PhoneNumber = company.PhoneNumber,
+
+                Website = company.Website,
+
+                LogoPath = company.LogoPath
+            };
+
+
+            return Ok(companyDto);
+        }
+
+
+
         [Authorize(Roles = "2")]
         [HttpPost]
-        public async Task<IActionResult> CreateCompany(CreateCompanyDto createCompanyDto)
+        public async Task<IActionResult> CreateCompany(
+     CreateCompanyDto createCompanyDto)
         {
-
-            if(!ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            // Ensure the recruiter exists.
-            // This prevents a foreign key constraint error.
-            var recruiterExists = await _context.Users
-                .AnyAsync(u => u.UserID == createCompanyDto.UserID);
 
-            if (!recruiterExists)
+            var userIDClaim = User.FindFirstValue(
+                ClaimTypes.NameIdentifier);
+
+            if (userIDClaim == null)
             {
-                return BadRequest("Recruiter does not exist.");
+                return Unauthorized();
             }
+
+            var userID = Guid.Parse(userIDClaim);
+
+
+            var recruiterAlreadyHasCompany =
+                await _context.Companies
+                    .AnyAsync(c => c.UserID == userID);
+
+            if (recruiterAlreadyHasCompany)
+            {
+                return BadRequest(
+                    "You already have a company profile.");
+            }
+
 
             // Ensure the selected city exists.
             var cityExists = await _context.Cities
-                .AnyAsync(c => c.CityID == createCompanyDto.CityID);
+                .AnyAsync(c =>
+                    c.CityID == createCompanyDto.CityID);
 
             if (!cityExists)
             {
                 return BadRequest("City does not exist.");
             }
 
+
             // Prevent duplicate company names.
             var companyExists = await _context.Companies
-                .AnyAsync(c => c.CompanyName == createCompanyDto.CompanyName);
+                .AnyAsync(c =>
+                    c.CompanyName ==
+                    createCompanyDto.CompanyName);
 
             if (companyExists)
             {
-                return BadRequest("A company with this name already exists.");
+                return BadRequest(
+                    "A company with this name already exists.");
             }
+
 
             var company = new Company
             {
                 CompanyID = Guid.NewGuid(),
-                UserID = createCompanyDto.UserID,
-                CompanyName = createCompanyDto.CompanyName,
-                Description = createCompanyDto.Description,
-                Email = createCompanyDto.Email,
-                CityID = createCompanyDto.CityID,
-                PhoneNumber = createCompanyDto.PhoneNumber,
-                Website = createCompanyDto.Website,
-                LogoPath = createCompanyDto.LogoPath
+
+                UserID = userID,
+
+                CompanyName =
+                    createCompanyDto.CompanyName,
+
+                Description =
+                    createCompanyDto.Description,
+
+                Email =
+                    createCompanyDto.Email,
+
+                CityID =
+                    createCompanyDto.CityID,
+
+                PhoneNumber =
+                    createCompanyDto.PhoneNumber,
+
+                Website =
+                    createCompanyDto.Website,
+
+                LogoPath =
+                    createCompanyDto.LogoPath
             };
 
+
             await _context.Companies.AddAsync(company);
+
             await _context.SaveChangesAsync();
+
 
             var createdCompany = await _context.Companies
                 .Include(c => c.User)

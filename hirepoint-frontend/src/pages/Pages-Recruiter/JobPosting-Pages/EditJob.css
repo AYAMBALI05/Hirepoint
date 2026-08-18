@@ -1,0 +1,306 @@
+/* =========================================
+   EDIT JOB PAGE
+========================================= */
+
+.edit-job-page {
+    min-height: 100vh;
+    background-color: #f5f7fb;
+    padding-bottom: 90px;
+}
+
+.edit-job-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+
+/* =========================================
+   BACK BUTTON
+========================================= */
+
+.edit-job-back {
+    background: none;
+    border: none;
+    color: #2563eb;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.edit-job-back:hover {
+    color: #1d4ed8;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.edit-job-header {
+    margin-bottom: 30px;
+}
+
+.edit-job-header p {
+    margin: 0 0 8px;
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.edit-job-header h1 {
+    margin: 0 0 10px;
+    color: #111827;
+    font-size: 32px;
+}
+
+.edit-job-header span {
+    color: #6b7280;
+    font-size: 15px;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.edit-job-form {
+    background-color: white;
+    border-radius: 12px;
+    padding: 35px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================
+   FORM GROUP
+========================================= */
+
+.edit-form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22px;
+    flex: 1;
+}
+
+.edit-form-group label {
+    margin-bottom: 8px;
+    color: #374151;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.edit-form-group input,
+.edit-form-group textarea,
+.edit-form-group select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    background-color: white;
+    color: #111827;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+.edit-form-group textarea {
+    resize: vertical;
+    min-height: 140px;
+}
+
+.edit-form-group input:focus,
+.edit-form-group textarea:focus,
+.edit-form-group select:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+
+
+/* =========================================
+   FORM ROW
+========================================= */
+
+.edit-form-row {
+    display: flex;
+    gap: 20px;
+}
+
+
+/* =========================================
+   ERROR MESSAGE
+========================================= */
+
+.edit-job-error {
+    background-color: #fee2e2;
+    color: #b91c1c;
+    border: 1px solid #fecaca;
+    padding: 12px 15px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+
+/* =========================================
+   SUCCESS MESSAGE
+========================================= */
+
+.edit-job-success {
+    background-color: #dcfce7;
+    color: #166534;
+    border: 1px solid #bbf7d0;
+    padding: 12px 15px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+
+/* =========================================
+   ACTION BUTTONS
+========================================= */
+
+.edit-job-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 10px;
+    padding-top: 25px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.edit-job-actions button {
+    padding: 12px 22px;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.edit-job-actions button:first-child {
+    background-color: white;
+    color: #374151;
+    border: 1px solid #d1d5db;
+}
+
+.edit-job-actions button:first-child:hover {
+    background-color: #f9fafb;
+}
+
+.edit-job-actions button:last-child {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+}
+
+.edit-job-actions button:last-child:hover {
+    background-color: #1d4ed8;
+}
+
+.edit-job-actions button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+
+/* =========================================
+   BOTTOM NAVIGATION
+========================================= */
+
+.recruiter-bottom-navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+
+    background-color: white;
+
+    border-top: 1px solid #e5e7eb;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    z-index: 1000;
+}
+
+.recruiter-bottom-navbar button {
+    min-width: 110px;
+    height: 42px;
+
+    background: none;
+    border: none;
+
+    color: #6b7280;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    border-radius: 7px;
+}
+
+.recruiter-bottom-navbar button:hover {
+    background-color: #f3f4f6;
+    color: #2563eb;
+}
+
+.recruiter-bottom-navbar button.active {
+    background-color: #eff6ff;
+    color: #2563eb;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .edit-job-container {
+        width: 92%;
+        padding: 25px 0;
+    }
+
+    .edit-job-header h1 {
+        font-size: 26px;
+    }
+
+    .edit-job-form {
+        padding: 22px;
+    }
+
+    .edit-form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .edit-job-actions {
+        flex-direction: column-reverse;
+    }
+
+    .edit-job-actions button {
+        width: 100%;
+    }
+
+    .recruiter-bottom-navbar {
+        height: 65px;
+        gap: 2px;
+    }
+
+    .recruiter-bottom-navbar button {
+        min-width: auto;
+        flex: 1;
+        font-size: 12px;
+    }
+}

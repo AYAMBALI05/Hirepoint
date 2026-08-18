@@ -8,67 +8,61 @@ import {
 import Navbar from "./components/Navbar";
 import ProtectedRoute from "./components/ProtectedRoute";
 
-import JobDetails from "./pages/Jobs/JobDetails-Pages/JobDetails";
+// JOB SEEKER
+import JobDetails from "./pages/Pages-JobSeeker/JobDetails-Pages/JobDetails";
+import ApplyJob from "./pages/Pages-JobSeeker/Apply-Pages/Apply";
+import MyApplications from "./pages/Pages-JobSeeker/Applications-Pages/MyApplications";
+import SavedJobs from "./pages/Pages-JobSeeker/SavedJobs-Pages/SavedJobs";
+import JobSeekerDashboard from "./pages/Pages-JobSeeker/JobSeeker-Dashboard/Jobseeker_Dashboard";
+import Profiles from "./pages/Pages-JobSeeker/Profile-Pages/Profile";
+import Messages from "./pages/Pages-JobSeeker/Messages-Pages/Messages";
 
-import Home from "./pages/Home-Pages/Home";
+// MAIN
+import Home from "./pages/Pages-Main/Home-Pages/Home";
+import Login from "./pages/Pages-Main/Login-Pages/Login";
+import Register from "./pages/Pages-Main/Registration-Pages/Register";
+import ForgotPassword from "./pages/Pages-Main/ForgotPassword-Pages/Forgot-Password";
 
-import Login from "./pages/Login-Pages/Login";
-import Register from "./pages/Registration-Pages/Register";
+// ADMIN
+import AdminDashboard from "./pages/Pages-Admin/AdminDashboard-Pages/AdminDashboard";
+import AdminUsers from "./pages/Pages-Admin/AdminUsers-Pages/Users";
+import JobListing from "./pages/Pages-Admin/Joblistings-Pages/Joblisting";
+import Analytics from "./pages/Pages-Admin/Analytics-Pages/Analytics";
+import RecruiterDashboard from "./pages/Pages-Recruiter/RecruitersDashboard-Pages/RecruiterDashboard";
+import JobPost from "./pages/Pages-Recruiter/JobPosting-Pages/JobPost";
+import RecruiterJobs from "./pages/Pages-Recruiter/RecruiterJobs-Pages/RecruiterJobs";
+import RecruiterProfile from "./pages/Pages-Recruiter/RecruiterProfile-Pages/RecruiterProfile";
+import EditJob from "./pages/Pages-Recruiter/JobPosting-Pages/EditJobs";
 
-import ApplyJob from "./pages/Jobs/Apply-Pages/Apply";
-
-import MyApplications from "./pages/Applications-Pages/MyApplications";
-
-
-import SavedJobs from "./pages/Jobs/SavedJobs-Pages/SavedJobs";
-
-import JobSeekerDashboard from "./pages/JobSeeker-Dashboard/Jobseeker_Dashboard";
-import Profiles from "./pages/Profile-Pages/Profile";
-import Messages from "./pages/Messages-Pages/Messages";
-
-
-/*
- * Controls which pages should display
- * the normal HirePoint navigation.
- */
 function AppLayout() {
 
     const location = useLocation();
 
-
-    /*
-     * Login and Register are standalone
-     * authentication pages.
-     *
-     * They should NOT display the Navbar.
-     */
-   const hideNavbar =
-    location.pathname === "/" ||
-    location.pathname === "/login" ||
-    location.pathname === "/register" ||
-    location.pathname.startsWith("/jobs/");
+    const hideNavbar =
+        location.pathname === "/" ||
+        location.pathname === "/login" ||
+        location.pathname === "/register" ||
+        location.pathname.startsWith("/jobs/");
 
     return (
         <>
 
-            {/* 
-             * Display Navbar on normal application pages.
-             * Hide it on Login and Register.
-             */}
             {!hideNavbar && <Navbar />}
-
 
             <Routes>
 
                 {/* =====================================
-                    MAIN LANDING PAGE
+                    MAIN
                 ====================================== */}
 
                 <Route
                     path="/"
                     element={<Home />}
                 />
-
+                <Route
+                    path="/forgot-password"
+                    element={<ForgotPassword />}
+                />
 
                 {/* =====================================
                     AUTHENTICATION
@@ -97,13 +91,6 @@ function AppLayout() {
                         </ProtectedRoute>
                     }
                 />
-
-
-                {/* =====================================
-                    JOBS
-                ====================================== */}
-
-               
 
 
                 {/* =====================================
@@ -161,22 +148,23 @@ function AppLayout() {
                     }
                 />
 
-                    {/* =====================================
-                        MESSAGES
-                    ===================================== */}
 
-                    <Route
-                        path="/messages"
-                        element={
-                            <ProtectedRoute>
-                                <Messages />
-                            </ProtectedRoute>
-                        }
-                    />
+                {/* =====================================
+                    MESSAGES
+                ====================================== */}
+
+                <Route
+                    path="/messages"
+                    element={
+                        <ProtectedRoute>
+                            <Messages />
+                        </ProtectedRoute>
+                    }
+                />
 
 
                 {/* =====================================
-                    PROFILES
+                    PROFILE
                 ====================================== */}
 
                 <Route
@@ -187,7 +175,133 @@ function AppLayout() {
                         </ProtectedRoute>
                     }
                 />
-                </Routes>
+
+
+                {/* =================================================
+                    ADMIN INTERFACE
+                ================================================= */}
+
+
+                {/* =====================================
+                    ADMIN DASHBOARD
+                ====================================== */}
+
+                <Route
+                    path="/admin-dashboard"
+                    element={
+                        <ProtectedRoute>
+                            <AdminDashboard />
+                        </ProtectedRoute>
+                    }
+                />
+
+
+                {/* =====================================
+                    ADMIN USERS
+                ====================================== */}
+
+                <Route
+                    path="/admin/users"
+                    element={
+                        <ProtectedRoute>
+                            <AdminUsers />
+                        </ProtectedRoute>
+                    }
+                />
+
+
+                {/* =====================================
+                     JOB LISTINGS
+                ====================================== */}
+
+                <Route
+                    path="/admin/jobs"
+                    element={
+                        <ProtectedRoute>
+                            <JobListing />
+                        </ProtectedRoute>
+                    }
+                />
+                {/* =====================================
+                    ANALTICS
+                ====================================== */}
+
+
+                <Route
+                    path="/admin/analytics"
+                    element={
+                        <ProtectedRoute>
+                            <Analytics />
+                        </ProtectedRoute>
+                    }
+                />
+
+
+                  {/* =================================================
+                    RECRUITER'S INTERFACE
+                ================================================= */}
+                
+                    {/* =====================================
+                    RECRUITER DASHBOARD
+                ====================================== */}
+
+
+                <Route
+                    path="/recruiter-dashboard"
+                    element={
+                        <ProtectedRoute>
+                            <RecruiterDashboard />
+                        </ProtectedRoute>
+                    }
+                />
+
+                 {/* =====================================
+                  POST NEW JOB
+                ====================================== */}
+
+               <Route
+                    path="/recruiter/jobs/create"
+                    element={
+                        <ProtectedRoute>
+                            <JobPost />
+                        </ProtectedRoute>
+                    }
+                />
+
+                {/* =====================================
+                    RECRUITER JOBS
+                ====================================== */}
+
+                <Route
+                    path="/recruiter/jobs"
+                    element={
+                        <ProtectedRoute>
+                            <RecruiterJobs />
+                        </ProtectedRoute>
+                    }
+                />
+                
+             
+                            <Route
+                    path="/recruiter/profile/create"
+                    element={
+                        <ProtectedRoute>
+                            <RecruiterProfile />
+                        </ProtectedRoute>
+                    }
+                />
+
+                <Route
+                    path="/recruiter/jobs/edit/:id"
+                    element={
+                        <ProtectedRoute>
+                            <EditJob />
+                        </ProtectedRoute>
+                    }
+                />
+
+
+            </Routes>
 
         </>
     );

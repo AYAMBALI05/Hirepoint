@@ -1,0 +1,689 @@
+/* =========================================
+   ANALYTICS PAGE
+========================================= */
+
+.analytics-page {
+    min-height: 100vh;
+
+    background: #e9eef8;
+
+    padding-bottom: 105px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   ANALYTICS CONTAINER
+========================================= */
+
+.analytics-container {
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 32px 42px 40px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   PAGE HEADER
+========================================= */
+
+.analytics-header {
+    margin-bottom: 28px;
+}
+
+
+.analytics-header h1 {
+    margin: 0;
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+    color: #111827;
+}
+
+
+.analytics-header p {
+    margin: 7px 0 0;
+
+    font-size: 15px;
+
+    color: #6b7280;
+}
+
+
+/* =========================================
+   STATISTICS
+========================================= */
+
+.analytics-statistics {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+
+    margin-bottom: 24px;
+}
+
+
+.analytics-stat-card {
+    min-height: 125px;
+
+    padding: 22px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 14px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+
+.analytics-stat-card span {
+    font-size: 13px;
+
+    font-weight: 600;
+
+    color: #6b7280;
+}
+
+
+.analytics-stat-card strong {
+    font-size: 30px;
+
+    font-weight: 700;
+
+    color: #111827;
+}
+
+
+/* =========================================
+   ANALYTICS SECTION
+========================================= */
+
+.analytics-section {
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 14px;
+
+    padding: 24px;
+
+    margin-bottom: 24px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   SECTION HEADER
+========================================= */
+
+.analytics-section-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+}
+
+
+.analytics-section-header h2 {
+    margin: 0;
+
+    font-size: 21px;
+
+    font-weight: 650;
+
+    color: #111827;
+}
+
+
+.analytics-section-header p {
+    margin: 6px 0 0;
+
+    font-size: 13px;
+
+    color: #6b7280;
+}
+
+
+/* =========================================
+   PLATFORM OVERVIEW
+========================================= */
+
+.analytics-overview {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 16px;
+}
+
+
+.analytics-overview-card {
+    min-height: 145px;
+
+    padding: 20px;
+
+    background: #f8fafc;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    transition: 0.2s ease;
+}
+
+
+.analytics-overview-card:hover {
+    border-color: #b4c4dd;
+
+    transform: translateY(-1px);
+}
+
+
+.analytics-overview-card span {
+    font-size: 13px;
+
+    font-weight: 600;
+
+    color: #6b7280;
+}
+
+
+.analytics-overview-card strong {
+    font-size: 28px;
+
+    font-weight: 700;
+
+    color: #111827;
+}
+
+
+.analytics-overview-card small {
+    font-size: 12px;
+
+    color: #6b7280;
+}
+
+
+/* =========================================
+   USER ACTIVITY
+========================================= */
+
+.analytics-activity {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+.activity-item {
+    min-height: 70px;
+
+    padding: 16px 18px;
+
+    background: #f8fafc;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    box-sizing: border-box;
+}
+
+
+.activity-item div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+
+.activity-item strong {
+    font-size: 14px;
+
+    font-weight: 650;
+
+    color: #111827;
+}
+
+
+.activity-item small {
+    font-size: 12px;
+
+    color: #6b7280;
+}
+
+
+.activity-item > span {
+    min-width: 50px;
+
+    text-align: right;
+
+    font-size: 22px;
+
+    font-weight: 700;
+
+    color: #2563EB;
+}
+
+
+/* =========================================
+   LOADING / ERROR
+========================================= */
+
+.analytics-message {
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    background: #e9eef8;
+
+    color: #1f4881;
+
+    font-size: 16px;
+
+    text-align: center;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+}
+
+
+.analytics-message h2 {
+    margin: 0;
+
+    font-size: 22px;
+
+    color: #111827;
+}
+
+
+.analytics-message p {
+    margin: 0;
+
+    color: #6b7280;
+}
+
+
+.analytics-message.error {
+    color: #b91c1c;
+}
+
+
+/* =========================================
+   RETRY BUTTON
+========================================= */
+
+.analytics-retry-button {
+    border: none;
+
+    background: #2563EB;
+
+    color: #ffffff;
+
+    padding: 10px 20px;
+
+    border-radius: 8px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.analytics-retry-button:hover {
+    background: #1d4ed8;
+}
+
+
+/* =========================================
+   BACK BUTTON
+========================================= */
+
+.analytics-back-button {
+    display: inline-block;
+
+    padding: 10px 18px;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    border: 1px solid #d1d5db;
+
+    color: #111827;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+.analytics-back-button:hover {
+    background: #f8fafc;
+}
+
+
+/* =========================================
+   BOTTOM NAVIGATION
+========================================= */
+
+.bottom-navbar {
+    position: fixed;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 72px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-around;
+
+    background-color: #ffffff;
+
+    border-top: 1px solid #e5e7eb;
+
+    box-shadow: 0 -3px 12px rgba(0, 0, 0, 0.06);
+
+    z-index: 1000;
+}
+
+
+/* =========================================
+   NAVIGATION ITEM
+========================================= */
+
+.bottom-navbar a {
+    position: relative;
+
+    height: 100%;
+
+    min-width: 90px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 4px;
+
+    color: #6b7280;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    font-weight: 500;
+
+    transition:
+        color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+/* =========================================
+   NAVIGATION LABEL
+========================================= */
+
+.bottom-navbar small {
+    font-size: 12px;
+
+    font-weight: 500;
+}
+
+
+/* =========================================
+   ICON SPACE
+========================================= */
+
+.bottom-navbar span {
+    width: 25px;
+
+    height: 25px;
+
+    display: block;
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.bottom-navbar a:hover {
+    color: #111827;
+}
+
+
+/* =========================================
+   ACTIVE NAVIGATION
+========================================= */
+
+.bottom-navbar a.active {
+    color: #111827;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   ACTIVE INDICATOR
+========================================= */
+
+.bottom-navbar a.active::after {
+    content: "";
+
+    position: absolute;
+
+    bottom: 0;
+
+    width: 35px;
+
+    height: 3px;
+
+    background-color: #facc15;
+
+    border-radius: 3px 3px 0 0;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .analytics-container {
+        padding: 28px 25px 40px;
+    }
+
+
+    .analytics-statistics {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .analytics-overview {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+    .analytics-container {
+        padding: 24px 16px 30px;
+    }
+
+
+    .analytics-header h1 {
+        font-size: 26px;
+    }
+
+
+    .analytics-statistics {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 12px;
+    }
+
+
+    .analytics-stat-card {
+        min-height: 110px;
+
+        padding: 17px;
+    }
+
+
+    .analytics-stat-card strong {
+        font-size: 25px;
+    }
+
+
+    .analytics-section {
+        padding: 18px;
+    }
+
+
+    .analytics-section-header h2 {
+        font-size: 19px;
+    }
+
+
+    .analytics-overview-card {
+        min-height: 125px;
+
+        padding: 17px;
+    }
+
+
+    .activity-item {
+        padding: 14px;
+    }
+
+
+    .bottom-navbar {
+        height: 72px;
+    }
+
+
+    .bottom-navbar a {
+        min-width: 65px;
+
+        font-size: 10px;
+    }
+
+
+    .bottom-navbar small {
+        font-size: 10px;
+    }
+
+
+    .bottom-navbar span {
+        width: 22px;
+
+        height: 22px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 430px) {
+
+    .analytics-statistics {
+        grid-template-columns: 1fr;
+    }
+
+
+    .analytics-container {
+        padding: 20px 12px 25px;
+    }
+
+
+    .analytics-section {
+        padding: 15px;
+    }
+
+
+    .bottom-navbar a {
+        min-width: 55px;
+
+        font-size: 9px;
+    }
+
+
+    .bottom-navbar small {
+        font-size: 9px;
+    }
+
+}

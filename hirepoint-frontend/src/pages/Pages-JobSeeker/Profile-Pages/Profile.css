@@ -156,7 +156,76 @@
     color: #ffffff;
 }
 
+/* =========================================
+   UPDATE CV BUTTON
+========================================= */
 
+.update-cv-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 20px;
+
+    background: #ffffff;
+    color: #222;
+
+    border: 1px solid #222;
+    border-radius: 6px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.update-cv-button:hover {
+    background: #222;
+    color: #ffffff;
+}
+
+.update-cv-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+/* =========================================
+   DELETE CV BUTTON
+========================================= */
+
+.delete-cv-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 20px;
+
+    background: #ffffff;
+    color: #c62828;
+
+    border: 1px solid #c62828;
+    border-radius: 6px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.delete-cv-button:hover {
+    background: #c62828;
+    color: #ffffff;
+}
+
+.delete-cv-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
 /* =========================================
    EDIT PROFILE BUTTON
 ========================================= */

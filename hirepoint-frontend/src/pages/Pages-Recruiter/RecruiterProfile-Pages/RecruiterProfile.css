@@ -1,0 +1,460 @@
+/* =========================================
+   RECRUITER PROFILE PAGE
+========================================= */
+
+.recruiter-profile-page {
+    min-height: 100vh;
+    background: #f7f9fc;
+    padding-bottom: 90px;
+    color: #111827;
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.recruiter-profile-container {
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 45px 30px 50px;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.recruiter-profile-header {
+    margin-bottom: 30px;
+}
+
+.recruiter-profile-label {
+    margin: 0 0 8px;
+    color: #0ea5e9;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.recruiter-profile-header h1 {
+    margin: 0;
+    color: #111827;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.recruiter-profile-header > p:last-child {
+    margin-top: 10px;
+    color: #6b7280;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   PROFILE CARD
+========================================= */
+
+.recruiter-profile-card {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    padding: 35px;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.recruiter-profile-form {
+    width: 100%;
+}
+
+
+/* =========================================
+   FORM SECTIONS
+========================================= */
+
+.form-section {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.form-section h2 {
+    margin: 0 0 7px;
+    color: #111827;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.form-section p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   FORM GROUP
+========================================= */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    color: #111827;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   INPUTS
+========================================= */
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #111827;
+    font-family: inherit;
+    font-size: 15px;
+    padding: 13px 14px;
+    outline: none;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.form-group input {
+    height: 48px;
+}
+
+.form-group textarea {
+    min-height: 125px;
+    resize: vertical;
+}
+
+.form-group select {
+    height: 48px;
+    cursor: pointer;
+}
+
+
+/* =========================================
+   INPUT FOCUS
+========================================= */
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: #0ea5e9;
+    box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.12);
+}
+
+
+/* =========================================
+   PLACEHOLDER
+========================================= */
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #9ca3af;
+}
+
+
+/* =========================================
+   SMALL HELP TEXT
+========================================= */
+
+.form-group small {
+    margin-top: 7px;
+    color: #6b7280;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   ERROR MESSAGE
+========================================= */
+
+.recruiter-profile-error {
+    margin: 20px 0;
+    padding: 13px 15px;
+    border: 1px solid #fecaca;
+    border-radius: 8px;
+    background: #fef2f2;
+    color: #b91c1c;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   SUCCESS MESSAGE
+========================================= */
+
+.recruiter-profile-success {
+    margin: 20px 0;
+    padding: 13px 15px;
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+    background: #f0fdf4;
+    color: #15803d;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   ACTIONS
+========================================= */
+
+.recruiter-profile-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+    padding-top: 25px;
+    border-top: 1px solid #e5e7eb;
+}
+
+
+/* =========================================
+   SUBMIT BUTTON
+========================================= */
+
+.recruiter-profile-submit {
+    min-width: 220px;
+    height: 48px;
+    padding: 0 25px;
+    border: none;
+    border-radius: 8px;
+    background: #facc15;
+    color: #111827;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.recruiter-profile-submit:hover {
+    background: #eab308;
+    transform: translateY(-1px);
+}
+
+.recruiter-profile-submit:active {
+    transform: translateY(0);
+}
+
+.recruiter-profile-submit:disabled {
+    background: #d1d5db;
+    color: #6b7280;
+    cursor: not-allowed;
+    transform: none;
+}
+
+
+/* =========================================
+   BOTTOM NAVIGATION
+========================================= */
+
+.recruiter-bottom-navbar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 68px;
+    padding: 0 20px;
+
+    background: #ffffff;
+    border-top: 1px solid #e5e7eb;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.05);
+}
+
+
+/* =========================================
+   NAVIGATION BUTTONS
+========================================= */
+
+.recruiter-bottom-navbar button {
+    height: 68px;
+    min-width: 125px;
+    padding: 0 20px;
+
+    border: none;
+    border-bottom: 3px solid transparent;
+
+    background: transparent;
+    color: #6b7280;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        color 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.recruiter-bottom-navbar button:hover {
+    background: #f8fafc;
+    color: #111827;
+}
+
+
+/* =========================================
+   ACTIVE NAVIGATION
+========================================= */
+
+.recruiter-bottom-navbar button.active {
+    border-bottom-color: #facc15;
+    background: #fffdf0;
+    color: #111827;
+}
+
+
+/* =========================================
+   RESPONSIVE - TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .recruiter-profile-container {
+        padding: 35px 25px 45px;
+    }
+
+    .recruiter-profile-header h1 {
+        font-size: 30px;
+    }
+
+    .recruiter-profile-card {
+        padding: 28px;
+    }
+
+    .recruiter-bottom-navbar button {
+        min-width: 105px;
+        padding: 0 12px;
+    }
+
+}
+
+
+/* =========================================
+   RESPONSIVE - MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+    .recruiter-profile-page {
+        padding-bottom: 75px;
+    }
+
+    .recruiter-profile-container {
+        padding: 25px 15px 35px;
+    }
+
+    .recruiter-profile-header {
+        margin-bottom: 20px;
+    }
+
+    .recruiter-profile-header h1 {
+        font-size: 25px;
+        line-height: 1.25;
+    }
+
+    .recruiter-profile-header > p:last-child {
+        font-size: 14px;
+    }
+
+    .recruiter-profile-card {
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .form-section h2 {
+        font-size: 18px;
+    }
+
+    .form-group input,
+    .form-group select {
+        height: 46px;
+    }
+
+    .recruiter-profile-actions {
+        justify-content: stretch;
+    }
+
+    .recruiter-profile-submit {
+        width: 100%;
+    }
+
+
+    /* =====================================
+       MOBILE BOTTOM NAV
+    ====================================== */
+
+    .recruiter-bottom-navbar {
+        min-height: 62px;
+        padding: 0;
+    }
+
+    .recruiter-bottom-navbar button {
+        flex: 1;
+        min-width: 0;
+        height: 62px;
+        padding: 0 4px;
+
+        font-size: 11px;
+    }
+
+}
+
+
+/* =========================================
+   VERY SMALL SCREENS
+========================================= */
+
+@media (max-width: 400px) {
+
+    .recruiter-profile-container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .recruiter-profile-card {
+        padding: 16px;
+    }
+
+    .recruiter-bottom-navbar button {
+        font-size: 10px;
+    }
+
+}

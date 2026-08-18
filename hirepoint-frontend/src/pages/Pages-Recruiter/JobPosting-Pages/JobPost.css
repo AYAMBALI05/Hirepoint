@@ -1,0 +1,670 @@
+/* =========================================
+   JOB POST PAGE
+========================================= */
+
+.job-post-page {
+    min-height: 100vh;
+
+    background: #f5f7fb;
+
+    padding: 30px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.job-post-container {
+    width: 100%;
+
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    background: #ffffff;
+
+    border-radius: 16px;
+
+    padding: 35px;
+
+    box-sizing: border-box;
+
+    box-shadow:
+        0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.job-post-header {
+    margin-bottom: 30px;
+
+    border-bottom:
+        1px solid #e5e7eb;
+
+    padding-bottom: 20px;
+}
+
+
+.job-post-header h1 {
+    margin: 0 0 8px;
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+    color: #111827;
+}
+
+
+.job-post-header p {
+    margin: 0;
+
+    color: #6b7280;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.job-post-form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 30px;
+}
+
+
+/* =========================================
+   FORM SECTION
+========================================= */
+
+.job-form-section {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+
+.job-form-section h2,
+.job-location-section h2 {
+    margin: 0;
+
+    font-size: 19px;
+
+    font-weight: 650;
+
+    color: #1f2937;
+}
+
+
+/* =========================================
+   FORM GRID
+========================================= */
+
+.job-form-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+
+/* =========================================
+   FORM GROUP
+========================================= */
+
+.job-form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+
+    min-width: 0;
+}
+
+
+.job-form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+.job-form-group label,
+.job-location-group label {
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #374151;
+}
+
+
+/* =========================================
+   INPUTS / SELECT / TEXTAREA
+========================================= */
+
+.job-form-group input,
+.job-form-group select,
+.job-form-group textarea,
+.job-location-group select {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    border:
+        1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    padding: 12px 14px;
+
+    font-size: 14px;
+
+    font-family: inherit;
+
+    background: #ffffff;
+
+    color: #111827;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+
+/* =========================================
+   INPUT / SELECT HEIGHT
+========================================= */
+
+.job-form-group input,
+.job-form-group select,
+.job-location-group select {
+    height: 45px;
+}
+
+
+/* =========================================
+   TEXTAREA
+========================================= */
+
+.job-form-group textarea {
+    min-height: 130px;
+
+    resize: vertical;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   FOCUS
+========================================= */
+
+.job-form-group input:focus,
+.job-form-group select:focus,
+.job-form-group textarea:focus,
+.job-location-group select:focus {
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(37, 99, 235, 0.1);
+}
+
+
+/* =========================================
+   PLACEHOLDER
+========================================= */
+
+.job-form-group input::placeholder,
+.job-form-group textarea::placeholder {
+    color: #9ca3af;
+}
+
+
+/* =========================================
+   DISABLED SELECT
+========================================= */
+
+.job-form-group select:disabled,
+.job-location-group select:disabled {
+
+    background: #f3f4f6;
+
+    color: #9ca3af;
+
+    cursor: not-allowed;
+}
+
+
+/* =========================================
+   REQUIRED
+========================================= */
+
+.required {
+    color: #dc2626;
+
+    margin-left: 3px;
+}
+
+
+/* =========================================
+   HELP TEXT
+========================================= */
+
+.job-help-text {
+    margin: 0;
+
+    font-size: 12px;
+
+    color: #6b7280;
+}
+
+
+/* =========================================
+   LOCATION SECTION
+========================================= */
+
+.job-location-section {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+
+/* =========================================
+   LOCATION GRID
+========================================= */
+
+.job-location-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+
+/* =========================================
+   LOCATION GROUP
+========================================= */
+
+.job-location-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+
+    min-width: 0;
+}
+
+
+/* =========================================
+   SUCCESS MESSAGE
+========================================= */
+
+.job-success-message {
+
+    margin-bottom: 20px;
+
+    padding: 13px 16px;
+
+    border-radius: 8px;
+
+    background: #ecfdf5;
+
+    border:
+        1px solid #a7f3d0;
+
+    color: #047857;
+
+    font-size: 14px;
+
+    font-weight: 500;
+}
+
+
+/* =========================================
+   ERROR MESSAGE
+========================================= */
+
+.job-error-message {
+
+    margin-bottom: 20px;
+
+    padding: 13px 16px;
+
+    border-radius: 8px;
+
+    background: #fef2f2;
+
+    border:
+        1px solid #fecaca;
+
+    color: #b91c1c;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   FIELD ERROR
+========================================= */
+
+.job-field-error {
+    margin: 0;
+
+    font-size: 12px;
+
+    color: #dc2626;
+}
+
+
+/* =========================================
+   FORM ACTIONS
+========================================= */
+
+.job-form-actions {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 12px;
+
+    padding-top: 20px;
+
+    border-top:
+        1px solid #e5e7eb;
+}
+
+
+/* =========================================
+   CANCEL BUTTON
+========================================= */
+
+.job-cancel-button {
+
+    height: 45px;
+
+    padding: 0 22px;
+
+    border:
+        1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #374151;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.1s ease;
+}
+
+
+.job-cancel-button:hover {
+
+    background: #f9fafb;
+
+    border-color: #9ca3af;
+}
+
+
+.job-cancel-button:active {
+
+    transform:
+        translateY(1px);
+}
+
+
+/* =========================================
+   POST JOB BUTTON
+========================================= */
+
+.job-submit-button {
+
+    height: 45px;
+
+    padding: 0 25px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.1s ease;
+}
+
+
+.job-submit-button:hover {
+
+    background: #1d4ed8;
+}
+
+
+.job-submit-button:active {
+
+    transform:
+        translateY(1px);
+}
+
+
+.job-submit-button:disabled {
+
+    background: #93c5fd;
+
+    cursor: not-allowed;
+}
+
+
+/* =========================================
+   BACK BUTTON
+========================================= */
+
+.job-back-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+
+    color: #2563eb;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+.job-back-button:hover {
+
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   LOADING
+========================================= */
+
+.job-loading {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #f5f7fb;
+
+    color: #6b7280;
+
+    font-size: 15px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 768px) {
+
+    .job-post-page {
+
+        padding: 20px;
+    }
+
+
+    .job-post-container {
+
+        padding: 25px;
+    }
+
+
+    .job-form-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .job-form-group.full-width {
+
+        grid-column: auto;
+    }
+
+
+    .job-location-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .job-post-header h1 {
+
+        font-size: 26px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 500px) {
+
+    .job-post-page {
+
+        padding: 12px;
+    }
+
+
+    .job-post-container {
+
+        padding: 20px 16px;
+
+        border-radius: 12px;
+    }
+
+
+    .job-post-header {
+
+        margin-bottom: 25px;
+    }
+
+
+    .job-post-header h1 {
+
+        font-size: 23px;
+    }
+
+
+    .job-post-header p {
+
+        font-size: 14px;
+    }
+
+
+    .job-form-grid {
+
+        gap: 15px;
+    }
+
+
+    .job-location-grid {
+
+        gap: 15px;
+    }
+
+
+    .job-form-actions {
+
+        flex-direction: column-reverse;
+
+        gap: 10px;
+    }
+
+
+    .job-submit-button,
+    .job-cancel-button {
+
+        width: 100%;
+    }
+
+}

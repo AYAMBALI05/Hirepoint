@@ -1,4 +1,5 @@
 ﻿using HirePoint.Data;
+using HirePoint.Models.DTOs;
 using HirePoint.Models.DTOs.Authentication;
 using HirePoint.Models.Entities;
 using HirePoint.Services;
@@ -179,6 +180,53 @@ namespace HirePoint.Controllers
             };
 
             return Ok(response);
+        }
+
+        [AllowAnonymous]
+        [HttpPost("ForgotPassword")]
+        public async Task<IActionResult> ForgotPassword(
+            ForgotPasswordDto forgotPasswordDto)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            // Check that the new passwords match.
+            if (forgotPasswordDto.NewPassword !=
+                forgotPasswordDto.ConfirmPassword)
+            {
+                return BadRequest("Passwords do not match.");
+            }
+
+            // Find the user using their email.
+            var user = await _context.Users
+                .FirstOrDefaultAsync(u =>
+                    u.Email == forgotPasswordDto.Email);
+
+            // Check whether the account exists.
+            if (user == null)
+            {
+                return BadRequest(
+                    "No account was found with this email.");
+            }
+
+            // Make sure the account is active.
+            if (!user.IsActive || user.IsDeleted)
+            {
+                return BadRequest(
+                    "This account is not active.");
+            }
+
+            // Hash the new password.
+            user.Password = _passwordService.HashPassword(
+                forgotPasswordDto.NewPassword);
+
+            // Save the new password.
+            await _context.SaveChangesAsync();
+
+            return Ok(
+                "Password changed successfully.");
         }
     }
 }

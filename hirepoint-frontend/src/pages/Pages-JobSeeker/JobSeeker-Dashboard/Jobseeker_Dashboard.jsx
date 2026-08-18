@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
-import { getCurrentUser, logout } from "../../services/auth";
-import { getJobs } from "../../services/api";
+import { getCurrentUser, logout } from "../../../services/auth";
+import { getJobs } from "../../../services/api";
 
 import "./Jobseeker_Dashboard.css";
 
-import userIcon from "../../assets/user.png";
-import briefcaseIcon from "../../assets/briefcase.png";
+import userIcon from "../../../assets/user.png";
+import briefcaseIcon from "../../../assets/briefcase.png";
 
 
 
@@ -288,11 +288,11 @@ function JobSeekerDashboard() {
 
                 <div className="dashboard-user">
 
-    <img
-        src={userIcon}
-        alt="User"
-        className="dashboard-user-icon"
-    />
+                    <img
+                        src={userIcon}
+                        alt="User"
+                        className="dashboard-user-icon"
+                    />
 
     <div>
 

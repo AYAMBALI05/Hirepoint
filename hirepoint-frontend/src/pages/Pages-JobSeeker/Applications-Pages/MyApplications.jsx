@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-import { getToken } from "../../services/auth";
+import { getToken } from "../../../services/auth";
 
 import "./MyApplications.css";
 
